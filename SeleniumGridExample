@@ -1,0 +1,22 @@
+package com.bescentTech.Guru99BankingProject.BaseClasses;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+//java -Dwebdriver.chrome.driver="C:\Users\91798\eclipse-workspace\Guru99BankingProject2\drivers\chromedriver.exe" 
+//-jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:5555/grid/register -port
+//4466 -browser browserName=chrome
+
+public class RemoteGridDriver {
+	public static void main(String[] args) throws MalformedURLException {
+		DesiredCapabilities cap=DesiredCapabilities.firefox();
+		cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, new FirefoxOptions());
+		WebDriver driver=new RemoteWebDriver(new URL("http://127.0.0.1:5555/wd/hub"), cap);
+		driver.get("https://www.google.com");
+	}
+}
