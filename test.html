@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Columns
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript">
+        $(document).ready(function(){
+            addBoardColumns();
+        });
+        function addBoardColumns(columNames, newColumn) {
+            var COLUMNS_PER_CHART = 4;
+            var newColumn = $("<div>").addClass("row").appendTo(columNames);
+            var text = "TODO";
+            var blockDiv;
+            for(var i=0; i < COLUMNS_PER_CHART; i++) {
+            blockDiv = $("<div>").addClass("col-md-2 col-xs-2").appendTO(newColumn);
+            $('<span>').text(text).appendTo(blockDiv);
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-2 col-xs-2" data-status="todo"></div>
+        </div>
+    </body>
+</html>
