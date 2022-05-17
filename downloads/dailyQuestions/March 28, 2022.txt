@@ -1,0 +1,26 @@
+Practice set for the day
+1.locators
+2. enable disable test 
+3.test ng notations
+4.pom.xml in test ng role 
+5. program to count the number of occurrences of character from string 
+6. select class with all methods 
+7. actions class with all methods 
+8. alerts in selenium, what happens when you accept the alert
+9. how to switch from one window to another one 
+10.status codes of api
+11.all type of requests in api testing 
+12. providing multiple inputs
+13.positive and negative test cases for 1 to 100 in post method
+14.environment variable in api testing 
+15.how to run parallel test in test ng 
+16.pom -how to declere elemets in pom 
+17.role or pom.xml in maven
+18.importance of maven what does it bring to the table 
+19.role of test ng xml file why it is used how its used 
+20.how does test cases run in test ng,order of execution
+21.priority set in test ng 
+22.explain waits in selenium webdriver wait ,implicit wait ,fluent wait 
+23.tell status codes in api testing
+24. difference between close and quite
+25.find elements and findelement
