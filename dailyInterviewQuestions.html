@@ -98,54 +98,21 @@
             </div>
         </section>
 
-        <!-- ============bg-se-05  Section  Start============ -->
-        
+
+
+
+        <!--- Topic Wise Questions--->
+
         <section class="bg-se-05">
             <div class="container">
                 <div class="row">
                     <div class="heading">
-                        <h2>Latest Questions</h2>
+                        <h2>&nbsp;Latest Questions - Topic Wise</h2>
                     </div>
                 </div>
                 
                 <div class="container bcontent">
                     <div class="accordion" id="accordionExample">
-
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5"><h4>BARCLAYS INTERVIEW QUESTIONS</h4></button>
-                            </div>
-                            <div id="collapse5" class="collapse" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p><strong>1. What you have done till now as part of your it experience?</strong></p>
-<p><strong>2. Do you know oops concepts and in framework where and how you have implemented it?</strong></p>
-<p><strong>3. Can we declare a private class?</strong></p>
-<p><strong>4. What is difference between == and equals?</strong></p>
-<p><strong>5.How string is immutable?</strong></p>
-<p><strong>6. Where strings get stored and where reference gets stored?</strong></p>
-<p><strong>7. Can you please explain with the reference of memory location that how string is immutable?</strong></p>
-<p><strong>8. If not want to use string class then what can be used?</strong></p>
-<p><strong>9. Difference between string and stringbuffer.</strong></p>
-<p><strong>10. What collections you have used? Have you used hashmap?</strong></p>
-<p><strong>11. List declaration?</strong></p>
-<p><strong>12. Where used set?</strong></p>
-<p><strong>13. You have an application like flipkart and you want to buy a pen, so you have added that item two times to cart using add to cart button, but in cart only one entry for item should be displayed with quantity as 2, so how you&rsquo;ll test this?</strong></p>
-<p><strong>14. 1 to 100 numbers will be flashed on screen only once and you have to find the missing number.</strong></p>
-<p><strong>15. I have a table and want to store all table data then which collection should be ust and why?</strong></p>
-<p><strong>16. What hashmap will return?</strong></p>
-<p><strong>17. How to achieve inheritance without having interface?</strong></p>
-<p><strong>18. Method overloading and method overriding? Where used in framework?</strong></p>
-<p><strong>19. If i want that my class should not be extended and instance cannot be created by other class then how to declare class?</strong></p>
-<p><strong>20. How to store multiple values in one reference?</strong></p>
-<p><strong>21. In cucumber, in which class you have gluecode, how many classes for gluecode and what was the program line limit for class?</strong></p>
-<p><strong>22. How to find missing implementation in cucumber?</strong></p>
-<p><strong>23. Used static data or dynamic data, what was the approach?</strong></p>
-<p><strong>24. How to resolved conflicts while pushing code in git?</strong></p>
-<p><strong>25. Write a program to merge two sorted arrays?</strong></p>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"><h4>Basic Agile Questions</h4></button>
@@ -409,181 +376,182 @@
                             <div id="collapse4" class="collapse" data-parent="#accordionExample">
                                 <div class="card-body">
                                 <p><strong>Q #1) Explain the architecture of JMeter.</strong></p>
-<p><strong>Answer:</strong>&nbsp;Jmeter is a Java-based open-source application that is basically designed for the purpose of Load Testing. It supports all major protocols that are supported in Load Runner. Unlike any browser, JMeter works on levels of protocols and does not execute JavaScript present in HTML web pages.</p>
-<p><strong>Q #2) Does JMeter simulate actual browser behavior?</strong></p>
-<p><strong>Answer:&nbsp;</strong>No, JMeter does not support the actual browser behavior. It does not render the HTML webpages as the normal browser does. The response can be viewed in HTML format but the actual timings are not present in the generated samples.</p>
-<p><strong>Q #3) What is Distributed testing?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Distributed Testing means using multiple machines for load testing in which one of the machines can be made master and others can be kept as a slave. It is very important to note that all the machines should be on the&nbsp; same network and should have the same version of Java and JMeter</p>
-<p><strong>Q #4) What is the use of Regular Expression in JMeter?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Regular Expression is used for extracting some values dynamically from the responses.These values can be used in the subsequent request or can be saved for reporting purposes. Regular Expression is used in both Pre-Processors as well as Post Processors.</p>
-<p><strong>Q #5) What are the types of processors in JMeter?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Basically there are two types of processors in JMeter namely Pre-Processor and Post Processor.</p>
-<p>Pre-Processors execute before the main sampler and can change the scope of the sampler whereas Post Processors execute after the main sampler and are applicable to all samplers in the same scope of Test Plan. They can be used to extract some fields from the server response and store them in variables.</p>
-<p><strong>Q #6) What are the different ways of Data Parameterization in JMeter?<br /></strong></p>
-<p><strong>Answer:</strong>&nbsp;Data Parametrization makes the scripts reusable where the values is not required to be hardcoded for the same request with different parameters.</p>
-<p><strong>Below is the data parametrization that is supported in JMeter:</strong></p>
-<ul>
-<li>CSV Data Set Config</li>
-<li>User-Defined Variables.</li>
-</ul>
-<p><strong>Q #7) What are the maximum recommended threads on a single system?</strong></p>
-<p><strong>Answer:</strong>&nbsp;It depends on the hardware configuration of your system which includes a processor, JVM, allocated memory -Xmx, etc.</p>
-<p>Other factors that impact thread count are the number of components in your test plan i.e. the number of config elements or processors and it also depends on whether you are using GUI/Non-GUI Mode.</p>
-<p><strong>Q #8) Explain the difference between Gaussian and Poisson Timers.</strong></p>
-<p><strong>Answer:</strong>&nbsp;Both Gaussian and Poisson Timers work on a mathematical formula with some constant delay and additional offset. Difference between the two lies in the fact that how the lambda value is calculated in the case of Poisson timer and how deviation is calculated in the case of Gaussian Timer.</p>
-<p><strong>Q #9) What are the major differences between JMeter and Load Runner.</strong></p>
-<p><strong>Answer:</strong>&nbsp;JMeter is considered as the major competitor of Load Runner in the industry.&nbsp;<strong>Enlisted are some of the major differences:</strong></p>
-<div id="tablepress-133-scroll-wrapper" class="tablepress-scroll-wrapper">
-<table id="tablepress-133" class="tablepress tablepress-id-133 tablepress-responsive">
-<thead>
-<tr class="row-1 odd">
-<th class="column-1">Load Runner</th>
-<th class="column-2">Jmeter</th>
-</tr>
-</thead>
-<tbody class="row-hover">
-<tr class="row-2 even">
-<td class="column-1">Licensed Software</td>
-<td class="column-2">Open Source tool.</td>
-</tr>
-<tr class="row-3 odd">
-<td class="column-1">Developed by Mercury</td>
-<td class="column-2">Developed by Apache.</td>
-</tr>
-<tr class="row-4 even">
-<td class="column-1">UI is very impressive</td>
-<td class="column-2">It lacks in UI</td>
-</tr>
-<tr class="row-5 odd">
-<td class="column-1">It has more technical capabilities.</td>
-<td class="column-2">Less technically sound as compared to Load Runner.</td>
-</tr>
-<tr class="row-6 even">
-<td class="column-1">Supports SAP, Siebel and Peoplesoft.</td>
-<td class="column-2">Doesn&rsquo;t support SAP and Siebel</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Q #10) What is the use of co-relation in JMeter?<br /></strong></p>
-<p><strong>Answer:</strong>&nbsp;Co-relation is a process of extracting the values from the server response and storing it in a variable to be used in any other request which is to follow.</p>
-<p><strong>For Example,</strong>&nbsp;for testing any login functionality if you have to use the session ID/cookie ID, you can extract the values from the response of GET Request of the login page and then dynamically use the same while making POST request for a login.</p>
-<p><strong>Q #11) What are the different types of listeners?</strong></p>
-<p><strong>Answer:&nbsp;</strong>Listeners are used for storing the execution results of load testing in different forms be it in a table, graph, tree or in any other presentable format so that it can be presented to the client. There are different type of inbuild listeners in JMeter and many others can be imported into it by using plugins as per the requirement.</p>
-<p><strong>Some of the inbuild listeners are:</strong></p>
-<ul>
-<li>View results in Table</li>
-<li>View results in Tree</li>
-<li>Graph results</li>
-<li>Aggregate graph</li>
-<li>Aggregate report</li>
-<li>Assertion results</li>
-<li>Response time graph</li>
-</ul>
-<p><strong>Q #12) Explain the flow of the Test Script Recorder.</strong></p>
-<p><strong>Answer:</strong>&nbsp;HTTP(s) Test Script Recorder is used to record all the Http(s) requests going to the server from your application. Some configurations require to be done in JMeter in order to make it work.</p>
-<p><strong>Steps followed to record https traffic are:</strong></p>
-<ul>
-<li>Add HTTP(s) Test script recorder to WorkBench.</li>
-<li>Enter the port number to start your proxy server.</li>
-<li>Choose the target either as &ldquo;Workbench&rdquo; or add a Recording Controller in your test plan and select the same target for storing all the recordings under it.</li>
-<li>Start the proxy server.</li>
-<li>Configure your browser with manual proxy settings pointing to the same port number used in the test script recorder.</li>
-</ul>
-<p><strong>Q #13) Can JMeter record actions from mobile? If yes, how?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Yes, JMeter can record HTTP or Https request going to the server from your mobile application also. It is required that mobile and JMeter are on the same network.</p>
-<p><strong>Below is the configuration required:</strong></p>
-<ul>
-<li>Configure your proxy server in JMeter to run at a specified port.</li>
-<li>Set up the proxy on your mobile wifi settings and enter the same port number that is used in the recorder.</li>
-<li>Install the Root CA certificate on your mobile.</li>
-<li>Hit server requests from your mobile and observe it getting captured by the specified controller.</li>
-</ul>
-<p><strong>Q #14) How to do master-slave configuration in JMeter?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Master-slave configuration is a part of distributed testing in which more than one machine is used to perform load testing of the server under test.</p>
-<p>It is very important that all machines are on the same network and all have the same version of JMeter. In distributed testing, one machine considered as the master and the others are kept as slaves by doing some configurations.</p>
-<p><strong>The process is specified below:</strong></p>
-<ul>
-<li>On the master machine, edit the JMeter.properties file and add the IP addresses of slave machines against the remote_host field in the file.</li>
-<li>Save the file and open the JMeter again.</li>
-<li>Now, from the RUN menu in JMeter, select Remote Start and choose the IP of the machine to be invoked.</li>
-<li>Choose RUN menu and select Remote Start all to start all the slave machines for your testing.</li>
-</ul>
-<p><strong>Q #15) What are the JMeter supported protocols?</strong></p>
-<p><strong>Answer:</strong>&nbsp;JMeter<strong>&nbsp;supports various standard protocols like:</strong></p>
-<ul>
-<li>HTTP/HTTPs</li>
-<li>SOAP</li>
-<li>LDAP</li>
-<li>FTP</li>
-<li>SMTP</li>
-<li>TCP</li>
-</ul>
-<p><strong>Q #16) Explain the syntax of JMeter variables and functions.</strong></p>
-<p><strong>Answer:</strong>&nbsp;Just as in any other programming language, variables and functions are used in JMeter also in order to make the scripts reusable.</p>
-<p><strong>Syntax of Variable</strong>&nbsp;&ndash; ${var}</p>
-<p>There are many inbuilt functions that are available in JMeter to perform various actions. Function string can be generated from the Function Dialogue Box itself.</p>
-<p><strong>For Example,</strong>&nbsp;if you want to get the machine IP stored in a machineIP variable, you can use the string ${__machineIP(machineIP)}.</p>
-<p><strong>Q #17) Why is it recommended to run JMeter in GUI mode?</strong></p>
-<p><strong>Answer:</strong>&nbsp;JMeter tests can be run both GUI as well as Non-GUI Mode. It is highly recommended to run the load test in Non-GUI mode because the AWT event thread can kill the tests in case of high load scenarios.</p>
-<p><strong>The various Non-GUI mode supported with JMeter are:</strong></p>
-<ul>
-<li>Command-line</li>
-<li>ANT plugin</li>
-<li>MAVEN plugin</li>
-<li>Jenkins</li>
-</ul>
-<p><strong>Q #18) Is it possible to run selenium scripts in JMeter? If yes, how?</strong></p>
-<p><strong>Answer:&nbsp;</strong>Yes, it is possible to run selenium scripts in JMeter to get some ideas on their performance.</p>
-<p>There are two ways of doing it. Either you can use JUnit libraries to build selenium scripts and save as Jars and copy the same in the JMeter directory. And then add JUnit sampler to your test plan and import the Jar file.</p>
-<p>Otherwise, the Webdriver sampler plugin can be added in the JMeter ext folder. Restart the JMeter. Write your selenium code in the Webdriver sampler and then execute it to see the performance.</p>
-<p><strong>Q #19) How do you manage sessions and cookies in JMeter?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Sessions and cookies can be managed in JMeter by using config elements such as HTTP Cache Manager which provides an option to clear the cookies in every iteration and also allows to add user-defined cookies.</p>
-<p>HTTP Cache manager helps you in clearing cache after each iteration as per your requirement in the load tests and also limits the number of elements that can be stored in the cache. Both of these config elements can be attached to the HTTP sampler.</p>
-<p><strong>Q #20) What are the important steps for testing JDBC request?</strong></p>
-<p><strong>Answer:</strong>&nbsp;JDBC requests are used to establish a connection with the databases and then measure the response time of the queries.</p>
-<p><strong>Important steps for testing JDBC requests are:</strong></p>
-<ul>
-<li><strong>Setting up Config Element,</strong>&nbsp;JDBC Connection configuration in which Database URL and JDBC Driver Class needs to be added as per the database which is being used. Also, add the variable name for this connection configuration so as to use it in the sampler.</li>
-<li>Add JDBC Request. Add the same variable name added above and write your queries to the test.</li>
-</ul>
-<p><strong>Q #21) What is BeanShell scripting?</strong></p>
-<p><strong>Answer:</strong>&nbsp;BeanShell is a lightweight Java scripting that is used in JMeter to perform some complex task.&nbsp;BeanShell sampler can perform various functions with the use of coding. You can print the thread number, get the current sampler executed, fetch the cookies, etc.</p>
-<p><strong>Q #22) Can JMeter measure the performance of a complete application? For Example, you have multiple screens in your mobile app. Can JMeter measure the time taken to flip the screens?</strong></p>
-<p><strong>Answer:</strong>&nbsp;No, JMeter does not measure the transition time between the screens. It can only measure the server actions not the UI interactions.</p>
-<p><strong>Q #23) What is a Root CA certificate?</strong></p>
-<p><strong>Answer:</strong>&nbsp;HTTPS connection requires a certificate to authenticate the connections which get established when the browser hits the webserver.&nbsp;JMeter generates it temporarily to intercept the SSL traffic in order to record the actions. For recording actions via mobile, you need to have this certificate on your mobile to record the actions.</p>
-<p><strong>Q #24) Which factors decide the maximum threads that one should generate per system?</strong></p>
-<p><strong>Answer:</strong>&nbsp;It depends on the hardware of the system.</p>
-<p><strong>For Example,</strong>&nbsp;on a 2-3 GHz CPU, 400-600 threads can be generated. It also depends on the components in your test plan. More the processors and XML parsing elements, the more the CPU load and hence fewer threads. For high load, it is recommended to use multiple machines for load testing.</p>
-<p><strong>Q #25) What is a Workbench and why is it required?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Workbench is a storage area for adding some components which can be added to the test plan if required.</p>
-<p>Components of workbench do not get saved with the test plan automatically. They have to be saved separately as test fragments. A most important part of the Workbench is HTTP(s) Test script recorder which is highly useful in recording the https request and later load can be applied to+9859 them to measure the response time.</p>
-<p><strong>Q #26) What is Tidy Parsing?</strong></p>
-<p><strong>Answer:&nbsp;</strong>Tidy Parsing is a type of parsing that is used in Xpath extractor.&nbsp;If the response is in pure XML then tidy parsing is not required whereas, in the case of XHTML, it is mandatory to check the tidy parsing option in order to fetch the correct results.</p>
-<p><strong>Q #27) What are the important plugins that are supported in JMeter?</strong></p>
-<p><strong>Answer:</strong>&nbsp;JMeter supports different types of plugins which are helpful in generating high-quality results.</p>
-<p><strong>Below are the major plugins that are supported:</strong></p>
-<ul>
-<li>Thread group plugin &ndash; Stepping thread group plugin.</li>
-<li>Samplers plugins like Webdriver.</li>
-<li>Listeners plugins.</li>
-</ul>
-<p><strong>Q #28) What are the types of the controller in JMeter?</strong></p>
-<p><strong>Answer:</strong>&nbsp;Controllers are used in JMeter to control the flow of execution of requests.</p>
-<p><strong>Below are the controllers that are used in JMeter:</strong></p>
-<ul>
-<li>Recording controller</li>
-<li>IF controller</li>
-<li>While controller</li>
-<li>Transaction controller</li>
-<li>Loop controller</li>
-<li>Simple controller</li>
-<li>Module controller</li>
-</ul>
+                                    <p><strong>Answer:</strong>&nbsp;Jmeter is a Java-based open-source application that is basically designed for the purpose of Load Testing. It supports all major protocols that are supported in Load Runner. Unlike any browser, JMeter works on levels of protocols and does not execute JavaScript present in HTML web pages.</p>
+                                    <p><strong>Q #2) Does JMeter simulate actual browser behavior?</strong></p>
+                                    <p><strong>Answer:&nbsp;</strong>No, JMeter does not support the actual browser behavior. It does not render the HTML webpages as the normal browser does. The response can be viewed in HTML format but the actual timings are not present in the generated samples.</p>
+                                    <p><strong>Q #3) What is Distributed testing?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Distributed Testing means using multiple machines for load testing in which one of the machines can be made master and others can be kept as a slave. It is very important to note that all the machines should be on the&nbsp; same network and should have the same version of Java and JMeter</p>
+                                    <p><strong>Q #4) What is the use of Regular Expression in JMeter?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Regular Expression is used for extracting some values dynamically from the responses.These values can be used in the subsequent request or can be saved for reporting purposes. Regular Expression is used in both Pre-Processors as well as Post Processors.</p>
+                                    <p><strong>Q #5) What are the types of processors in JMeter?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Basically there are two types of processors in JMeter namely Pre-Processor and Post Processor.</p>
+                                    <p>Pre-Processors execute before the main sampler and can change the scope of the sampler whereas Post Processors execute after the main sampler and are applicable to all samplers in the same scope of Test Plan. They can be used to extract some fields from the server response and store them in variables.</p>
+                                    <p><strong>Q #6) What are the different ways of Data Parameterization in JMeter?<br /></strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Data Parametrization makes the scripts reusable where the values is not required to be hardcoded for the same request with different parameters.</p>
+                                    <p><strong>Below is the data parametrization that is supported in JMeter:</strong></p>
+                                    <ul>
+                                    <li>CSV Data Set Config</li>
+                                    <li>User-Defined Variables.</li>
+                                    </ul>
+                                    <p><strong>Q #7) What are the maximum recommended threads on a single system?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;It depends on the hardware configuration of your system which includes a processor, JVM, allocated memory -Xmx, etc.</p>
+                                    <p>Other factors that impact thread count are the number of components in your test plan i.e. the number of config elements or processors and it also depends on whether you are using GUI/Non-GUI Mode.</p>
+                                    <p><strong>Q #8) Explain the difference between Gaussian and Poisson Timers.</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Both Gaussian and Poisson Timers work on a mathematical formula with some constant delay and additional offset. Difference between the two lies in the fact that how the lambda value is calculated in the case of Poisson timer and how deviation is calculated in the case of Gaussian Timer.</p>
+                                    <p><strong>Q #9) What are the major differences between JMeter and Load Runner.</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;JMeter is considered as the major competitor of Load Runner in the industry.&nbsp;<strong>Enlisted are some of the major differences:</strong></p>
+                                    <div id="tablepress-133-scroll-wrapper" class="tablepress-scroll-wrapper">
+                                    <table id="tablepress-133" class="tablepress tablepress-id-133 tablepress-responsive">
+                                    <thead>
+                                    <tr class="row-1 odd">
+                                    <th class="column-1">Load Runner</th>
+                                    <th class="column-2">Jmeter</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="row-hover">
+                                    <tr class="row-2 even">
+                                    <td class="column-1">Licensed Software</td>
+                                    <td class="column-2">Open Source tool.</td>
+                                    </tr>
+                                    <tr class="row-3 odd">
+                                    <td class="column-1">Developed by Mercury</td>
+                                    <td class="column-2">Developed by Apache.</td>
+                                    </tr>
+                                    <tr class="row-4 even">
+                                    <td class="column-1">UI is very impressive</td>
+                                    <td class="column-2">It lacks in UI</td>
+                                    </tr>
+                                    <tr class="row-5 odd">
+                                    <td class="column-1">It has more technical capabilities.</td>
+                                    <td class="column-2">Less technically sound as compared to Load Runner.</td>
+                                    </tr>
+                                    <tr class="row-6 even">
+                                    <td class="column-1">Supports SAP, Siebel and Peoplesoft.</td>
+                                    <td class="column-2">Doesn&rsquo;t support SAP and Siebel</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                    <p><strong>Q #10) What is the use of co-relation in JMeter?<br /></strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Co-relation is a process of extracting the values from the server response and storing it in a variable to be used in any other request which is to follow.</p>
+                                    <p><strong>For Example,</strong>&nbsp;for testing any login functionality if you have to use the session ID/cookie ID, you can extract the values from the response of GET Request of the login page and then dynamically use the same while making POST request for a login.</p>
+                                    <p><strong>Q #11) What are the different types of listeners?</strong></p>
+                                    <p><strong>Answer:&nbsp;</strong>Listeners are used for storing the execution results of load testing in different forms be it in a table, graph, tree or in any other presentable format so that it can be presented to the client. There are different type of inbuild listeners in JMeter and many others can be imported into it by using plugins as per the requirement.</p>
+                                    <p><strong>Some of the inbuild listeners are:</strong></p>
+                                    <ul>
+                                    <li>View results in Table</li>
+                                    <li>View results in Tree</li>
+                                    <li>Graph results</li>
+                                    <li>Aggregate graph</li>
+                                    <li>Aggregate report</li>
+                                    <li>Assertion results</li>
+                                    <li>Response time graph</li>
+                                    </ul>
+                                    <p><strong>Q #12) Explain the flow of the Test Script Recorder.</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;HTTP(s) Test Script Recorder is used to record all the Http(s) requests going to the server from your application. Some configurations require to be done in JMeter in order to make it work.</p>
+                                    <p><strong>Steps followed to record https traffic are:</strong></p>
+                                    <ul>
+                                    <li>Add HTTP(s) Test script recorder to WorkBench.</li>
+                                    <li>Enter the port number to start your proxy server.</li>
+                                    <li>Choose the target either as &ldquo;Workbench&rdquo; or add a Recording Controller in your test plan and select the same target for storing all the recordings under it.</li>
+                                    <li>Start the proxy server.</li>
+                                    <li>Configure your browser with manual proxy settings pointing to the same port number used in the test script recorder.</li>
+                                    </ul>
+                                    <p><strong>Q #13) Can JMeter record actions from mobile? If yes, how?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Yes, JMeter can record HTTP or Https request going to the server from your mobile application also. It is required that mobile and JMeter are on the same network.</p>
+                                    <p><strong>Below is the configuration required:</strong></p>
+                                    <ul>
+                                    <li>Configure your proxy server in JMeter to run at a specified port.</li>
+                                    <li>Set up the proxy on your mobile wifi settings and enter the same port number that is used in the recorder.</li>
+                                    <li>Install the Root CA certificate on your mobile.</li>
+                                    <li>Hit server requests from your mobile and observe it getting captured by the specified controller.</li>
+                                    </ul>
+                                    <p><strong>Q #14) How to do master-slave configuration in JMeter?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Master-slave configuration is a part of distributed testing in which more than one machine is used to perform load testing of the server under test.</p>
+                                    <p>It is very important that all machines are on the same network and all have the same version of JMeter. In distributed testing, one machine considered as the master and the others are kept as slaves by doing some configurations.</p>
+                                    <p><strong>The process is specified below:</strong></p>
+                                    <ul>
+                                    <li>On the master machine, edit the JMeter.properties file and add the IP addresses of slave machines against the remote_host field in the file.</li>
+                                    <li>Save the file and open the JMeter again.</li>
+                                    <li>Now, from the RUN menu in JMeter, select Remote Start and choose the IP of the machine to be invoked.</li>
+                                    <li>Choose RUN menu and select Remote Start all to start all the slave machines for your testing.</li>
+                                    </ul>
+                                    <p><strong>Q #15) What are the JMeter supported protocols?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;JMeter<strong>&nbsp;supports various standard protocols like:</strong></p>
+                                    <ul>
+                                    <li>HTTP/HTTPs</li>
+                                    <li>SOAP</li>
+                                    <li>LDAP</li>
+                                    <li>FTP</li>
+                                    <li>SMTP</li>
+                                    <li>TCP</li>
+                                    </ul>
+                                    <p><strong>Q #16) Explain the syntax of JMeter variables and functions.</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Just as in any other programming language, variables and functions are used in JMeter also in order to make the scripts reusable.</p>
+                                    <p><strong>Syntax of Variable</strong>&nbsp;&ndash; ${var}</p>
+                                    <p>There are many inbuilt functions that are available in JMeter to perform various actions. Function string can be generated from the Function Dialogue Box itself.</p>
+                                    <p><strong>For Example,</strong>&nbsp;if you want to get the machine IP stored in a machineIP variable, you can use the string ${__machineIP(machineIP)}.</p>
+                                    <p><strong>Q #17) Why is it recommended to run JMeter in GUI mode?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;JMeter tests can be run both GUI as well as Non-GUI Mode. It is highly recommended to run the load test in Non-GUI mode because the AWT event thread can kill the tests in case of high load scenarios.</p>
+                                    <p><strong>The various Non-GUI mode supported with JMeter are:</strong></p>
+                                    <ul>
+                                    <li>Command-line</li>
+                                    <li>ANT plugin</li>
+                                    <li>MAVEN plugin</li>
+                                    <li>Jenkins</li>
+                                    </ul>
+                                    <p><strong>Q #18) Is it possible to run selenium scripts in JMeter? If yes, how?</strong></p>
+                                    <p><strong>Answer:&nbsp;</strong>Yes, it is possible to run selenium scripts in JMeter to get some ideas on their performance.</p>
+                                    <p>There are two ways of doing it. Either you can use JUnit libraries to build selenium scripts and save as Jars and copy the same in the JMeter directory. And then add JUnit sampler to your test plan and import the Jar file.</p>
+                                    <p>Otherwise, the Webdriver sampler plugin can be added in the JMeter ext folder. Restart the JMeter. Write your selenium code in the Webdriver sampler and then execute it to see the performance.</p>
+                                    <p><strong>Q #19) How do you manage sessions and cookies in JMeter?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Sessions and cookies can be managed in JMeter by using config elements such as HTTP Cache Manager which provides an option to clear the cookies in every iteration and also allows to add user-defined cookies.</p>
+                                    <p>HTTP Cache manager helps you in clearing cache after each iteration as per your requirement in the load tests and also limits the number of elements that can be stored in the cache. Both of these config elements can be attached to the HTTP sampler.</p>
+                                    <p><strong>Q #20) What are the important steps for testing JDBC request?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;JDBC requests are used to establish a connection with the databases and then measure the response time of the queries.</p>
+                                    <p><strong>Important steps for testing JDBC requests are:</strong></p>
+                                    <ul>
+                                    <li><strong>Setting up Config Element,</strong>&nbsp;JDBC Connection configuration in which Database URL and JDBC Driver Class needs to be added as per the database which is being used. Also, add the variable name for this connection configuration so as to use it in the sampler.</li>
+                                    <li>Add JDBC Request. Add the same variable name added above and write your queries to the test.</li>
+                                    </ul>
+                                    <p><strong>Q #21) What is BeanShell scripting?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;BeanShell is a lightweight Java scripting that is used in JMeter to perform some complex task.&nbsp;BeanShell sampler can perform various functions with the use of coding. You can print the thread number, get the current sampler executed, fetch the cookies, etc.</p>
+                                    <p><strong>Q #22) Can JMeter measure the performance of a complete application? For Example, you have multiple screens in your mobile app. Can JMeter measure the time taken to flip the screens?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;No, JMeter does not measure the transition time between the screens. It can only measure the server actions not the UI interactions.</p>
+                                    <p><strong>Q #23) What is a Root CA certificate?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;HTTPS connection requires a certificate to authenticate the connections which get established when the browser hits the webserver.&nbsp;JMeter generates it temporarily to intercept the SSL traffic in order to record the actions. For recording actions via mobile, you need to have this certificate on your mobile to record the actions.</p>
+                                    <p><strong>Q #24) Which factors decide the maximum threads that one should generate per system?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;It depends on the hardware of the system.</p>
+                                    <p><strong>For Example,</strong>&nbsp;on a 2-3 GHz CPU, 400-600 threads can be generated. It also depends on the components in your test plan. More the processors and XML parsing elements, the more the CPU load and hence fewer threads. For high load, it is recommended to use multiple machines for load testing.</p>
+                                    <p><strong>Q #25) What is a Workbench and why is it required?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Workbench is a storage area for adding some components which can be added to the test plan if required.</p>
+                                    <p>Components of workbench do not get saved with the test plan automatically. They have to be saved separately as test fragments. A most important part of the Workbench is HTTP(s) Test script recorder which is highly useful in recording the https request and later load can be applied to+9859 them to measure the response time.</p>
+                                    <p><strong>Q #26) What is Tidy Parsing?</strong></p>
+                                    <p><strong>Answer:&nbsp;</strong>Tidy Parsing is a type of parsing that is used in Xpath extractor.&nbsp;If the response is in pure XML then tidy parsing is not required whereas, in the case of XHTML, it is mandatory to check the tidy parsing option in order to fetch the correct results.</p>
+                                    <p><strong>Q #27) What are the important plugins that are supported in JMeter?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;JMeter supports different types of plugins which are helpful in generating high-quality results.</p>
+                                    <p><strong>Below are the major plugins that are supported:</strong></p>
+                                    <ul>
+                                    <li>Thread group plugin &ndash; Stepping thread group plugin.</li>
+                                    <li>Samplers plugins like Webdriver.</li>
+                                    <li>Listeners plugins.</li>
+                                    </ul>
+                                    <p><strong>Q #28) What are the types of the controller in JMeter?</strong></p>
+                                    <p><strong>Answer:</strong>&nbsp;Controllers are used in JMeter to control the flow of execution of requests.</p>
+                                    <p><strong>Below are the controllers that are used in JMeter:</strong></p>
+                                    <ul>
+                                    <li>Recording controller</li>
+                                    <li>IF controller</li>
+                                    <li>While controller</li>
+                                    <li>Transaction controller</li>
+                                    <li>Loop controller</li>
+                                    <li>Simple controller</li>
+                                    <li>Module controller</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
                         <!-- <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"><h4>Basic Cucumber Questions</h4></button>
@@ -602,6 +570,59 @@
             </div>
         </section>
 
+        <!-- ============Company Wise Questions============ -->
+        
+        <section class="bg-se-05">
+            <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>&nbsp;Latest Questions - Companywise</h2>
+                    </div>
+                </div>
+                
+                <div class="container bcontent">
+                    <div class="accordion" id="accordionExample">
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5"><h4>BARCLAYS INTERVIEW QUESTIONS</h4></button>
+                            </div>
+                            <div id="collapse5" class="collapse" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p><strong>1. What you have done till now as part of your it experience?</strong></p>
+                                    <p><strong>2. Do you know oops concepts and in framework where and how you have implemented it?</strong></p>
+                                    <p><strong>3. Can we declare a private class?</strong></p>
+                                    <p><strong>4. What is difference between == and equals?</strong></p>
+                                    <p><strong>5.How string is immutable?</strong></p>
+                                    <p><strong>6. Where strings get stored and where reference gets stored?</strong></p>
+                                    <p><strong>7. Can you please explain with the reference of memory location that how string is immutable?</strong></p>
+                                    <p><strong>8. If not want to use string class then what can be used?</strong></p>
+                                    <p><strong>9. Difference between string and stringbuffer.</strong></p>
+                                    <p><strong>10. What collections you have used? Have you used hashmap?</strong></p>
+                                    <p><strong>11. List declaration?</strong></p>
+                                    <p><strong>12. Where used set?</strong></p>
+                                    <p><strong>13. You have an application like flipkart and you want to buy a pen, so you have added that item two times to cart using add to cart button, but in cart only one entry for item should be displayed with quantity as 2, so how you&rsquo;ll test this?</strong></p>
+                                    <p><strong>14. 1 to 100 numbers will be flashed on screen only once and you have to find the missing number.</strong></p>
+                                    <p><strong>15. I have a table and want to store all table data then which collection should be ust and why?</strong></p>
+                                    <p><strong>16. What hashmap will return?</strong></p>
+                                    <p><strong>17. How to achieve inheritance without having interface?</strong></p>
+                                    <p><strong>18. Method overloading and method overriding? Where used in framework?</strong></p>
+                                    <p><strong>19. If i want that my class should not be extended and instance cannot be created by other class then how to declare class?</strong></p>
+                                    <p><strong>20. How to store multiple values in one reference?</strong></p>
+                                    <p><strong>21. In cucumber, in which class you have gluecode, how many classes for gluecode and what was the program line limit for class?</strong></p>
+                                    <p><strong>22. How to find missing implementation in cucumber?</strong></p>
+                                    <p><strong>23. Used static data or dynamic data, what was the approach?</strong></p>
+                                    <p><strong>24. How to resolved conflicts while pushing code in git?</strong></p>
+                                    <p><strong>25. Write a program to merge two sorted arrays?</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+               </div>
+            </div>
+        </section>
    
     </main>
 
