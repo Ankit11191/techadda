@@ -115,9 +115,9 @@ header .nav-items {
     max-width: 30%; }
     @media screen and (max-width: 767.98px) {
       header .nav-items .logo {
-        width: 80%;
-        flex: 1 1 80%;
-        max-width: 80%; } }
+        width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%; } }
   header .nav-items .menu-items {
     width: 70%;
     flex: 1 1 70%;
@@ -131,8 +131,8 @@ header .nav-items {
         flex: 1 1 100%;
         max-width: 100%; } }
     header .nav-items .menu-items .menu {
-      display: block;
-      width: 100%;
+      display: inline-block;
+      width: 105%;
       text-align: right; }
       header .nav-items .menu-items .menu.active {
         opacity: 1;

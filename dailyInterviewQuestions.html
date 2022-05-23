@@ -52,7 +52,7 @@
         .bcontent {
             margin-top: 1px;
         }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                             <div class="menu-hamburger"></div>
                         </div>
                         <div class="logo">
-                            <img src="assets/images/MyLogoTrans 1.png">
+                            <a href="https://ankit11191.github.io/testadda/index.html"><img src="assets/images/MyLogoTrans 1.png"></a>
                         </div>
                         <div class="menu-items">
                             <div class="menu">
@@ -83,22 +83,19 @@
             </div>
         </div>
     </header>
+    <main>    
         <!-- ============abt-01 Section  Start============ -->
-    <main>
         <section class="abt-01">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="heading-wrapper">
-                            <h1 style="color:rgb(255,255,255)">Daily Real time  Interview Quesions<br>Asked in Different Companies</h1>
+                            <h1 style="color:rgb(255,255,255)">Daily Real time  Interview Quesions Asked in Different Companies</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
 
         <!--- Topic Wise Questions--->
 
@@ -1247,14 +1244,104 @@
                                 </div>
                             </div>
 
-                             <!-- <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse16"><h4>Basic Cucumber Questions</h4></button>
+                             <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse16"><h4>Types of Test Automation Frameworks</h4></button>
                             </div>
                             <div id="collapse16" class="collapse" data-parent="#accordionExample">
                                 <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
-                                
+                                    <p>Each automation framework has its own architecture, advantages and disadvantages. Below given are the different types of automation frameworks.</p>
+                                    <ol>
+                                    <li><strong>Behaviour-Driven Framework</strong></li>
+                                    <li><strong>Modular-Driven Framework</strong></li>
+                                    <li><strong>Library Architecture Testing Framework</strong></li>
+                                    <li><strong>Linear Automation Framework</strong></li>
+                                    <li><strong>Data-Driven Framework</strong></li>
+                                    <li><strong>Keyword-Driven Framework</strong></li>
+                                    <li><strong>Hybrid Testing Framework</strong></li>
+                                    </ol>
+                                    <h3 id="behaviour-driven-framework-bdd-">Behaviour-Driven Framework (BDD)</h3>
+                                    <p>Behaviour-Driven development framework is used to create a platform that allows every Testers, Developers, Business analyst, etc. to engage actively. In addition, it helps to increase collaboration between the tester and the developers in your project.</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:</strong>&nbsp;It doesn&rsquo;t require the users to be familiar with a programming language. With non-technical, natural language, test specifications can be created.</li>
+                                    <li><strong>Cons:</strong>&nbsp;To work with BDD, sufficient technical skills and prior experience in<a href="https://www.bmc.com/blogs/testing-frameworks-unit-functional-tdd-bdd/" target="_blank" rel="noopener">&nbsp;Test Driven Development</a>&nbsp;(an iterative approach which is a combination of programming, creation of unit tests, and refactoring) is required.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
+                                    <p>In BDD, good communication is crucial between the people who write the feature files and develops the automation code. The coder should interpret these files and the scenarios to implement them as automation steps. If there is no mutual understanding about the structure and the approach being used, the scenarios become increasingly difficult to turn into working automated tests. This can lead to problems.</p>
+                                    <p>Another issue is Data-driven testing, the BDD&rsquo;s support for defining test data makes it easier to create data-driven automated test scenarios. But, issues arise when trying to execute these tests in test environments that are never left in a known state. Also, with the execution of the automated tests, dependencies on external data feeds can often cause issues.</p>
+                                    <h3 id="modular-driven-framework">Modular-Driven Framework</h3>
+                                    <p>In this, the testers create individual test scripts by dividing the application into multiple modules. These individual test scripts can be combined to make larger test scripts. It is done by using a master script to achieve the needed scenarios.</p>
+                                    <p>This master script is used to invoke the individual modules to run end-to-end test scenarios. This framework builds an abstraction layer to protect the master module from any alterations made in individual tests.</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:</strong>&nbsp;Modular-driven frameworks make sure that the division of scripts leads to easier maintenance and scalability. Thus the testers can write independent test scripts. Also, the changes made in one module bring no or low impact to the other modules.</li>
+                                    <li><strong>Cons:</strong>&nbsp;Modular-driven frameworks take more time to examine the test cases and to identify reusable flows. It requires coding skills to set up the framework.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
+                                    <h3 id="library-architecture-testing-framework">Library Architecture Testing Framework</h3>
+                                    <p>Library Architecture Testing Framework is also known as &ldquo;Structured Scripting&rdquo; or &ldquo;Functional Decomposition.&rdquo; It is based on modular framework with some additional benefits.</p>
+                                    <p>In modular-driven framework, testers can divide applications under test into modules, whereas in Library Architecture Testing Framework, they can identify the common tasks and group them into functions. After that, these groups will be kept in a library.</p>
+                                    <p>The test scripts reuse these libraries to create new test cases.</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:</strong>&nbsp;This framework will lead to a high level of modularisation that makes test maintenance and scalability easier and more cost-effective. It has a library of common functions that multiple test scripts can use. So, it has a higher degree of reusability.</li>
+                                    <li><strong>Cons:</strong>&nbsp;In Library Architecture Testing Framework, it takes more time to develop test scripts. Also, to work with this framework, coding skills are required to write and analyse the common functions within the test scripts.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
+                                    <h3 id="linear-automation-framework">Linear Automation Framework</h3>
+                                    <p>The linear automation framework is commonly used to test small applications. It is also called a Record and playback framework. With this, testers don&rsquo;t need to write code to make functions. And the steps are written in sequential order.</p>
+                                    <p>Here, the tester records each step, such as navigation, checkpoints, or user input, and then plays the script back automatically to conduct the test.</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:</strong>&nbsp;As you don&rsquo;t have to write custom code, expertise in test automation is not necessary. The code can be easily recorded in a minimal amount of time, so it is one of the fastest ways to generate test scripts. In this, the test scripts are laid out sequentially, so anyone involved in testing will find the test workflow easier.</li>
+                                    <li><strong>Cons:</strong>&nbsp;The scripts developed using this framework are not reusable. The data is hardcoded into the test script. It means the test cases cannot be re-run with multiple sets. If the data is modified, test cases also should be changed.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
+                                    <p>The maintenance is considered a hassle as any changes in the application need a lot of rework. And this model is not particularly scalable as the testing scope expands.</p>
+                                    <h3 id="data-driven-framework">Data-Driven Framework</h3>
+                                    <p>This model separates the test data from script logic. It means the testers can store data externally. Testers will frequently need to test the same feature or function of an application multiple times with various sets of data.</p>
+                                    <p>In these instances, the test data mustn&rsquo;t be hard-coded in the script itself like a Linear or modular-driven framework.</p>
+                                    <p>Setting up a data-driven framework will let the tester store and pass the input/output parameters to test scripts from an external source. It can be Excel Files, Text Files, SQL Table, CSV Files, or ODBC repositories.</p>
+                                    <p>The test scripts are connected to the external data source, and when needed, they are told and populate the necessary data.</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:&nbsp;</strong>As they reduce the number of scripts needed, multiple scenarios can be tested in less code. Hard-coding data can be avoided so that changes made to the test scripts do not affect the data being used and vice versa.</li>
+                                    <li><strong>Cons:&nbsp;</strong>You will need a well-versed tester who is proficient in various programming languages to completely utilise this framework&rsquo;s design.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
+                                    <h3 id="keyword-driven-framework">Keyword-Driven Framework</h3>
+                                    <p>Keyword-Driven Framework also known as table-driven testing, is suitable only for small projects or applications. The automation test scripts performed are based on the keywords stored in the excel sheet of the project.</p>
+                                    <p>These keywords are a part of a script representing the various actions performed to test the GUI of an application. These can be labeled simply as &lsquo;click&rsquo;, &lsquo;login&rsquo;, or with complex labels like &lsquo;click link, or &lsquo;verify link.&rsquo;</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:</strong>&nbsp;For this framework, minimal scripting knowledge is required. The code is reusable as a single keyword can be used across multiple test scripts.</li>
+                                    <li><strong>Cons:</strong>&nbsp;The initial setup cost of the framework is high. It is also time-consuming and complex. To work with this framework, you need an employee with good test automation skills.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
+                                    <h3 id="hybrid-testing-framework">Hybrid Testing Framework</h3>
+                                    <p>A hybrid testing framework is a combination of Data-driven and Keyword-driven frameworks to execute the most out of the frameworks mentioned above. It is to leverage the benefits and strengths of other frameworks for the particular environment it manages.</p>
+                                    <ul>
+                                    <ul>
+                                    <ul>
+                                    <li><strong>Pros:</strong>&nbsp;This model leverages the advantages of all kinds of related frameworks.</li>
+                                    <li><strong>Cons:</strong>&nbsp;In this model, tests are entirely scripted. Thus, it increases the automation effort.</li>
+                                    </ul>
+                                    </ul>
+                                    </ul>
                                 </div>
-                            </div> -->
+                            </div>
 
                                                             <!-- <div class="card-header" id="headingTwo">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse17"><h4>Basic Cucumber Questions</h4></button>
