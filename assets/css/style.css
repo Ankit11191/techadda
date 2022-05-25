@@ -132,8 +132,9 @@ header .nav-items {
         max-width: 100%; } }
     header .nav-items .menu-items .menu {
       display: inline-block;
-      width: 105%;
-      text-align: right; }
+      width: 110%;
+      text-align: left; }
+        
       header .nav-items .menu-items .menu.active {
         opacity: 1;
         visibility: visible;
