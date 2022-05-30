@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="heading-wrapper">
-                            <h1 style="color:rgb(255,255,255)">Contact Us</h1>
+                            <h1 style="color:rgb(255,255,255)">About Us</h1>
                         </div>
                     </div>
                 </div>
@@ -92,17 +92,47 @@
                             <div class="sup-content">
                                 <div class="head-content">
                                     <h2>Leave A Message Here</h2>
-                                    <p>
-                                        </p>
-                                    </div>
+                                    <form action="" method="POST">
+                                        <label for="fullName">Your Name</label> <br>
+                                        <input type="text" name="fullName" id="uname" pattern="[A-Za-z]{3,15}" maxlength="15" required><br>
+                                    
+                                        <label for="email">Your E-mail</label> <br>
+                                        <input type="text" name="email" id="uemail" required tooltip><br>
+                                        <br>
+                                    
+                                        <label for="comments">Your Comments</label> <br>
+                                        <textarea name="comments" id="ucomment" required></textarea><br>
+                                    
+                                        <input type="submit" value="Submit" onclick="show_alert()">
+                                        <input type="reset" value="Reset">
+
+                                        <script>
+                                            function show_alert(uname)
+                                            {
+                                                const name=document.getElementById("uname");
+                                                const email=document.getElementById("uemail");
+                                                const comnt=document.getElementById("ucomment");
+
+                                                if(name.value.length!=0 && email.value.length!=0 && comnt.value.length!=0){
+                                                alert("Thank you, "+ uname + " for message us \n We will connect with you soon!!!" );
+                                                }
+                                            }
+                                        </script>
+
+                                    </form><br/><br/>
+                                    
+                                </div>
         
                                 <div class="contact-title">
                                     <h2>Contact Details</h2>
                                     <ol>
                                         <li><i class="far fa-map-marker-check"></i>India</li>
-                                        <li><i class="fal fa-mobile"></i>+91 7723809110</li>
-                                        <li><i class="fa fa-whatsapp"></i>+91 7723809110</li>
                                         <li><i class="fal fa-envelope"></i>techadda.ankit.mittal@gmail.com</li>
+                                        <body>
+                                            </br></br><p><strong>Scan here for WhatsApp Contact</strong></p>
+                                            <img src="http://api.qrserver.com/v1/create-qr-code/?color=1F18DB&amp;bgcolor=FFFFFF&amp;data=https%3A%2F%2Fwa.me%2F7723809110&amp;qzone=1&amp;margin=0&amp;size=150x150&amp;ecc=L" alt="qr code" >
+                                        </body>
+                                        
                                     </ol>
                                 </div>
                             </div>
@@ -110,7 +140,6 @@
         
                         <div class="sup-card-contact-0a">
                             <div class="contact-a1" style="font-size: 18px; text-align: justify; text-justify: inter-word;">
-                                <form>
                                     <!--<div class="dived d-flex">
                                         <div class="form-group">
                                             <div class="form-sup">
