@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <style>
         h1 {
@@ -98,6 +99,16 @@
             color: transparent;
         }
 
+        #myModal {
+            /* width: 1500px;
+            height: 1800px;
+            top: 25%;
+            left: 25%;
+            margin-top: -50px;  */
+            margin-left: -200px;
+            padding: 150px;
+            background-color:  rgba(167, 167, 201, 0.527);;
+        }
 
         </style>
 </head>
@@ -132,6 +143,39 @@
         </div>
     </header>
     <main>
+
+        <!-- ============Autopopup Section Start============ -->
+
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="_he_w">
+                        <h3 style="background-color: #ffff00;"><strong>Company : PWC</strong></h3>
+                        <p><strong>Skills : Automation selenium testing</strong><br /><strong><span style="background-color: #ffff00;">Exp level : 4.5 to 7 yrs</span></strong><br /><strong>Location : Bangalore</strong><br /><strong>Level : Senior associate</strong><br /><strong>Interested candidates please send resume to <a href="mailto:sudha999kar@gmail.com">sudha999kar@gmail.com</a>.</strong></p>
+                        <p><strong>Please don't send resume if you are not eligible for the experience gap or skills</strong></p>
+                    </div>
+                    <h2>=================================</h2>
+                    <div class="_he_w">
+                        <h3 style="background-color: #ffff00;"><strong>Hiring for a manual tester.</strong></h3>
+                        <p><strong>Company name :56Secure Ai Technology</strong><br /><strong>Job Location: IndiraNagar, Bangalore</strong><br /><strong><span style="background-color: #ffff00;">Experience: 0 to 2 years</span></strong><br /><strong>Preferred Stream : CS/IT</strong><br /><strong>Job Description: </strong><strong>Must have sound knowledge on manual testing concepts.</strong><br /><strong>Interested candidates can drop their resume on my mail : <a href="mailto:santosh.kumar@56secure.com">santosh.kumar@56secure.com</a></strong></p>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script>
+            $(window).load(function(){
+                $('#myModal').modal('show');
+            });
+        </script>
+
         <!-- ============abt-01 Section  Start============ -->
         
         <section class="abt-01">
