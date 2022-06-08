@@ -15,6 +15,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
     <style>
         h1 {
           text-align: center;
@@ -52,6 +54,13 @@
         .bcontent {
             margin-top: 1px;
         }
+
+        #myModal {
+                /* margin-left: -100px; */
+            padding: 10%;
+            background-color:  rgba(167, 167, 201, 0.527);;
+        }
+
     </style>
 </head>
 
@@ -85,6 +94,34 @@
         </div>
     </header>
     <main>    
+
+        <!-- ============Autopopup Section Start============ -->
+
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="_he_w">
+                        <h2><span style="text-decoration: underline;"><strong>Advantages of Agile SDLC</strong></span></h2>
+                        <p><strong>1. Project is divided into short and transparent iterations.</strong><br /><strong>2. It has a flexible change process.</strong><br /><strong>3. It minimizes the risk of software development.</strong><br /><strong>4. Quick release of the first product version.</strong><br /><strong>5. The correctness of functional requirement is implemented into the development process.</strong><br /><strong>6. Customer can see the result and understand whether he/she is satisfied with it or not.</strong></p>
+                        <h2><span style="text-decoration: underline;"><strong>Disadvantages of Agile SDLC</strong></span></h2>
+                        <p><strong>1. The development team should be highly professional and client-oriented.</strong><br /><strong>2. New requirement may be a conflict with the existing architecture.</strong><br /><strong>3. With further correction and change, there may be chances that the project will cross the expected time.</strong><br /><strong>4. There may be difficult to estimate the final coast of the project due to constant iteration.</strong><br /><strong>5. A defined requirement is absent.</strong></p>
+                    </div>                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script>
+            $(window).load(function(){
+                $('#myModal').modal('show');
+            });
+        </script>
+
         <!-- ============abt-01 Section  Start============ -->
         <section class="abt-01">
             <div class="container">
