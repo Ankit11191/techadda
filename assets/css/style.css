@@ -119,9 +119,9 @@ header .nav-items {
         flex: 1 1 100%;
         max-width: 100%; } }
   header .nav-items .menu-items {
-    width: 70%;
-    flex: 1 1 70%;
-    max-width: 70%;
+    width: 45%;
+    flex: 1 1 45%;
+    max-width: 45%;
     position: relative;
     align-items: center;
     justify-content: flex-end; }

@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Daily Questions</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <style>
+        h1 {
+          text-align: center;
+        }
+        
+        p.righted {
+          text-align: right;
+        }
+        p.lefted {
+          text-align: left;
+        }
+
+        .middle {
+          text-align: left;
+        }
+        
+        p.justifed {
+          text-align: justify;
+        }
+        .my-icon {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .my-image {
+            width: 150px;
+            height: 250px;
+        }
+
+        .download-color{
+            font-size:35px;
+            color:rgb(0, 60, 255);
+        }
+
+        .bcontent {
+            margin-top: 1px;
+        }
+
+        #myModal {
+                /* margin-left: -100px; */
+            padding: 5%;
+            background-color:  rgba(167, 167, 201, 0.527);;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="my-nav sub-01">
+            <div class="container">
+                <div class="row">
+                    <div class="nav-items">
+                        <div class="menu-toggle">
+                            <div class="menu-hamburger"></div>
+                        </div>
+                        <div class="logo">
+                            <a href="https://ankit11191.github.io/testadda/index.html"><img src="assets/images/MyLogoTrans 1.png"></a>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="downloads.html">Downloads</a></li>
+                                    <li><a href="dailyInterviewQuestions.html">Daily Questions</a></li>
+                                    <li><a href="productcasestudy.html">Product Case Study</a></li>
+                                    <li><a href="interviewdetails.html">Interview Details</a></li>
+                                    <li><a href="moketest.html">Practice Exam</a></li>
+                                    <li><a href="aboutme.html">About Me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>    
+
+        <!-- ============Autopopup Section Start============ -->
+
+        <!-- <div class="container">
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="_he_w">
+                        <h2><strong>What is Kubernetes?</strong></h2>
+                        <p><strong>Kubernetes is an automation platform for application deployment, scaling, and management of individual containers within multiple clusters.</strong></p>
+                        <p><strong>Kubernetes or K8s is a free and open-source (FOSS) container orchestration system by Google. It is now managed by the CNCF- Cloud Native Computing Foundation.</strong></p>
+                        <p><strong>A container orchestration system is responsible for all the automation processes of applications based on microservices on individual containers.</strong></p>
+                        <p><strong>Other Container orchestration systems include:</strong></p>
+                        <p style="padding-left: 40px;"><strong>Docker Swarm<br>Red Hat OpenShift<br/>Amazon ECS<br/>Nomad<br/>OpenStack<br/><strong>Rancher</strong></p>
+                    </div>                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script>
+            $(window).load(function(){
+                $('#myModal').modal('show');
+            });
+        </script> -->
+
+        <!-- ============abt-01 Section  Start============ -->
+        <section class="abt-01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading-wrapper">
+                            <h1 style="color:rgb(255,255,255)">Scenarios and Cases for different Applications </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- Topic Wise Questions--->
+
+        <section class="bg-se-05">
+            <div class="container">                
+                <div class="container bcontent">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1001"><h4>1. Test scenarios and cases For OTP</h4></button>
+                        </div>
+                        <div id="collapse_1001" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <ul>
+                                    <li>Check the generated OTP is valid from one time or not.</li>
+                                    <li>Check is there any limitation for Generating the one-time password for single authentication.</li>
+                                    <li>Check if the one-time password is generated within the time period or not.</li>
+                                    <li>Check the number of times the one-time password code generated should not be more than required as per the requirement document.</li>
+                                    <li>Check the OTP is delivered to the requested user within time or not.</li>
+                                    <li>Check the one-time password (OTP) should be delivered to the registered email id or contact number.</li>
+                                    <li>Check the time duration in which the user received the OTP-generated code sent by email.</li>
+                                    <li>Check the time duration in which the user received the OTP-generated code sent on mobile.</li>
+                                    <li>Check by providing the OTP, the application must accept the code successfully.</li>
+                                    <li>Check the number of times a user can enter the invalid OTP.</li>
+                                    <li>Check OTP code should expire after the time allowed by the application or software.</li>
+                                    <li>Check if the user is able to log in with the expired OTP.</li>
+                                    <li>Check after multiple invalid tries, verify that the system temporarily blocks the account.</li>
+                                    <li>Check by entering the invalid Phone Number or E-Mail address and submit the OTP. Check the validation.</li>
+                                    <li>Check when the user receives multiple OTP, with the last received password the user should be able to login into the application.</li>
+                                    <li>Check on entering the valid OTP, correct info message is displaying or not.</li>
+                                    <li>Check on entering the invalid OTP, error info message is displaying or not.</li>
+                                    <li>Check if the user can request a new OTP code by clicking on the link or button resend code.</li>
+                                    <li>Check if the user should be temporarily blocked or not in case it requests for new OTP code again and again.</li>
+                                    <li>Check the OTP is case sensitive or not.</li>
+                                    <li>Check the one-time password is only numeric or alphanumeric.</li>
+                                    <li>Check is there any pause time to resent the OTP again.</li>
+                                    </ul>
+                                    <p><strong>Conclusion</strong></p>
+                                    <p>These are some of the test scenarios and cases that you can try for the OTP system. Most of the OTP systems these days are used in E-commerce and bank applications. You may find the cases will be different based on the type of OTP module used.</p>
+                                    <p>If you think I have missed any test scenarios or test cases, then do let me know in the comments. I&rsquo;d appreciate it if you share the post on social media.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1002"><h4>2. Test scenarios and cases For Login Page</h4></button>
+                        </div>
+                        <div id="collapse_1002" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <p><strong>For this scenario, first let us divide all the possible categories like:</strong></p>
+                                <ul>
+                                <li>Basic Field Validations of GUI</li>
+                                <li>Security Validations</li>
+                                <li>Testing Captcha</li>
+                                <li>Session</li>
+                                <li>Browser</li>
+                                </ul>
+                                <p><strong>Basic Field Validation On GUI</strong></p>
+                                <ul>
+                                <li>Check is the cursor is the focus at the username text box when you open the login page.</li>
+                                <li>Check whether tab functionality (move the cursor from one text box to other text boxes) is working or not.</li>
+                                <li>Check the minimum and maximum length of the text boxes are defined or not.</li>
+                                <li>Check whether Password field values are displayed in masked format or not.</li>
+                                <li>Check whether the validation message is displaying or not based on the input value.</li>
+                                <li>Check the valid credential user should be able to log in</li>
+                                <li>Check if the user is redirected to the forget password page after clicking on the forget password link.</li>
+                                <li>Check if the user is redirected to the signup page after clicking on the signup page.</li>
+                                <li>Check users should not able to log in with valid user names and invalid passwords.</li>
+                                <li>Check user should not be able to invalid user name and valid password.</li>
+                                <li>Check user should not be able to log in with a blank user field and valid password.</li>
+                                <li>Check user should not be able to log in with a valid user and blank password field.</li>
+                                <li>The system should block the IP or User name after frequent unsuccessful (defined invalid login attempts) of login.</li>
+                                <li>Check is the data of all the text boxes is clear after hitting the reset button.</li>
+                                <li>Check by using the keyboard tab functionality, the user is able to select the web element through the tab button or not.</li>
+                                <li>Check is the user able to click on the login button through the enter button or not.</li>
+                                <li>Check the user credential remained on the field after clicking remember and get back to the login screen again.</li>
+                                </ul>
+                                <p><strong>Design Related Test Cases For Login Page</strong></p>
+                                <ul>
+                                <li>Check the login screen is appearing after clicking on a login link or login button.</li>
+                                <li>Check is all login-related elements and fields are present on the login page.</li>
+                                <li>Check the alignment of displayed elements on the login screen that should be compatible in cross-browsers testing.</li>
+                                <li>Check the size, color, and UI of different elements should match the specifications.</li>
+                                <li>Check the login page of the application is responsive and aligns properly on different screen resolutions and devices.</li>
+                                </ul>
+                                <p><strong>Testing Captcha</strong></p>
+                                <ul>
+                                <li>Check when a user does not validate the captcha then the user should not be allowed to log in.</li>
+                                <li>Check link is present or not so that a user can refresh the captcha.</li>
+                                <li>Check the input field of the captcha is case sensitive or not.</li>
+                                <li>There should be an option for audio support, so after playing the audio user can fill the captcha.</li>
+                                <li>The angle and background texture of captcha should be different so that captcha cracking programs can not break them easily.</li>
+                                </ul>
+                                <p><strong>Security Test Scenarios</strong></p>
+                                <ul>
+                                <li>XSS scripts should not affect the system and Users should not be allowed to log in. A proper validation message should be displayed.</li>
+                                <li>Check if the SSL certificate is implemented in the application or not.</li>
+                                <li>Users should not be allowed to copy and paste the password from the text boxes.</li>
+                                <li>Check if a user is logging in from a new device then a notification should be sent to the registered user.</li>
+                                <li>SSL certificate should be implemented/ installed to secure the platform.</li>
+                                <li>The password should not be worked when copied.</li>
+                                <li>The login form should not reveal security information in view page source mode.</li>
+                                <li>The login form should not be vulnerable to SQL injection.</li>
+                                <li>Check the password format should be encrypted.</li>
+                                <li>Check when a logged-in user copies the URL and pastes it into a new window, it should redirect to the login page.</li>
+                                <li>Two-way authentication through OTP on mobile/email should be tested for banking applications.</li>
+                                </ul>
+                                <p><strong>Session</strong></p>
+                                <ul>
+                                <li>Check if a user successfully logs out, if the user clicks the back button should not take the User to logged-in mode.</li>
+                                <li>If a user is logged in through multiple devices and if he logs out from one device then automatically the user should log out from all the devices.</li>
+                                <li>Check that session time out an application</li>
+                                <li>Maximum Session time should be set for the Secured website</li>
+                                </ul>
+                                <p><strong>Browser related testing</strong></p>
+                                <ul>
+                                <li>If a user clears all the cookies of a browser and tries to go to a specific page of the application then it should ask for credentials again.</li>
+                                <li>&lsquo;Remember Form Data&rsquo; setting of the browser should not remember the password</li>
+                                <li>Validate the login functionality when browser cookies are turned OFF.</li>
+                                </ul>
+                                <h2 id="negative-test-cases-for-login-page"><span id="Negative_Test_Cases_For_Login_Page" class="ez-toc-section"></span>Negative Test Cases For Login Page</h2>
+                                <ul>
+                                <li>Check if a user is able to log in with an expired password or not</li>
+                                <li>Check if an unverified user is able to login into the application or not</li>
+                                <li>Check if the login functionality with blank fields</li>
+                                <li>Check is the login functionality with SQL injections</li>
+                                <li>Check if the login functionality with incorrect email addresses and passwords</li>
+                                </ul>
+                                <p><strong>Performance Test Cases For Login Page</strong></p>
+                                <ul>
+                                <li>Check how many users log in to an application at a time</li>
+                                <li>Check the response time when the user logged in to the application</li>
+                                <li>Check when more than expected users logged in to the application at a time, the application should not be crashed.</li>
+                                </ul>
+                                <p><strong>Conclusion</strong></p>
+                                <p>If you still try to write the test scenario in an excel format then you can follow one of our earlier published articles, Where do we have to write in detail how to write the test cases in an Excel sheet?</p>
+                                <p>we hope we have covered almost all various types of testing scenarios, but if you found any missed test cases, then you can comment in the comment section. We will update this Login page test scenario article as per your suggestions.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1003"><h4>3. Test scenarios and cases For Logout Page</h4></button>
+                        </div>
+                        <div id="collapse_1003" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2>Test Cases For Logout Page</h2>
+                                <p>We are going to take a look at those small changes along with the test scenarios. A few things to consider while testing a logout feature are &ndash; security, accessibility, and HTTPS support. These are the things that most modern web apps require for safe and accessible usage.</p>
+                                <p><strong>Here are some of the test cases and scenarios for the logout functionality:</strong></p>
+                                <ul>
+                                <li>Make sure the app allows a single sign off from all the devices.</li>
+                                <li>Make sure the app lets you sign off for multiple accounts.</li>
+                                <li>Does the app clear cookies after sign off?</li>
+                                <li>Does the app clear the session for the user after sign off?</li>
+                                <li>Does the app remember the username after signoff?</li>
+                                <li>Does the app take more time for signoff at different connection speeds?</li>
+                                <li>Is the sign off link easy to find?</li>
+                                <li>Is the sign off link or button easy to click?</li>
+                                <li>Is the sign off link or button positioned as per specification?</li>
+                                <li>Is the sign off button or link readable?</li>
+                                <li>Does the power outage retain the session if not signed off?</li>
+                                <li>Does the sign off functionality require face recognition or fingerprint (in case of the desktop app)?</li>
+                                <li>Does the sign off page redirect to the page where it allows login?</li>
+                                <li>Does the sign off page allow redirection to the home page?</li>
+                                <li>Is sign off page going to remove the window or tab automatically? (If it&rsquo;s bank account sign off link)</li>
+                                <li>Does the sign off button or link work on all devices?</li>
+                                <li>Is the sign off button or link broke after clicked?</li>
+                                </ul>
+                                <p><strong>Accessibility Test Case For Logout</strong></p>
+                                <ul>
+                                <li>Is the logout link or button easy to use?</li>
+                                <li>Does the link or button recognizable?</li>
+                                <li>Is the link or button easy to find?</li>
+                                <li>Is the link or button for logout accessible for all users?</li>
+                                </ul>
+                                <p><strong>Security Logs&nbsp;Test Case For Logout</strong></p>
+                                <ul>
+                                <li>Check the logs for the login and logout session.</li>
+                                <li>Check if the logs contain multiple IPs for a single ID at the same time.</li>
+                                <li>Check if the logs contain a denial of service attack for the login or log out.</li>
+                                <li>Check if the unauthorized IP makes a request for the logout.</li>
+                                <li>Check if the log has suspicious activity.</li>
+                                </ul>
+                                <p><strong>HTTPS Logout Page Test Cases</strong></p>
+                                <p>Most of the member areas are secured with HTTPS. However, we have to test the code in both productions and on the release server. So we have to check whether the https remains on both signs-in and sign-out pages. Like the sign-in page, it has to be encrypted as well.</p>
+                                <p>The HTTPS certificate has to be genuine and should be easy to verify. It should not be expired while using the sign-in or sign-out. Make sure the security service provider for the HTTPS certification is genuine and supports a 128 bit SSL connection.</p>
+                                <p><strong>Conclusion</strong></p>
+                                <p>These are some of the test cases you can use for testing the sign-off or the logout functionality of the web app. If it&rsquo;s a desktop app then the working would be slightly different and the test cases will be different too.</p>
+                                <p>I hope this post helps you answer some of the questions related to the manual testing interview. Do let me know if you can think of additional test cases. I&rsquo;d appreciate it if you share the post on social media.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1004"><h4>4. Test scenarios and cases for Bank Account Number Field</h4></button>
+                        </div>
+                        <div id="collapse_1004" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2>Test Cases for Bank Account Number Field</h2>
+                                <p>To test a bank account number field, just follow the below steps.</p>
+                                <p>Bank Account Number: SSSSXXNNNNNNNN (e.g. 35010100008033)</p>
+                                <ul>
+                                <li>SSSS- The first four digits of your Account Number is the Service Outlet ID [SOL ID]</li>
+                                <li>XX-The fifth &amp; sixth digit of your Account Number denotes the Scheme Type (01-09).</li>
+                                </ul>
+                                <p>The various Scheme Types are:</p>
+                                <p>01 &ndash; Savings,<br />02 &ndash; Current Account<br />03 &ndash; Term Deposit<br />04 &ndash; Overdraft<br />05 &ndash; Cash Credit<br />06 &ndash; Loans<br />07 &ndash; Packing Credit<br />08 &ndash; Inland Bills<br />09 &ndash; Foreign Bills<br />81 &ndash; FI Accounts under SB 150</p>
+                                <p>NNNNNNNN &ndash; The remaining -8- digits denote the running serial number.</p>
+                                <p><strong>Sample Test Cases for Bank account Number Field</strong></p>
+                                <ul>
+                                <li>Check the accounting field by entering a valid account number.</li>
+                                <li>Check the accounting field by entering an invalid account number.</li>
+                                <li>Check the account number field by entering the account number of more than 14 digits.</li>
+                                <li>Check the account number field by entering the account number less than 14 digits.</li>
+                                <li>Check the account number by inserting 14 zeros.</li>
+                                <li>Check if the accounting field is allowing alphabets and special characters.</li>
+                                <li>Check the account number field by entering the alphanumeric value.</li>
+                                <li>Check if the account number field is allowing a blank value.</li>
+                                <li>Check if any warning message is displayed or not by entering an invalid account number.</li>
+                                <li>Check if any message is showing when the user enters an account number that does not exist.</li>
+                                <li>Check if the user is allowed to paste the account number in the account number field.</li>
+                                <li>Check that when users enter any closed account number.</li>
+                                <li>Check that when the user enters an account number with a blank space in between.</li>
+                                </ul>
+                                <p>Conclusion:</p>
+                                <p>We have tried to cover many possible test scenarios for the account Number Field. But still, if you have to find the missing test scenario, you can inform us in the comment section, and we are happy to update our post with those missing Test Cases for the Bank account Number Field.</p>
+                            </div>
+                        </div>
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1005"><h4>5. Test scenarios and cases For QR Code</h4></button>
+                        </div>
+                        <div id="collapse_1005" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2>Test Cases For QR Code</h2>
+                                <ul>
+                                <li>Check is the QR code is easy to scan and you are following the QR code design guidelines.</li>
+                                <li>Check how long it takes to load the information.</li>
+                                <li>Check is the information on your screen matches what you expect, after scanning the QR Code.</li>
+                                <li>Check that when you scan the QR code with a different device, it works properly.</li>
+                                <li>Check is the information displayed on the QR code matches what is shown on your device&rsquo;s screen when you scan it.</li>
+                                <li>Check you know the desired distance to scan a QR Code before starting. This will help ensure that the code is scanned successfully.</li>
+                                <li>Make sure to check the minimum distance required to scan the QR code.</li>
+                                <li>Make sure you scan the QR code at the maximum distance to get the best results!</li>
+                                <li>Check the QR code under different lighting conditions. (In low light, medium light, bright light, and very bright light.)</li>
+                                <li>Make sure that your QR code scanner works properly when you have internet access.</li>
+                                <li>Check is the QR code scanner works or not when you&rsquo;re not connected to the internet.</li>
+                                <li>Check on a Slow internet connection you are able to scan the QR Code.</li>
+                                <li>Make sure your QR scanner can read damaged codes.</li>
+                                <li>Make sure that when the user scans an inactive QR Code, nothing happens.</li>
+                                <li>Make sure to scan the QR code after making any manual changes.</li>
+                                <li>Make sure to scan the QR code with your mobile device or laptop for the best results. You can also use a plastic or paper QR code if you&rsquo;d like.</li>
+                                <li>Make sure that your scanner can read both black-and-white and color QR codes.</li>
+                                <li>Make sure the information being loaded is correct when the background of your QR code is white or a different color.</li>
+                                <li>Make sure if your QR code is laminated then also the information it contains is clearly visible.</li>
+                                <li>Make sure the information you want to load into your tattoo is correct before getting it inked!</li>
+                                <li>Check if you scan a QR code that appears to be a duplicate, your device will notify you.</li>
+                                <li>Make sure that the information is loading correctly when you scan the QR code (both vertically and horizontally).</li>
+                                <li>Make sure the QR code is working correctly by checking the screenshot.</li>
+                                </ul>
+                                <p>We hope these test cases for QR codes will give an idea about the possible test scenarios. If you found any test scenarios you can think of those then let us know in the comment section.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1006"><h4>6. Test scenarios and cases For Wall Clock</h4></button>
+                        </div>
+                        <div id="collapse_1006" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2 id="test-scenario-for-wall-clock"><strong>Test Scenario For Wall Clock</strong></h2>
+                                <ul>
+                                <li>The numbers read 1 through 12</li>
+                                <li>The numbers are presented in a clockwise manner</li>
+                                <li>All numbers are legible from a reasonable distance</li>
+                                <li>All numbers are located along the outside of the clock&rsquo;s surface</li>
+                                <li>All numbers are equidistant from one another</li>
+                                <li>Each number is at its proper location (ex: 3 is at 90 degrees)</li>
+                                <li>The hour and&nbsp;minute&nbsp;hands are visible from a reasonable distance</li>
+                                <li>The minute tick marks are legible from a reasonable distance</li>
+                                <li>Sizes of numbers, tick marks, hour, and minute hands are relatively congruent</li>
+                                <li>Inserting the battery is easy and intuitive</li>
+                                <li>Removing the battery is easy and intuitive</li>
+                                <li>Inserting a fresh battery causes the clock to mark time</li>
+                                <li>Clock reports time with reasonable accuracy after 3, 6, 12, and 24 hours</li>
+                                <li>Changing the time is easy and intuitive</li>
+                                <li>Hanging the clock on a wall is relatively easy to do</li>
+                                <li>An encasement protects all moving parts</li>
+                                <li>The watch has company branding per spec</li>
+                                <li>The clock has a reasonable battery life</li>
+                                <li>Check whether all the digits are clear and big visible from a vision distance.</li>
+                                <li>Check digit's color should not match the color of the clock background.</li>
+                                <li>To check if the clock is placed on any wall also it should work</li>
+                                <li>To check the time is shown clearly and correctly</li>
+                                <li>To check the clock is flexible to stick in the wall</li>
+                                <li>Check whether the movement of the pendulum is smooth or not</li>
+                                <li>Make sure the minute hand is not making too much sound while rotating.</li>
+                                <li>Check the length, and the weight of the pendulum if it is present.</li>
+                                </ul>
+                                <p>If you found any test cases which we missed, then you can comment in the comment box. so that we can update this post.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1007"><h4>7. Test scenarios and cases For Pen</h4></button>
+                        </div>
+                        <div id="collapse_1007" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h3 id="test-scenarios-for-functionality">Test Scenarios for Functionality</h3>
+                                <ul>
+                                <li>Verify &ldquo;type of Pen&rdquo; (Ball Point or Ink or Felt tip) etc., Let&rsquo;s assume it&rsquo;s a Ball Point pen as further scenarios will change based on the Pen type.</li>
+                                <li>Test Pen colour is as per specification.</li>
+                                <li>Test if the ink colour is as per specification.</li>
+                                <li>Test ink impression/colour on paper remains consistent from start till ink in the refill gets over.</li>
+                                <li>Test Dimensions of the Pen, Size length and Shape of the Pen meet the requirements.</li>
+                                <li>Test if the pen writes smoothly and continuously without breaks or blots on the paper.</li>
+                                <li>Test if the ink on paper dries quickly as per requirement (assume less than 1 second as per requirement).</li>
+                                <li>Test if the thickness of the line drawn by the pen tip is as per specification (0.4 mm etc.).</li>
+                                <li>Keep the ballpoint of the pen in contact with the paper for a considerable amount of time and check if the inkblots.</li>
+                                <li>Write on different types of paper (smooth, rough, cardboard, etc.,) and confirm the pen writes correctly on all types of paper.</li>
+                                <li>Check if the pen cap has a gripper so that the user can plug the pen into the shirt pocket firmly.</li>
+                                <li>Test if the ink is waterproof. Write on paper, dip paper in water, and check if the writing/ink has faded or smudged.</li>
+                                <li>Verify that the ink used does not have a bad odour because of the chemicals used in the ink.</li>
+                                <li>The check weight of the pen is as per requirements.</li>
+                                <li>Test pens can be used for writing with various angles like straight, slant, etc. Different writing angles should not</li>
+                                <li>impact the quality of the impression made on the paper nor should the pen tip be damaged.<br />Validate dimensions (length, circumference) and weights of the pen are as per specifications.</li>
+                                </ul>
+                                <h3 id="performance-test-scenarios"><span id="Performance_test_scenarios" class="ez-toc-section"></span>Performance test scenarios</h3>
+                                <ul>
+                                <li>Test if Pen works in extreme temperatures like less than 0 degrees and at higher temperatures like 60 etc.</li>
+                                <li>Test if the pen works in higher and lower altitudes i.e. in different gravity.</li>
+                                <li>Test if the pen works with lower and higher atmospheric pressures. The ink may not flow evenly at lower or higher atmospheric pressures.</li>
+                                <li>Test if the pen functions if it is used for writing continuously for a longer duration (say for 10 hours).</li>
+                                <li>Keep scribbling on paper vigorously and continuously for several minutes to check friction on the ball does not damage the pen tip.</li>
+                                <li>Test how much can be written using 1 complete refill. Measure the distance it can write and compare it with the specification.</li>
+                                <li>Test if the ink dries up if the pen is kept open (without a cap) for a longer duration.</li>
+                                <li>Dip the pen in water for a considerable amount of time, take it out, dry it out in the open air and write. Verify pen still writes without any issues.</li>
+                                </ul>
+                                <h3 id="load-test-scenarios"><span id="Load_test_scenarios" class="ez-toc-section"></span>Load test scenarios</h3>
+                                <ul>
+                                <li>Drop the pen from a reasonable height say about 5 to 6 feet multiple times with different angles like the Pen tip hitting the floor dead on and the pen falling flat on the ground etc., Verify the pen is not broken and the pen still writes without issues.</li>
+                                <li>Press the pen hard on to surface while writing, check if the pen still writes and the Pen tip or pen itself does not break.<br />Drop the pen on the ground, and stamp it to test if it can bear reasonable external weight (e.g.: up to 100 Kgs). Verify pen is not broken and still writes as expected.</li>
+                                <li>The pen should work put force abruptly.</li>
+                                </ul>
+                                <h3 id="compatibility-test-scenarios"><span id="Compatibility_Test_Scenarios" class="ez-toc-section"></span>Compatibility Test Scenarios</h3>
+                                <ul>
+                                <li>Write on different type&rsquo;s materials like leather, cloth, plastic sheet, rubber etc, Verify ink dries quickly.<br />Test compatibility of refills of the same and other brands.</li>
+                                </ul>
+                                <h3 id="installation-and-un-installation-test-scenarios"><span id="Installation_and_Un-installation_Test_Scenarios" class="ez-toc-section"></span>Installation and Un-installation Test Scenarios</h3>
+                                <ul>
+                                <li>Disassemble and assemble the pen. Remove cap, remove refill, etc, and put it back. Test if the pen writes as expected.</li>
+                                <li>Change Refill and Test if the pen writes as expected.</li>
+                                </ul>
+                                <h3 id="usability-test-scenarios"><span id="Usability_Test_Scenarios" class="ez-toc-section"></span>Usability Test Scenarios</h3>
+                                <ul>
+                                <li>Test if Pen is usable across ages (Children to age) and by different Professionals like Lawyers, Doctors, Businessmen, etc. can write comfortably with the pen.</li>
+                                <li>Check with the different audiences if the colour and dimension of the Pen are acceptable for their usage or profession.</li>
+                                <li>Test if ink leaks from refill when the pen is kept upside down for a longer duration.</li>
+                                <li>Test materials used in the pen are recyclable.</li>
+                                <li>Test to see if there are smaller parts in the pen that people can accidentally swallow, especially children have a tendency to stick the rear end of the pen in their mouth while thinking and some people have the habit of the chewing pen as they think.</li>
+                                <li>Test external material of the pen is made of non-toxic material. Check pen has a firm grip, comfortable to hold, and does not slip while writing (even for a longer time, when fingers and hands sweat).</li>
+                                <li>Pen&rsquo;s should not leak when open.</li>
+                                <li>Pen&rsquo;s should be refilled if its not a use and throw kind of pen.</li>
+                                <li>The pen should have at least refill in it.</li>
+                                </ul>
+                                <p><strong>Portability Tests</strong></p>
+                                <ul>
+                                <li>Pen&rsquo;s weight should not be more than 10gms.</li>
+                                </ul>
+                                <h3 id="design-based-pen-test-case"><span id="Design_based_Pen_Test_Case" class="ez-toc-section"></span><strong>Design-based Pen Test Case</strong></h3>
+                                <p>Each pen is unique in design and follows a particular pattern for design. So we have to write the test cases for the same.</p>
+                                <ul>
+                                <li>Does it make follows the design specification?</li>
+                                <li>Does it have the colour as per specification?</li>
+                                <li>Does the tip of the pen as per the specification?</li>
+                                <li>Does the grip hold as per the specification?</li>
+                                <li>Does the pen gets closed properly either by cover or with the click of a button at the top?</li>
+                                <li>Does the logo of the company is placed as per the design specification?</li>
+                                </ul>
+                                <h3 id="functional-test-cases"><span id="Functional_Test_Cases" class="ez-toc-section"></span><strong>Functional Test Cases</strong></h3>
+                                <ul>
+                                <li>Write on paper and see if it works or not.</li>
+                                <li>Write on the paper of rough surface and see if it writes or not.</li>
+                                <li>Write and check if it has the same link as a specification.</li>
+                                <li>Pen should have enough grip so that user can get hold of it.</li>
+                                <li>Pen should work on paper.</li>
+                                <li>Pen having more than one refill to work with shall have proper click button so that user can opt for the suitable refill to work with.</li>
+                                </ul>
+                                <h3 id="performance-and-load-test-cases"><span id="Performance_and_Load_Test_Cases" class="ez-toc-section"></span><strong>Performance and Load Test Cases</strong></h3>
+                                <ul>
+                                <li>Check it works in continuous writing.</li>
+                                <li>Check the temperature has any effect on the pen ink or tip.</li>
+                                <li>Check the pen works on wet paper.</li>
+                                <li>Check the pen operates by keeping the pen in a horizontal position while writing with the paper placed on a wall.</li>
+                                <li>Check if the pen operates if the tip is held facing a vertical position for long.</li>
+                                <li>Check if the tip of the pen works on both rough surfaces and then back to the smooth surface of the paper.</li>
+                                <li>Check if the tip works fine while writing on hand.</li>
+                                <li>When put in various cold and hot temperature, Pen&rsquo;s speed should not get effective</li>
+                                <li>Pen should work on board</li>
+                                <li>Pen should not work on leaves.</li>
+                                <li>Pen should work on clothes.</li>
+                                </ul>
+                                <h3 id="negative-test-cases"><span id="Negative_Test_Cases" class="ez-toc-section"></span><strong>Negative Test Cases</strong></h3>
+                                <ul>
+                                <li>Check it has ink or not.</li>
+                                <li>Check it has the right coloured ink.</li>
+                                <li>Check it works for a specific meter specified in the specification.</li>
+                                <li>Verify the capacity of the tip by putting the tip in the water and then trying to write with it.</li>
+                                <li>Verify if the tip works on both rough and smooth surfaces by writing with various angles and then using it back on the normal paper surface.</li>
+                                <li>Verify it works on the smooth surface.</li>
+                                </ul>
+                                <h3 id="pen-test-case-scenario"><span id="Pen_Test_Case_Scenario" class="ez-toc-section"></span><strong>Pen Test Case Scenario</strong></h3>
+                                <ul>
+                                <li>Verify the type, whether it is a&nbsp;ballpoint, ink or gel pen</li>
+                                <li>Verify the outer body, whether it should be metallic, plastic or any&nbsp;other material as per the specification</li>
+                                <li>Verify that length, breadth, and other size specifications.</li>
+                                <li>Verify that it is with a cap or without a cap</li>
+                                <li>Verify that it has a rubber grip or not</li>
+                                <li>Verify the colour of the ink.</li>
+                                <li>Verify the colour.</li>
+                                <li>Verify the size of the tip.</li>
+                                <li>Verify the company name or logo of the maker is correct and at the desired place</li>
+                                <li>Verify that it is smooth</li>
+                                <li>Verify if the ink gets leaked in case it is tilted upside down</li>
+                                <li>Verify if the pens get leaked at higher altitude</li>
+                                <li>Verify the type of surfaces we can write at</li>
+                                <li>Verify if the text written by the pen is erasable or not</li>
+                                <li>Verify its ink condition at extreme temperature is as per the specification</li>
+                                <li>Verify the pressure up to which the pen&rsquo;s tip can resist and work correctly</li>
+                                <li>Verify that is breakable or not at a certain height as the specification</li>
+                                <li>Verify text written doesn&rsquo;t get faded before a certain time as per the specification</li>
+                                <li>Verify the effect of water, oil and other liquid on the text written</li>
+                                <li>Verify the condition of ink after a long period of time is as per permissible specification or not</li>
+                                <li>Verify the total amount of text that can be written by at one go</li>
+                                <li>Verify that ink is waterproof or not</li>
+                                <li>Verify that it can write when used against the gravity- upside down</li>
+                                <li>Verify that in the case of the ink pen, the pen&rsquo;s ink can be refilled again</li>
+                                <li>Verify that it has a transparent body or not.</li>
+                                <li>verify that can we able to see refill or not.</li>
+                                </ul>
+                                <p>There are many other additional tests, but these are the ones that you can come up with when you have no visual idea of the pen and also don&rsquo;t know the specification of the product. I hope these test cases help you with interviews or while discussing it with peers. Feel free to let me know if you have any suggestions or comments.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1008"><h4>8. Test scenarios and cases For Door</h4></button>
+                        </div>
+                        <div id="collapse_1008" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h3 id="door-test-case">Door Test Case</h3>
+                                <ul>
+                                <li>Check whether the door is made up of wood or glass or any other material</li>
+                                <li>Check the door is a leading door washroom door any other location door</li>
+                                <li>Check if the door is built with glass then it is a transparent or non-transparent door</li>
+                                <li>Check is there any levels present on the door like push or pull</li>
+                                <li>Check which type of door, whether it is a single door or by the folded door.</li>
+                                <li>Check the door is open on which side, Whether it is inside or outside.</li>
+                                <li>Check the size of the door is as per the specification document</li>
+                                <li>Check the door is made upon the same material which was mentioned in the specification document</li>
+                                <li>Check whether the color of the door is the same as the specification document</li>
+                                <li>Check the opening functionality of the door whether that is a sliding door a rotating door</li>
+                                <li>Check the design of the door is as per the specification document</li>
+                                <li>Check the position, quality, and strength of the hinges</li>
+                                <li>Check what type of logs are present in the door</li>
+                                <li>Check the number of locks current inside and outside of the door</li>
+                                <li>Check whether the big hole door have a peek-hole, and also check the position of that whole is as per the specification document</li>
+                                <li>Check is the door has automatic close functionality in it, and your automatic feature represents the spring mechanism</li>
+                                <li>Check whether the door has a stopper at the correct location Which is mentioned in the specification document</li>
+                                <li>Check whether the door make any sounds while opening or closing</li>
+                                <li>Check the door condition when you are washing with hot water or cold water</li>
+                                <li>Check the door condition and different climates like in summer winter rain etc</li>
+                                <li>Check how much amount of force required to open or close the door</li>
+                                </ul>
+                                <h3 id="test-cases-for-swiping-card-for-door">Test Cases for Swiping Card for Door</h3>
+                                <ul>
+                                <li>Test the swiping with a Valid Card.</li>
+                                <li>Test the swiping with Invalid Card.</li>
+                                <li>Test the swiping of the Valid Card and get entry.</li>
+                                <li>Test the swiping of Card with both entry and exit with Valid Card.</li>
+                                <li>Test the swiping of Card with Invalid Card continuously swiping and after limited attempts try to pop up message that Card is blocked.</li>
+                                <li>Test for Swiping of Card with the proper position in front of the machine.</li>
+                                <li>Test for swiping of Card with proper ID and displaying Valid ID for reports extracted.</li>
+                                <li>Test for swiping of Card with proper Time and Date and correct Id display for the reports extracted.</li>
+                                <li>Test for swiping of Card with One or more Card swiping at the same time and should not allow multiple entries of overlapping of reports.</li>
+                                <li>Test without using Card and manually entering manipulating the&nbsp;<a href="https://en.wikipedia.org/wiki/Machine" target="_blank" rel="noopener">machine</a>.</li>
+                                <li>Test for swiping of Card and automatically close the door within time.</li>
+                                <li>Test for swiping of Valid Card and message displayed as Access allowed or Thank You.</li>
+                                <li>Test for swiping of Invalid Card and message displayed as Access denied.</li>
+                                <li>Test for swiping of Invalid Card and again manually entering manipulating the machine.</li>
+                                <li>Test for swiping of In-Valid Card and have some advanced features if someone tries to enter and pop up the message immediately to the concerned department.</li>
+                                </ul>
+                                <p>I think we are trying to cover very basic possible scenarios. But if you are going through these&nbsp;Door Test cases&nbsp;then you can find more test cases.</p>
+                                <p>We have also already informed earlier like before writing test cases about any application or object try to understand the application.&nbsp; If you want to verify some of the scenarios then you can do that by using automation.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1009"><h4>9. Test scenarios and cases For Calculator</h4></button>
+                        </div>
+                        <div id="collapse_1009" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h3 id="test-case-for-calculator"><strong><span data-preserver-spaces="true">Test Case For&nbsp;</span></strong><strong><span data-preserver-spaces="true">Calculator</span></strong></h3>
+                                <p>Here we are taking Ubuntu Linux&rsquo;s calculator as an example of my test case. You can use the below image or use the one that comes with your operating system.</p>
+                                <div class="wp-block-image wp-image-7367 size-full">&nbsp;</div>
+                                <h3 id="attachment_754" class="wp-caption aligncenter"><span id="Basic_Calculator_Test_Cases_Template" class="ez-toc-section"></span><strong>Basic Calculator Test Cases Template</strong></h3>
+                                <div class="wp-block-image wp-image-29846">&nbsp;</div>
+                                <p><span data-preserver-spaces="true">Write the test cases based on the following functions and scenarios.</span></p>
+                                <ul>
+                                <li><span data-preserver-spaces="true">Check the calculator if it starts by on button. If it is a software-based calculator, then check if it begins via specific means like from searching for a calculator in a search bar and then executing an application. Or by accessing menu items in Windows.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the calculator window maximizes to the specified window size.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the calculator closes when the close button is pressed or if the exit menu is clicked from the file &gt; exit option.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the help document is accessed from Help &gt; Documentation.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the calculator allows copy and paste functionality.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the calculator has any specific preferences.</span></li>
+                                <li><span data-preserver-spaces="true">Check if all the numbers are working ( 0 to 9)</span></li>
+                                <li><span data-preserver-spaces="true">Check if the arithmetic keys ( +, -, *, %, /) are working.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the clear key is working.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the brackets keys are working.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the sum or corresponding key is working.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the square and square root keys are working.</span></li>
+                                </ul>
+                                <h3 id="functionality-test-cases"><span id="Functionality_Test_Cases" class="ez-toc-section"></span><strong><span data-preserver-spaces="true">Functionality Test Cases</span></strong></h3>
+                                <ul>
+                                <li><span data-preserver-spaces="true">Check the addition of two integer numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the addition of two negative numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the addition of one positive and one negative number.</span></li>
+                                <li><span data-preserver-spaces="true">Check the subtraction of two integer numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the subtraction of two negative numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the subtraction of one negative and one positive number.</span></li>
+                                <li><span data-preserver-spaces="true">Check the multiplication of two integer numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the multiplication of two negative numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the multiplication of one negative and one positive number.</span></li>
+                                <li><span data-preserver-spaces="true">Check the division of two integer numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the division of two negative numbers.</span></li>
+                                <li><span data-preserver-spaces="true">Check the division of one positive number and one integer number.</span></li>
+                                <li><span data-preserver-spaces="true">Check the division of a number by zero.</span></li>
+                                <li><span data-preserver-spaces="true">Check the division of a number by a negative number.</span></li>
+                                <li><span data-preserver-spaces="true">Check the division of zero by any number.</span></li>
+                                <li><span data-preserver-spaces="true">Check if the functionality using BODMAS/BIDMAS works as expected.</span></li>
+                                </ul>
+                                <h3 id="test-cases-for-advanced-calculator"><span id="Test_Cases_For_Advanced_Calculator" class="ez-toc-section"></span><strong><span data-preserver-spaces="true">Test Cases For Advanced Calculator</span></strong></h3>
+                                <p>Some of the advanced scientific calculators have the converter option. It does the conversion of angle, length, weight, area, volume, duration, currency, temperature. If your calculator has advanced features, as shown in the screenshot.</p>
+                                <div class="wp-block-image wp-image-7368 size-full">&nbsp;</div>
+                                <ul>
+                                <li>Check is the user can do the operations like sin, cos, tan, and cos using the keys.</li>
+                                <li>Check is the operations like x-1, x!,|x|,x^y, and f(x) are functional and works as expected.</li>
+                                <li>Check is the log key is operational and functions as expected.</li>
+                                <li>Check the natural logarithm key are operational and works as expected.</li>
+                                <li>Check the factorial key is working as expected.</li>
+                                <li>Check the real and imaginary component keys are working as expected.</li>
+                                <li>Check the sophisticated conjugate keys are working as expected.</li>
+                                </ul>
+                                <p><span data-preserver-spaces="true">There are hundreds of test cases that we can make based on the operation of single and combination of the&nbsp;<a href="https://en.wikipedia.org/wiki/Key" target="_blank" rel="noopener">keys</a>. I have given the test cases here to provide you with a head start. It may help you with the interview purpose, or it can be used for writing your test cases where there is a use of a calculator. Hope you have found this test case tutorial helpful</span></p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1010"><h4>10. Test scenarios and cases For Fan</h4></button>
+                        </div>
+                        <div id="collapse_1010" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h3 id="test-cases-for-fan-ui-testing">Test Cases For FAN (UI Testing)</h3>
+                                <ul>
+                                <li>Check what type of pen that is that table fan or a ceiling fan.</li>
+                                <li>Check how many blades are present in that fan<br />Check all the blades and parts are fitting correctly.</li>
+                                <li>Check whether the fan dimension is as per the specification document</li>
+                                <li>Check whether the color of the pen is as per the specification document</li>
+                                <li>Check the size of the blades is Per the specification document</li>
+                                <li>Check the position of the company logo is as per the specification document.</li>
+                                <li>Check whether the company logo is visible</li>
+                                <li>Check is the distance between to another blade is as per the specification document, and also the gap should be equal between the blades</li>
+                                </ul>
+                                <h3 id="functional-testing-test-cases-for-fan"><span id="Functional_Testing_Test_Cases_For_FAN" class="ez-toc-section"></span>Functional Testing Test Cases For FAN</h3>
+                                <ul>
+                                <li>Check the power consumption by a fan is as per the requirement document</li>
+                                <li>Check is the fan is working when the electric switch is on</li>
+                                <li>Check whether the fan is slowing down when the&nbsp;<a href="https://en.wikipedia.org/wiki/Switch" target="_blank" rel="noopener">switch</a>&nbsp;is off</li>
+                                <li>Check whether the speed of the fan is where is when the regulator is adjusted</li>
+                                <li>Check the moving direction of the fan blades is it clockwise or anticlockwise</li>
+                                <li>Check when the fan is rotating it is throwing the wind in a proper direction</li>
+                                <li>Check by using regulator you can control the speed of the fan</li>
+                                <li>Check the time required to reach its maximum speed when the switch is on</li>
+                                <li>Check is the maximum and minimum speed of a fan</li>
+                                <li>Check whether the materials used to build a fan is as per the specification document</li>
+                                <li>Check whether the fan blades are bending when the fan is rotating state</li>
+                                <li>Check if the fan is not wobbling when it&rsquo;s in the movement.</li>
+                                <li>Check it is working under-voltage fluctuation conditions properly like low voltage conditions.</li>
+                                <li>Check the status of a fan when it is rotating for a longer time</li>
+                                <li>Check the condition of Motors coils and other electrical parts when there is an in the voltage</li>
+                                <li>Check the fan is moving smoothly without making so many noise and vibration</li>
+                                <li>Check the weight of the pen is as per the specification document</li>
+                                <li>Check the voltage fluctuation effect of a fan when it is moving</li>
+                                <li>Check after switch on the fan doesn&rsquo;t run in the anticlockwise direction</li>
+                                <li>Check all the Blades of a fan should have the same size</li>
+                                </ul>
+                                <h3 id="test-cases-for-ceiling-fan"><span id="Test_Cases_For_Ceiling_Fan" class="ez-toc-section"></span>Test Cases For Ceiling Fan</h3>
+                                <ul>
+                                <li>Whether the ceiling fan has a hook hanging on the roof.</li>
+                                <li>Check whether all the fan blades are fitted tightly</li>
+                                <li>Check the fan should be on when the use of a switch on</li>
+                                <li>Check weather-specific distance is maintained between roof and fan mentioned in the requirement document</li>
+                                <li>Check all the electric materials like capacitors are covered within the plastic coil of the fan.</li>
+                                </ul>
+                                <p><strong>Component Tests</strong></p>
+                                <ul>
+                                <li>Fan&rsquo;s wings should have edges which should be long enough so that it can give proper air</li>
+                                <li>Fan&rsquo;s rod should be sleek enough so that it can we well put in Fan&rsquo;s cup and engine.</li>
+                                <li>Fan&rsquo;s engine should have all wiring well fitted, so that it can create a connected circuit with all components.</li>
+                                </ul>
+                                <p><strong>Integration Tests</strong></p>
+                                <ul>
+                                <li>When switched on all component of Fan,then fan should start working.</li>
+                                <li>Fan&rsquo;s rod should not rotate when engine is working.</li>
+                                <li>Fan&rsquo;s engine should start working when switched on.</li>
+                                <li>Fan&rsquo;s wings should start rotating along with the engine,when put in contact with electricity.</li>
+                                </ul>
+                                <p><strong>Functional Tests</strong></p>
+                                <ul>
+                                <li>Fan should run in clock-wise direction when put in direct power and voltage.</li>
+                                <li>Fan should run in anti-clock-wise direction when put in direct power and voltage.</li>
+                                </ul>
+                                <p><strong>Specification Tests</strong></p>
+                                <ul>
+                                <li>Two winger fans should have radius not more than 20 cm.</li>
+                                <li>Three winger fans should have radius not more than 40 cm.</li>
+                                </ul>
+                                <p><strong>Usability Tests</strong></p>
+                                <ul>
+                                <li>Fan&rsquo;s engine should not create noise when switched on.</li>
+                                <li>Fan&rsquo;s should be made such that it can get well fit with the room ceiling.</li>
+                                <li>Fan should have atleast two wings,irrespective of type.</li>
+                                </ul>
+                                <p><strong>Portability Tests</strong></p>
+                                <ul>
+                                <li>Fan&rsquo;s weight should not be more than 3kgs if it is a two winger fan.</li>
+                                <li>Fan&rsquo;s weight should not be more than 5kgs if it is a three winger fan.</li>
+                                </ul>
+                                <p><strong>Load Tests</strong></p>
+                                <ul>
+                                <li>Fan should work upto 50W power.</li>
+                                <li>Fan should work upto 220V voltage.</li>
+                                </ul>
+                                <p><strong>Stress Tests</strong></p>
+                                <ul>
+                                <li>Fan should not bear load above 100W</li>
+                                <li>Fan should not bear voltage above 300V</li>
+                                </ul>
+                                <p><strong>Performance Tests</strong></p>
+                                <ul>
+                                <li>When put in high frequency energy, no wire should get burn</li>
+                                <li>When put in low frequency energy, no wire should get burn</li>
+                                <li>When put in various cold and hot temperature, fan&rsquo;s speed should not get effective.</li>
+                                </ul>
+                                <p>Here I have listed down few Test cases for Fan. I have initially not included a few interesting test cases you can write down. So let&rsquo;s think to add the test cases which not included in the above list to make a list to our reader more comprehensive.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1011"><h4>11. Test scenarios and cases For Traffic Signal</h4></button>
+                        </div>
+                        <div id="collapse_1011" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2 id="test-cases-for-traffic-signals">Test Cases For Traffic Signals</h2>
+                                <ul>
+                                <li>Check is the traffic Signal Light stand has all three lights (green, yellow, red) as per the requirement.</li>
+                                <li>Check is during the expected hours the traffic signal lights are on as per rules.</li>
+                                <li>Check the sequence of turn-on traffic Signal lights are based on the specified time (green light- 4.1 min, yellow light 10 sec, red light 1 min).</li>
+                                <li>Check only one traffic Signal light should glow at a time.</li>
+                                <li>Check is the stop signal is shown with a red light on the traffic light.</li>
+                                <li>Check is the traffic light for a wait unless a signal is shown with yellow or amber color.</li>
+                                <li>Check is the traffic light for the go is shown with green.</li>
+                                <li>Check if the traffic lights during off-hours show blinking in yellow or amber color displaying off for rules.</li>
+                                <li>Check is the speed of the Traffic Signal light can be accelerated as the time specified based on the traffic.</li>
+                                <li>Check is the Traffic Signal lights in some spots are sensor activated.</li>
+                                <li>Check the height of the traffic lights as per the requirement so normal human eyes can see it properly at night and day.</li>
+                                <li>Check the availability of poles with the traffic signal lights in all 4 directions (North South East West)</li>
+                                <li>Check the sequence of multiple signal posts is in sync at crossroads.</li>
+                                </ul>
+                                <p>These are some of the test cases that we can use to test the traffic signal post. There are many other product-specific test cases that we can develop. I hope the test cases in this post are helpful to you. Feel free to let me know if you have any questions or comments below</p>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1012"><h4>12. Test Cases OLA Mobile Apps Testing 🏎️ </h4></button>
+                        </div>
+                        <div id="collapse_1012" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2 id="ola-test-cases">Ola Test Cases</h2>
+                                <ul>
+                                <li>Test the installation and Uninstallation of the App</li>
+                                <li>Test the login and log out of the account</li>
+                                <li>Test the emergency contact receives the SMS when a ride is started</li>
+                                <li>Test the signup for new user</li>
+                                <li>Test the ride using Ola money</li>
+                                <li>Test the Ola money transfer after KYC has been done</li>
+                                <li>Test the Ola money transfer without doing KYC</li>
+                                <li>Test the current location picked when opened the app</li>
+                                <li>Test the favorite marking of the locations</li>
+                                <li>Test the picking of the desired location</li>
+                                <li>Test the vehicle availability in mins for all the types</li>
+                                <li>Test the vehicle availability says no when there&rsquo;s no active driver for that type</li>
+                                <li>Test the vehicle option from source to destination</li>
+                                <li>Test the source and destination are interstates</li>
+                                <li>Test the source and destination are intercountry through the land</li>
+                                <li>Test the source and destination has no roadways</li>
+                                <li>Test the source and destination between two planets</li>
+                                <li>Test the driver allocated for the ride can be called from the deep link of the app</li>
+                                <li>Test the money displayed before the ride and after ride are same when taken the given route</li>
+                                <li>Test the money displayed before the ride and after ride changes when taken the short/long route</li>
+                                <li>Test the choice of source and destination by giving lat and longs for that location</li>
+                                <li>Test the driver arrived indication is notified once he marked reached.</li>
+                                <li>Test the booking during rush hours when the demand is more</li>
+                                <li>Test the &lsquo;sorry cab didn&rsquo;t found&rsquo; message when the search completes without booking a cab</li>
+                                <li>Test the OTP generation</li>
+                                <li>Test the SMS delivered for the booked cab or auto</li>
+                                <li>Test the OTP starts the ride. Only correct number</li>
+                                <li>Test by giving a random OTP number to start the ride</li>
+                                <li>Test the OTP number by giving vehicle number</li>
+                                <li>Test the auto deduction of ola money when the ride completes</li>
+                                <li>Test the cancellation of OLA cab/auto</li>
+                                <li>Test the cancellation charge applied after crossing the cancellation limit for that month</li>
+                                <li>Test the promo code works for each ride</li>
+                                <li>Test the OLA pass is applied if the pass hasn&rsquo;t been expired</li>
+                                <li>Test the fare changes for each variant like Prime, Mini, Micro</li>
+                                <li>Test Ola outstation verification</li>
+                                <li>Test the late-night charges are higher than the usual</li>
+                                <li>Test the cab driver cancellation of the current booking notified in the SMS and Ola app</li>
+                                <li>Test the booking when the network has a weak signal strength</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1013"><h4>13. Test Case For Uber Cab Booking Online</h4></button>
+                        </div>
+                        <div id="collapse_1013" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2 id="functional-test-cases-for-uber-cab-booking">Functional Test Cases For Uber Cab Booking</h2>
+                                <ul>
+                                <li>Check is the location is enabled on the mobile/tab and the pickup location should be automatically filled in.</li>
+                                <li>Check if the location is disabled on the mobile/tab, then the app should display a popup where it asks the user to enter the pickup location.</li>
+                                <li>Check by default the booking time is taken as the current time.</li>
+                                <li>Check there is an option available to choose/schedule a ride for a later time.</li>
+                                <li>Check the user should not be able to choose a ride time later than 1 month.</li>
+                                <li>Check the app shows the suggestion of your previously visited or saved location for choosing the destination.</li>
+                                <li>Check the selection of destination works fine.</li>
+                                <li>Check that on selecting a destination, the map gets zoomed out and shows the destination.</li>
+                                <li>Check that there is an option to search location.</li>
+                                <li>Check the selection of all the available types of vehicle class.</li>
+                                <li>Check the prices of the vehicle are displayed correctly.</li>
+                                <li>Check after booking a ride by selecting pickup, destination, time, and vehicle class. The app should start looking for a cab and should show the estimated time to find a cab.</li>
+                                <li>Check On a confirmed booking, the app should show the cab and driver details.</li>
+                                <li>Check the map to show the driver&rsquo;s location and estimated time to arrive.</li>
+                                <li>Check the&nbsp;<a href="https://maps.google.com/" target="_blank" rel="noopener">map</a>&nbsp;gets updated with the location of the driver.</li>
+                                <li>Check there is an option to call/message the driver.</li>
+                                <li>Check the cancellation option is available once the booking is confirmed.</li>
+                                <li>Check on cancellation the current booking is aborted and the cancellation charge is deducted if applicable.</li>
+                                <li>Check by booking a ride for a later time and Check at that time a cab is booked and prior to booking user gets the notification.</li>
+                                </ul>
+                                <h3 id="edge-test-cases-for-uber-cab-booking"><span id="Edge_Test_Cases_For_Uber_Cab_Booking" class="ez-toc-section"></span>Edge Test Cases For Uber Cab Booking</h3>
+                                <ul>
+                                <li>Check that at allow one time only one booking is allowed</li>
+                                <li>Check is that multiple bookings can be scheduled for different times.</li>
+                                <li>Check the behavior of network interruption while booking a cab.</li>
+                                <li>Check the driver canceling the booking.</li>
+                                <li>Check the behavior when a search of a cab is in progress and a phone comes in.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1014"><h4>14. Test Cases For Notepad Custom Pad </h4></button>
+                        </div>
+                        <div id="collapse_1014" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <h2 id="test-cases-for-notepad-1"><strong>Test Cases for Notepad</strong></h2>
+                                <ul>
+                                <li>Check whether the system supports notepad or not.</li>
+                                <li>Check by clicking on the windows button selected for the notepad and clicking on to open.</li>
+                                <li>Check notepad is opening or not by opening the Run prompt window and entering for the notepad.</li>
+                                <li>Check notepad is opening or not by clicking the notepad shortcut icon.</li>
+                                <li>Check the new page should be blank and cursor at the beginning of the first line.</li>
+                                <li>Check the application allows typing</li>
+                                <li>Check the application allows saving</li>
+                                <li>Check the application allows opening a saved instance</li>
+                                <li>Check Menu bar option is opening or not.</li>
+                                <li>On the menu bar, select for File button and click to open the dialog box.</li>
+                                <li>Check the validate menus and submenus</li>
+                                <li>Check if the data is saved after writing to the file.</li>
+                                <li>Check the functionality for the save as a file.</li>
+                                <li>Check the type of data that can be saved (numeric, alphanumeric, special chars).</li>
+                                <li>Check by saving a blank file.</li>
+                                <li>A dialog box should open. In the dialog box, choose the option to the Open button.</li>
+                                <li>After selecting the option, the cursor should be highlighted on the screen of the notepad.</li>
+                                <li>After clicking on to Open button, by default, it should open the blank page to edit.</li>
+                                <li>Check for the functionality of the edit on the screen.</li>
+                                <li>Check if the notepad allows the same file name in the same file path.</li>
+                                <li>Check if the edits to the file are saved.</li>
+                                <li>Check the shortcut key is worked to open and close the dialog box</li>
+                                <li>Check the dialog box is closed when pressing Esc button on the keyboard</li>
+                                <li>Check the functionality of the close, maximize, and minimize buttons.</li>
+                                <li>Check if the window for notepad can be re-sized.</li>
+                                <li>Check the default size of the notepad is based on the last saved window size.</li>
+                                <li>Check if the clearing system cache has any difference in the size of the notepad window after you open any file.</li>
+                                <li>Do performance testing by opening, say, 100 instances of notepad (possibly by using an automated tool), and determining the response time.</li>
+                                <li>Check the max length of the data.</li>
+                                </ul>
+                                <p>These were some of the common test cases, but if you want to go to application-specific test cases, then you have to check each item on the menu.</p>
+                                <p id="test-case-for-new-file-option"><strong>Test Case for New File Option</strong></p>
+                                <ul>
+                                <li>Create a new file using CTRL+N hotkey.</li>
+                                <li>Create a new file using the File&gt; New menu option.</li>
+                                <li>Create a new file using Windows Icon+ Menu &gt; Accessories &gt; Notepad.</li>
+                                </ul>
+                                <p><strong>Test Case for Undo Option:</strong></p>
+                                <ul>
+                                <li>Click on Undo option in Edit Menu.</li>
+                                <li>Use CTRL+Z hotkey to undo the text changes.</li>
+                                </ul>
+                                <p><strong>Test Case for Copy Option:</strong></p>
+                                <ul>
+                                <li>Click on the Cut option in Edit Menu</li>
+                                <li>Use CTRL+C hotkey to copy the text selected.</li>
+                                <li>Use cut option in the edit menu without selecting any text.</li>
+                                <li>Use CTRL+x hotkey with selecting text.</li>
+                                </ul>
+                                <p><strong>Test Case for Paste Option:</strong></p>
+                                <ul>
+                                <li>Click on Paste option in Edit Menu</li>
+                                <li>Use CTRL+V hotkey to paste the text selected.</li>
+                                <li>Use Paste option in the edit menu without selecting any text.</li>
+                                <li>Use CTRL+V hotkey without selecting text or area.</li>
+                                </ul>
+                                <p><strong>Test Cases for Save Option:</strong></p>
+                                <ul>
+                                <li>Save the empty file.</li>
+                                <li>Save the file with maximum text content.</li>
+                                <li>Save the file with less than the maximum allowed to store in a file.</li>
+                                <li>Save the file on the desktop.</li>
+                                <li>Save the file with the same file name that two of the earlier saved file and choose the same file path.</li>
+                                <li>Save the file with word-wrapped and close it to open again after a few seconds.</li>
+                                <li>Save the file without word-wrapped and close it to open again after a few seconds.</li>
+                                <li>Save the file from the file menu.</li>
+                                <li>Save the file using CTRL+S hotkey.</li>
+                                <li>Save the file with the ASCII character set.</li>
+                                <li>Save the file with the UTF character set.</li>
+                                <li>Save the file with multiple encoding character set.</li>
+                                <li>Save the file with Unicode endian character set.</li>
+                                </ul>
+                                <p><strong>Test Case for Exit Option:</strong></p>
+                                <ul>
+                                <li>Exit the application by clicking the file&gt;exit menu.</li>
+                                <li>Exit the application by using the ALT+F4 system hotkey.</li>
+                                </ul>
+                                <p><strong>Some of the other common test cases for cross-platform applications</strong></p>
+                                <ul>
+                                <li>Check if the find option exists for the notepad.</li>
+                                <li>Check if the navigation within the text is possible with the arrow keys on the keypad.</li>
+                                <li>Check the default position of the&nbsp;<a href="https://en.wikipedia.org/wiki/Cursor" target="_blank" rel="noopener">cursor</a>&nbsp;(before, after the saving file).</li>
+                                <li>Check if the notepad has found and replaced functionality.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1015"><h4>15. Test Case For Online Examination System</h4></button>
+                        </div>
+                        <div id="collapse_1015" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                <p>Let&rsquo;s start to find out possible test scenarios or test cases for the online examination system. if you can see from the online examination portal two types of user</p>
+                                <ul>
+                                <li>Teacher: who is responsible for adding questions to the portal</li>
+                                <li>Students or users: who gives the answer to the questions</li>
+                                </ul>
+                                <p>So where is that this is a web application and according to that we are trying to write test cases for the online examination system. so let&rsquo;s start with some of the basic test scenarios</p>
+                                <ul>
+                                <li>Check If a user enters in the address section of the browser and hits enter the application should be open</li>
+                                <li>Check the application is loading properly</li>
+                                <li>Check all the images logos and text of the portal are clearly visible</li>
+                                <li>Check the application login functionality</li>
+                                <li>Check the users who have valid credentials and those who are only able to login into the application</li>
+                                <li>Check the user who doesn&rsquo;t have valid credentials to log in this should get an error message when they hit the submit button</li>
+                                </ul>
+                                <h3 id="online-examination-system-for-student"><span id="Online_Examination_System_For_Student" class="ez-toc-section"></span>Online Examination System For Student</h3>
+                                <ul>
+                                <li>Check after login to the online examination portal As a student he should see the user profile</li>
+                                <li>When the user clicks on the user profile the user details page should be displayed</li>
+                                <li>Check is all the mandatory fields are filled on the user profile page</li>
+                                <li>Check if the user type is displaying on the user details page or not, user type in the sense of free user or paid user</li>
+                                <li>Check if the user is a paid user and then is the expiry date is displayed or not</li>
+                                <li>Check is there any option for changing the password</li>
+                                <li>Check student is able to log in after entering valid credentials he should be able to see only specific course questions for which he is subscribed.</li>
+                                <li>Check whether a user is able to choose the exam by clicking on the exam name for the exam code</li>
+                                <li>Check before starting the exam if a confirmation popup is displaying all the details ( like full name of the student, roll number, exam duration) of the student or not</li>
+                                <li>Check if the confirmation popup has not the correct details that should be an edit option by which a user can update his correct details</li>
+                                <li>Check if the user clicks the ok button then the user should be redirected to the exam page</li>
+                                <li>Check once the exam is started Dainik clocks should be displayed on the test duration</li>
+                                <li>Check what type of questions are available on the portal, whether it is multiple choice or subjective question</li>
+                                <li>Check if the question is multiple questions then the choices should be displayed below the questions pant that should be an option to select the correct answer</li>
+                                <li>Check if that is the subjective question then below the question that should be a text box where the user can enter the of that question</li>
+                                <li>Check is there any option to skip a particular question</li>
+                                <li>Check is there any option to go to the next question or previous question</li>
+                                <li>Check once a user completes or Answers all the questions, then he should be able to end the test</li>
+                                <li>Check if the time duration is completed then the test should be automatically ended.</li>
+                                <li>Check if all the questions are multiple questions, then after the completion of the test evolution should be performed on the basis of positive and negative marking.</li>
+                                <li>Check based on the evolution the result should be displayed in the pass or fail with the correct answer percentage</li>
+                                </ul>
+                                <h3 id="online-examination-system-for-teacher"><span id="Online_Examination_System_For_Teacher" class="ez-toc-section"></span>Online Examination System For Teachers</h3>
+                                <ul>
+                                <li>If a user is a login as a teacher into the online exam system application then he should be able to see his profile</li>
+                                <li>Check the user have an option to change the password</li>
+                                <li>Check for the teacher that should be an option for adding a new subject</li>
+                                <li>Check after clicking on the subject name the teacher should be able to add questions under the subject</li>
+                                <li>Check after a click on the subject name that should be an option for creating exams</li>
+                                <li>Check for creating a new exam the user should have to feel some mandatory fields like exam name, subject name enter the exam code</li>
+                                <li>Check whether a teacher can able to set the number of questions and pass a percentage of foreign exam</li>
+                                <li>Check based on the number of questions it should display feels accordingly</li>
+                                <li>Check a teacher is able to enter the question and multiple-choice options in the respective fields</li>
+                                <li>Check whether an examiner is able to set the time duration for a particular exam</li>
+                                <li>Check if the teacher has an option for which user has completed the test</li>
+                                </ul>
+                                <p>If you still think that we have missed any test case, then you can comment on that in the comment section.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_1003"><h4>Test Cases For Logout Page</h4></button>
+                        </div>
+                        <div id="collapse_1003" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
+                                
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                    
+               </div>
+            </div>
+        </section> 
+    </main>
+
+    <!-- ============Footer  Start============ -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="_kl_de_w">
+                        <h3>Quick Links</h3>
+                        <ol>
+                            <li><i class="far fa-angle-right"></i><a href="./index.html">Home</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./aboutme.html">About Us</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./interviewdetails.html">Latest Interview Details</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./moketest.html">Mock Test</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./dailyInterviewQuestions.html">Latest Interview Questions</a></li>
+                        </ol>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="_kl_de_w">
+                        <h3>Course to Support</h3>
+                        <ol>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Manual_Testing.pdf"  target="_blank">Manual Testing</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Core_Java.pdf"  target="_blank">Java</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Python Programming Syllabus.pdf"  target="_blank">Python</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Selenium_with_Java.pdf"  target="_blank">Selenium With Java</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Selenium_Python.pdf"  target="_blank">Selenium With Python</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_DevOPS.pdf"  target="_blank">DevOps</a></li>
+                            
+                        </ol>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="end-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="last-card">
+                        <p>© 2022 All Rights Reserved by TechAdda Grpup</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins/owl.carousel.js"></script>
+<script src="assets/js/plugins/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
