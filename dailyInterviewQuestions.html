@@ -292,15 +292,317 @@
                         </div>
 
                         <div class="card-header" id="headingTwo">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse24"><h4>Benefits of String immutability</h4></button>
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse24"><h4>Java Script Interview Quesions</h4></button>
                         </div>
                         <div id="collapse24" class="collapse" data-parent="#accordionExample">
                             <div class="card-body" style="border:black;border: width 1px;border-style:solid;">
-                                <p><strong>1.</strong> String pool is possible only because String is immutable in Java. This way Java Runtime saves a lot of heap space because different String variables can refer to the same String variable in the pool. If String would not have been immutable, then String interning would not have been possible because if any variable would have changed the value, it would have been reflected in the other variables too.</p>
-                                <p><strong>2.</strong> <span style="color: #808080;">If a String is not immutable then it would cause a severe security threat to the application. For example, database username, and password are passed as String to get database connection and in socket programming host and port, details passed as String. Since String is immutable, its value can&rsquo;t be changed otherwise any hacker could change the referenced value to cause security issues in the application.</span></p>
-                                <p><strong>3.</strong> <span style="color: #333333;">Since String is immutable, it is safe for multithreading. A single String instance can be shared across different threads. This avoids the use of synchronization for thread safety. Strings are implicitly thread-safe.</span></p>
-                                <p><strong>4.</strong> <span style="color: #339966;">Strings are used in java classloader and immutability provides security that correct class is getting loaded by Classloader. For example, think of an instance where you are trying to load java.sql.Connection class but the referenced value is changed to myhacked.Connection class that can do unwanted things to your database.</span></p>
-                                <p><strong>5.</strong> <span style="color: #808000;">Since String is immutable, its hashcode is cached at the time of creation and it doesn&rsquo;t need to be calculated again. This makes it a great candidate for the key in a Map and its processing is faster than other HashMap key objects. This is why String is the most widely used as HashMap keys.</span></p>
+                                <h4 id="h.wt78t97856cj" class="c1"><strong><span class="c13 c17">1. What do you understand by JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">JavaScript is the most popular web scripting language, used for both client-side and server-side development. Supporting object-oriented programming abilities, the JavaScript code can be inserted into HTML pages that can be understood and executed by web browsers.</span></p>
+                                <h4 id="h.oo67wkuqysk5" class="c1"><strong><span class="c13 c17">2. How is JavaScript different from Java?</span></strong></h4>
+                                <p class="c5"><span class="c3">Java is a programming language, whereas JavaScript is essentially a scripting language. Developers use Java for building applications that can run in a virtual machine, an operating system, or inside a browser. Contrastingly, JS code is meant to run inside a browser only.</span></p>
+                                <p class="c5"><span class="c18">Nonetheless, standalone desktop applications can be built with JavaScript by using Electron and&nbsp;</span><span class="c0">Node.js</span><span class="c3">. Another important distinction between Java and JS code is that while the former requires compilation, the latter is available in a text format.</span></p>
+                                <h4 id="h.sa87ka2q55qg" class="c1"><strong><span class="c13 c17">3. Please explain the various JavaScript data types.</span></strong></h4>
+                                <p class="c5"><span class="c3">There are a total of 7 basic data types supported by JavaScript. Each one of them is briefed up as follows:</span></p>
+                                <ul class="c19 lst-kix_ord5j72fh8a-0 start">
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Boolean&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Represents true and false values.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Null&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Represents empty, nothing, and unknown type of values</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Number&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Represents both integer and floating-point values.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Object&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Used for storing collections of data or more complex entities</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>String&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Represents single-character, multi-character, and alphanumeric values.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Symbol&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Used for creating unique identifiers for objects</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Undefined&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Represents value not assigned. If a variable is only declared and not assigned in JS, it represents the undefined data type.</span></li>
+                                </ul>
+                                <h4 id="h.8a4kgu8xd8v7" class="c1"><strong><span class="c13 c17">4. Could you enumerate the various features of JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">Some important features of JavaScript are:</span></p>
+                                <div class="text-center">&nbsp;</div>
+                                <ul class="c19 lst-kix_n0hi0uo6c3dc-0 start">
+                                <li class="c15 li-bullet-0"><span class="c3">A lightweight interpreted programming language with some object-oriented capabilities.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3">An open, cross-platform scripting language</span></li>
+                                <li class="c15 li-bullet-0"><span class="c18">Complements and integrates with the&nbsp;</span><span class="c0"><a class="c14" href="https://hackr.io/blog/what-is-java">Java programming language</a></span><span class="c3">&nbsp;as well as other backend technologies.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3">Designed especially for creating network-centric applications</span></li>
+                                </ul>
+                                <h4 id="h.txcapebzjw38" class="c1"><strong><span class="c13 c17">5. Can you differentiate between let and var?</span></strong></h4>
+                                <p class="c5"><span class="c3">Both let and var are used for variable and method declaration in JavaScript. However, the most important difference between the two JS keywords is that while the var keyword is function scoped, the let keyword is block scoped.</span></p>
+                                <h4 id="h.boj0vsanhafx" class="c1"><strong><span class="c13 c17">6. What are the escape characters in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">In JavaScript, we use escape characters, typically backslash (\ \) while working with special characters, such as ampersands (&amp;), apostrophes (&lsquo;), double quotes (&ldquo; &ldquo;), and single quotes (&lsquo; &lsquo;). Whatever is enclosed within the escape, characters get displayed by JavaScript.</span></p>
+                                <p class="c5"><span class="c3">Six additional escape characters are also available in JavaScript:</span></p>
+                                <ul class="c19 lst-kix_a1xajympxyek-0 start">
+                                <li class="c15 li-bullet-0"><span class="c3"><strong>\b</strong>&nbsp;&ndash; Backspace</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3"><strong>\f</strong>&nbsp;&ndash; Form feed</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3"><strong>\n</strong>&nbsp;&ndash; Newline</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3"><strong>\r</strong>&nbsp;&ndash; Carriage return</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3"><strong>\t</strong>&nbsp;&ndash; Horizontal tabulator</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3"><strong>\v</strong>&nbsp;&ndash; Vertical tabulator</span></li>
+                                </ul>
+                                <p class="c5"><span class="c3">These aren&rsquo;t in anyway executed in the HTML or JS code. These were originally designed for controlling fax machines, teletypes, and typewriters.</span></p>
+                                <h4 id="h.pi3n66wmpbge" class="c1"><strong><span class="c13 c17">7. Please describe the most important advantages of using JavaScript.</span></strong></h4>
+                                <p class="c5"><span class="c3">There are several advantages to using JavaScript. Most notable amongst them are listed down as follows:</span></p>
+                                <ul class="c19 lst-kix_wti7zelasq2k-0 start">
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Enhanced interactivity</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;JavaScript allows creating interfaces that react when the user activates them via the keyboard or merely hovers the cursor over the same.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Immediate feedback&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Visitors need not wait for a page reload to see if they had forgotten to enter some important details.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Low server interaction</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;JS allows validating user input before sending the webpage to the server. It means less server traffic and hence, less load on the server.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Rich interfaces</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;JS has items like drag-and-drop components and sliders to present a richer interface to the website visitors.</span></li>
+                                </ul>
+                                <h4 id="h.l32ppnbns0ga" class="c1"><strong><span class="c13 c17">8. Could you name some built-in methods in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">Following are some of the inbuilt methods in JavaScript:</span></p>
+                                <ul class="c19 lst-kix_5og3w0co4xc0-0 start">
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>anchor()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Creates an HTML anchor to be used as a hypertext target</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>ceil()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;returns the smallest integer that is greater than or equal to the given number</span><span id="ez-clearholder-banner-1"></span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>concat()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Combines two strings and returns the newer string</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>constructor()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Returns the function that created the corresponding instance of the object</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Date()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Returns the present date and time</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Date.parse()&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Parses a string representation of a date and time and then returns the internal millisecond representation for the same</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>exec()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Searches for a match in the string parameter</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>filter()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Creates a new array with all the elements of the array for which the filtering function returns true</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>font color ()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Displays a string in the specified color</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>link()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Creates an HTML hypertext link that requests another URL</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>localeCompare()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Returns a number that indicates whether a reference string comes before, after, or is the same as the given string in the sort order</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>match()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Used for matching a regular expression against a string</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>pop()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Removes and returns the last element from an array</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>reduce()&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Applies a function simultaneously for two values of the array to reduce them to a single value</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>round()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Rounds off the value of the given number to the nearest integer and returns the same</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>slice()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Extracts a certain section of a string and returns the remaining string</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>some()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;returns true if at least one element of the array satisfies the provided testing function</span><span id="ez-clearholder-large-leaderboard-2"></span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>toLocaleString()&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Return a string value of the current number in a format that depends on the browser&rsquo;s locale settings</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>sup()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Displays a string as a superscript</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>toSource()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Returns a string containing the source of the Boolean object</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>toUpperCase()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Converts a text to uppercase</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>valueOf()</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Returns the primitive value of the specified object</span></li>
+                                </ul>
+                                <h4 id="h.5yhsk0k2244l" class="c1"><strong><span class="c13 c17">9. Could you tell us about the various types of error constructors supported by JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">The Error constructor is responsible for creating an error object. Instances of the error objects are thrown when runtime errors occur. Moreover, the Error object can also be used as a base object for user-defined exceptions.</span></p>
+                                <p class="c5"><span class="c3">Other than the generic Error constructor, JS provides support for 7 error constructors that are:</span></p>
+                                <ul class="c19 lst-kix_5gcfy1y8wnts-0 start">
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>EvalError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding the global function eval().</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>InternalError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding an internal error in the JS engine.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>RangeError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding a numeric variable or parameter that is outside of its valid range.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>ReferenceError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding de-referencing an invalid reference.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>SyntaxError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding a syntax error occurring while parsing code in eval().</span><span id="ez-clearholder-leader-1"></span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>TypeError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding a parameter or variable not of a valid type.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>URIError&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Creates an error instance regarding when invalid parameters are passed to the decode URI() or encodeURI()</span></li>
+                                </ul>
+                                <h4 id="h.j5j4q6xt6aw3" class="c1"><strong><span class="c13 c17">10. Explain the use of debuggers in JavaScript.</span></strong></h4>
+                                <p class="c5"><span class="c3">All modern browsers (Mozilla Firefox, Safari, Google Chrome, etc.) come with an inbuilt debugger that can be summoned by pressing the F12 key. You need to choose the Console tab to view the result. Here you can set breakpoints as well as view the value of the variables.</span></p>
+                                <p class="c5"><img class=" ezlazyloaded" src="https://hackr.io/blog/media/10-2.png?ezimgfmt=rs:714x500/rscb1/ng:webp/ngcb1" alt="" width="960" height="659" data-ezsrc="https://hackr.io/blog/media/10-2.png?ezimgfmt=rs:714x500/rscb1/ng:webp/ngcb1" /></p>
+                                <p class="c5"><span class="c3">JavaScript also features a debugger keyword that replicates the function of using breakpoints using a debugger. However, it works only when the debugging option is enabled in the web browser settings.</span></p>
+                                <h4 id="h.7lpy8y2764r5" class="c1"><strong><span class="c13 c17">11. What are the different types of Error Name values in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">There are 6 types of Error Name values. Each one of them is briefly explained as follows:</span></p>
+                                <ul class="c19 lst-kix_x6wkb7w2df4l-0 start">
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Eval Error</strong>&nbsp;&ndash;&nbsp;</span><span class="c3">Thrown when coming across an error in eval() (Newer JS releases don&rsquo;t have it)</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Range Error</span></strong><span class="c3"><strong>&nbsp;</strong>&ndash; Generated when a number outside the specified range is used</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Reference Error</strong>&nbsp;</span><span class="c3">&ndash; It comes into play when an undeclared variable is used.</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Syntax Error</span></strong><span class="c3"><strong>&nbsp;</strong>&ndash; When the incorrect syntax is used, we get this error</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Type Error</span></strong><span class="c3"><strong>&nbsp;</strong>&ndash; This error is thrown when a value outside the range of data types is tried to be used.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>URI Error</strong>&nbsp;</span><span class="c3">&ndash; Generated due to the use of illegal characters</span></li>
+                                </ul>
+                                <h2 id="h.ozhmi269yzq7" class="c6"><strong><span class="c13 c39 c47">Advanced Javascript Interview Questions</span></strong></h2>
+                                <h4 id="h.p0b8owa4q3d9" class="c1"><strong><span class="c13 c17">12. Please explain Self Invoking Function and its syntax.</span></strong></h4>
+                                <p class="c5"><span class="c3">Functions that are automatically invoked are termed as Self Invoking Functions. These are also known as Immediately Invoked Function Expressions and Self Executing Anonymous Functions. The general syntax of a Self Invoking Function is:</span><span class="c3">&nbsp;</span></p>
+                                <pre class="language-javascript hljs"><code>(some_function () {
+                                <span class="hljs-keyword">return</span> () }) ();</code></pre>
+                                <p class="c5"><span class="c3">13. Explain the difference between function declaration and function expression. Typically, a function is defined and then invoked. However, if there is a need to automatically execute a function at the place where it is given and not be called again, then anonymous functions can be used. Such functions have no name, and thus the name.</span></p>
+                                <p class="c5"><span class="c3">Following are the differences between function declaration and function expression:</span></p>
+                                <ul class="c19 lst-kix_s896x8spqget-0 start">
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Definition</span></strong><span class="c3">&nbsp;&ndash; A function declared as a separate statement in the main code flow is termed the function declaration. When a function is created inside an expression or another syntax construct, it is called a function expression.</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Strict Mode</span></strong><span class="c3">&nbsp;&ndash; When a function declaration is within a code block in the Strict mode, it is visible everywhere inside that block but not outside of it. This isn&rsquo;t the case for a function expression.</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Time of Use</span></strong><span class="c3">&nbsp;&ndash; A function expression is created when the execution reaches it. The function expression is usable only from that moment onwards. A function declaration, on the other hand, can be called before the same is defined.</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">When to Use&nbsp;</span></strong><span class="c3">&ndash; Function declaration offers better readability and offers more freedom in organizing the code. Function expressions are typically restricted to be used when there is a need for a conditional declaration.</span></li>
+                                </ul>
+                                <h4 id="h.9cjslltam3f8" class="c1"><strong><span class="c13 c17">14. What is the difference between attributes and property?</span></strong></h4>
+                                <p class="c5"><span class="c18">JS DOM objects have properties that are like instance variables for particular elements. A property can be of various data types. Properties are accessible by interacting with the object in&nbsp;</span><span class="c0"><a class="c14" href="http://vanilla-js.com/" target="_blank" rel="noopener">Vanilla JS</a></span><span class="c3">&nbsp;or using jQuery&rsquo;s prop() method.</span></p>
+                                <p class="c5"><span class="c3">Rather than in the DOM, attributes are in the HTML. They are similar to properties but not as capable. It&rsquo;s recommended to work with properties rather than attributes if the former is available. Unlike a property, an attribute is of the string data type.</span></p>
+                                <h4 id="h.byldt7koz0c0" class="c1"><strong><span class="c13 c17">15. What are the various ways of embedding JavaScript code in an HTML file?</span></strong></h4>
+                                <p class="c5"><span class="c18">There are 4 ways of embedding JS code within HTML documents, which you can also learn about&nbsp;</span><span class="c33">through HTML classes</span><span class="c3">:</span></p>
+                                <ul class="c19 lst-kix_p29gt8mqj08i-0 start">
+                                <li class="c15 li-bullet-0"><span class="c18">Adding it between tags From an external file that is specified by the src attribute of a&nbsp;</span><span class="c18 c38">tag. Old browsers treat this JS code as a long HTML comment.</span></li>
+                                </ul>
+                                <p class="c5"><span class="c3">Typically, JS code is hidden from old browsers for solving compatibility and UI issues. Interestingly, browsers that support JavaScript will take as one-line comments.</span></p>
+                                <h4 id="h.e3hkkrsid6ng" class="c1"><strong><span class="c13 c17">16. What do you understand by cookies? How will you create, read, and delete a cookie using JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">A cookie is simply data, usually small, sent from a website and stored on the user&rsquo;s computer by the web browser used to access the website. It is a reliable way for websites to remember stateful information and record the user's browsing activity.</span></p>
+                                <div class="text-center">&nbsp;</div>
+                                <p class="c5"><span class="c3">The most basic way of creating a cookie using JS is to assign a string value to the document. Cookie object. The general syntax is:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-built_in">document</span>.cookie = <span class="hljs-string">"key1 = value1; key2 = value2; ... ; keyN= valueN; expires = date"</span>;</code></pre>
+                                <p class="c5"><strong><span class="c4 c13">Reading a Cookie</span></strong></p>
+                                <p class="c5"><span class="c3">Reading a cookie using JS is as simple as creating the same. As the value of the document. The cookie object is the cookie, use this string whenever you wish to access the cookie.</span></p>
+                                <p class="c5"><span class="c3">The document.cookie string keeps a list of name = value pairs, where a semicolon separates each pair. The name represents a cookie's name, and the value represents the respective cookie&rsquo;s string value. For breaking the string into key and value, you can use the split() method.</span></p>
+                                <p class="c5"><strong><span class="c13 c4">Deleting a Cookie</span></strong></p>
+                                <div class="text-center">&nbsp;</div>
+                                <p class="c5"><span class="c3">Deleting a cookie using JavaScript, simply set the expiration date (expires) to a time that&rsquo;s already past. Some web browsers don&rsquo;t let you delete a cookie unless you don&rsquo;t specify the cookie's path. Hence, defining the cookie path is important to ensure that the right cookie is deleted.</span></p>
+                                <div class="text-center">&nbsp;</div>
+                                <h4 id="h.h5tge6rb41e9" class="c1"><strong><span class="c13 c17">17. What will be the output of the JS code below? Please explain.</span></strong></h4>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">var</span> y = <span class="hljs-number">1</span>;
+                                <span class="hljs-keyword">if</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span>()</span>{})
+                                {
+                                y += <span class="hljs-keyword">typeof</span> F;
+                                }
+                                <span class="hljs-built_in">console</span>.log(y);</code></pre>
+                                <p class="c5"><span class="c3">Inside the if statement, executing typeof F returns undefined because if the statement code executes at run time, the statement inside the condition is evaluated.The output of the aforementioned JavaScript code will be 1undefined. The if condition statement in the code evaluates using eval. Hence, eval(function F(){}) will return function F(){}.</span></p>
+                                <h4 id="h.jl4v6ndewfgt" class="c1"><strong><span class="c13 c17">18. What do you understand by Closures in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">Closures provide a better, concise, creative, and expressive writing code for JavaScript developers and programmers. Technically speaking, closures are a combination of lexical environment and function.</span></p>
+                                <p class="c5"><span class="c3">In other words, a closure is a locally declared variable that is related to a function and stays in the memory when the related function has returned. The closure contains all local variables that were in-scope at the time of the closure creation.</span></p>
+                                <p class="c5"><span class="c3">The following code snippet demonstrates using a normal function in JavaScript:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greet</span>(<span class="hljs-params">message</span>) </span>{
+                                <span class="hljs-built_in">console</span>.log(message);
+                                }
+                                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">name, age</span>) </span>{
+                                <span class="hljs-keyword">return</span> name + <span class="hljs-string">" says Hey!! He is "</span> + age + <span class="hljs-string">" years old"</span>;
+                                }
+                                <span class="hljs-keyword">var</span> message = greeter(<span class="hljs-string">"Akhil"</span>, <span class="hljs-number">26</span>);
+                                greet(message);​</code></pre>
+                                <pre class="language-javascript hljs"><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">name, age</span>) </span>{
+                                <span class="hljs-keyword">var</span> message = name + <span class="hljs-string">" says Hey!! He is "</span> + age + <span class="hljs-string">" years old"</span>;
+                                <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greet</span>() </span>{
+                                <span class="hljs-built_in">console</span>.log(message);
+                                };
+                                }
+
+                                <span class="hljs-comment">// Generate the closure</span>
+                                <span class="hljs-keyword">var</span> AkhilGreeter = greeter(<span class="hljs-string">"Akhil"</span>, <span class="hljs-number">26</span>);
+
+                                <span class="hljs-comment">// Use the closure</span>
+                                AkhilGreeter();</code></pre>
+                                <p class="c5"><span class="c3">The aforementioned function can be represented in a better way by using closures. This is demonstrated in the following code snippet:</span></p>
+                                <h4 id="h.koozo5tmlft4" class="c1"><strong><span class="c13 c17">19. Please explain NEGATIVE_INFINITY in JavaScript.</span></strong></h4>
+                                <p class="c5"><span class="c3">The NEGATIVE_INFINITY is a static property in JS that results when a negative number is divided by 0. Its important characteristics are:</span></p>
+                                <ul class="c19 lst-kix_qv7znfeuy1wl-0 start">
+                                <li class="c15 li-bullet-0"><span class="c3">There is no need for creating several objects for accessing NEGATIVE_INFINITY</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3">The value of the NEGATIVE_INFINITY property is the same as the negative value of the global object's infinity property.</span><span id="ez-clearholder-mobile-leaderboard-1"></span></li>
+                                </ul>
+                                <h4 id="h.ah6dlkhjn05f" class="c1"><strong><span class="c13 c17">20. Is there any short and concise way of writing function expressions in JS?</span></strong></h4>
+                                <p class="c5"><span class="c3">JavaScript offers a short and concise way of writing function expressions known as arrow functions. This way of writing function expressions is preferred typically for non-method functions. The general syntax of an arrow function is:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">const</span> function_name = <span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{}</code></pre>
+                                <p class="c5"><span class="c3">Arrow functions can&rsquo;t be used as constructors. Moreover, they don&rsquo;t provide support for arguments, new.target, super, and this.</span></p>
+                                <h4 id="h.9yi36n51t1f8" class="c1"><strong><span class="c13 c17">21. How can you import all exports of a file as an object in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">To import all exported members of an object, one can use:</span></p>
+                                <p class="c5"><span class="c3">import * as object name from &lsquo;./file.js.&rsquo;</span></p>
+                                <div class="text-center">&nbsp;</div>
+                                <p class="c5"><span class="c3">The exported methods or variables can be easily accessed by using the dot (.) operator.</span></p>
+                                <div class="text-center">&nbsp;</div>
+                                <h4 id="h.713b2427lc37" class="c1"><strong><span class="c13 c17">22. How will you empty an array in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">There are multiple ways of emptying an array in JavaScript. Four of the most important ones are:</span></p>
+                                <p><span class="c18">By assigning an empty array:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">var</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">22</span>, <span class="hljs-number">24</span>, <span class="hljs-number">46</span>];
+                                array1 = [];</code></pre>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">var</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">22</span>, <span class="hljs-number">24</span>, <span class="hljs-number">46</span>];
+                                array1.length=<span class="hljs-number">0</span>;</code></pre>
+                                <p><span class="c18">By assigning array length to 0:</span></p>
+                                <p><span class="c18">By popping the elements of the array:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">var</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">22</span>, <span class="hljs-number">24</span>, <span class="hljs-number">46</span>];
+                                <span class="hljs-keyword">while</span>(array1.length &gt; <span class="hljs-number">0</span>) {
+                                array1.pop();
+                                }</code></pre>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">var</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">22</span>, <span class="hljs-number">24</span>, <span class="hljs-number">46</span>];
+                                array1.splice(<span class="hljs-number">0</span>, array1.length)</code></pre>
+                                <p><span class="c18">By using the splice array function:</span></p>
+                                <h4 id="h.j9zy8zmyqova" class="c1"><strong><span class="c13 c17">23. What are Event Bubbling and Event Capturing?</span></strong></h4>
+                                <p class="c5"><span class="c3">There are two ways for accomplishing event propagation and the order in which an event is received in the HTML DOM API.</span></p>
+                                <p class="c5"><span class="c3">These are Event Bubbling and Event Capturing. The event is directed towards its intended target in the former, whereas the event goes down to the latter element.</span></p>
+                                <ul class="c19 lst-kix_aali3j33a806-0 start">
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Event Capturing</span></strong><span class="c3">&nbsp;&ndash; Also known as trickling, Event Capturing is rarely used. The process starts with the outermost element capturing the event and then propagating it to the innermost element.</span></li>
+                                <li class="c15 li-bullet-0"><strong><span class="c4">Event Bubbling</span></strong><span class="c3">&nbsp;&ndash; In this process, the event gets handled by the innermost element first and then propagated to the outermost element.</span></li>
+                                </ul>
+                                <h4 id="h.nc619tfxf03l" class="c1"><strong><span class="c13 c17">24. In how many ways can you create an array in JS?</span></strong></h4>
+                                <p class="c5"><span class="c3">There are three different ways of creating an array in JavaScript, namely:</span></p>
+                                <ol class="c19 lst-kix_8pkwpbpa1x2r-0 start" start="1">
+                                <li class="c15 li-bullet-0"><span class="c3">By creating instance of an array:<br />var someArray = new Array();</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3">By using an array constructor:<br />var someArray = new Array(&lsquo;value1&rsquo;, &lsquo;value2&rsquo;,&hellip;, &lsquo;valueN&rsquo;);</span></li>
+                                <li class="c15 li-bullet-0"><span class="c3">By using an array literal:<br />var someArray = [value1, value2,&hellip;., valueN];</span></li>
+                                </ol>
+                                <h4 id="h.feyvimh7wowm" class="c1"><strong><span class="c39">25. Write a code to demonstrate how to get inner HTML of an element in JavaScript.</span></strong></h4>
+                                <pre class="language-javascript hljs"><code>&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+                                <span class="hljs-keyword">var</span> inner= <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"inner"</span>).innerHTML ;
+                                <span class="hljs-built_in">console</span>.log(inner); <span class="hljs-comment">// This is inner Element</span>
+                                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"inner"</span>).innerHTML = <span class="hljs-string">"Html changed!"</span>;
+                                <span class="hljs-keyword">var</span> inner= <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"inner"</span>).innerHTML ;
+                                <span class="hljs-built_in">console</span>.log(inner); <span class="hljs-comment">// Html changed!</span>
+                                <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></code></pre>
+                                <h4 id="h.6wlkun9c6930" class="c1 c54"><strong>26. How will you remove duplicates from a JS array?</strong></h4>
+                                <p class="c5"><span class="c3">There are several possible ways of eliminating duplicates from a JS array. The three most-used ones are described as follows:</span></p>
+                                <p class="c31"><strong><span class="c18">1.&nbsp;</span><span class="c4">By using Filter</span></strong><span class="c18"><strong>&nbsp;&ndash;&nbsp;</strong>It is possible to remove duplicates from an array in JavaScript by applying a filter to the same. To call the filter() method, three arguments are required. These are namely array, current element, and index of the current element.function unque_array (arr){</span></p>
+                                <div class="text-center">&nbsp;</div>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">let</span> unique_array = arr.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">elem, index, self</span>) </span>{
+                                <span class="hljs-keyword">return</span> index == self.indexOf(elem); }
+                                <span class="hljs-keyword">return</span> unique_array }
+                                <span class="hljs-built_in">console</span>.log(unique_array(array_with_duplicates));​</code></pre>
+                                <p><strong>2. By using the For loop</strong><strong>&nbsp;&ndash;</strong>&nbsp;In this method of removing duplicate elements from an array, an empty array is used for storing all the repeating elements:</p>
+                                <div class="text-center">&nbsp;</div>
+                                <pre class="language-javascript hljs"><code>elements.Array dups_names = [<span class="hljs-string">'Akhil'</span>, <span class="hljs-string">'Vijay'</span>, <span class="hljs-string">'Swapnil'</span>, <span class="hljs-string">'Akhil'</span>, <span class="hljs-string">'Vijay'</span>];
+                                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dups_array</span>(<span class="hljs-params">dups_names</span>) </span>{
+                                <span class="hljs-keyword">let</span> unique = {};
+                                names.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">i</span>) </span>{
+                                If (!unique[i]) {
+                                unique[i] = <span class="hljs-literal">true</span>; }
+                                });
+                                <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.keys(unique);}
+                                Dups_array(names);</code></pre>
+                                <p class="c30 c35"><span class="c18"><strong>3.&nbsp;<span class="c4">By using Set&nbsp;</span></strong><span class="c3"><strong>&ndash;</strong>&nbsp;This is the simplest approach of removing duplicate elements from an array in JS. A set is an inbuilt object for storing unique values in an array. Here&rsquo;s how to use it for eliminating repeating elements from an array:</span>2.&nbsp;</span><span class="c4">By using the For loop</span><span class="c3">&nbsp;&ndash; In this method of removing duplicate elements from an array, an empty array is used for storing all the repeating elements:</span><span class="c3">&nbsp;</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">uniquearray</span>(<span class="hljs-params">array</span>) </span>{
+                                <span class="hljs-keyword">let</span> unique_array= <span class="hljs-built_in">Array</span>.from(<span class="hljs-keyword">set</span>(array))
+                                return unique_array;}</code></pre>
+                                <h4 id="27-can-you-draw-a-simple-javascript-dom-document-object-model" class="c31"><strong><span class="c3">27. Can you draw a simple JavaScript DOM (Document Object Model)?</span></strong></h4>
+                                <p class="c31"><span class="c3">In the above example, a set is created out of the array having duplicate elements. As a set is an ordered collection of unique elements, the result is an array with non-repeating elements.</span></p>
+                                <p class="c35 c22 c57"><img class=" ezlazyloaded" src="https://hackr.io/blog/media/can-you-draw-a-simple-javascript-dom-document-object-model-min.png?ezimgfmt=rs:714x415/rscb1/ng:webp/ngcb1" alt="" data-ezsrc="https://hackr.io/blog/media/can-you-draw-a-simple-javascript-dom-document-object-model-min.png?ezimgfmt=rs:714x415/rscb1/ng:webp/ngcb1" /></p>
+                                <h4 id="h.xbwgq5u1n94x" class="c1"><strong><span class="c39">28. Write the code to force a page to load another page in JavaScript.</span></strong></h4>
+                                <pre class="language-javascript hljs"><code>&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+                                <span class="xml"><span class="hljs-comment">&lt;!-- location.href="http://newhost/newpath/newfile.html"; //--&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></code></pre>
+                                <p><span class="c13 c17">When in the Strict Mode, JS displays errors for some code segments that might be otherwise not available. In other words, the Strict mode adds certain compulsions to the JS. It is used for removing some code mistakes that result in dropped efficiency of JS engines.29. Please explain the Strict mode in JavaScript. Also, explain how to enable it.</span></p>
+                                <p class="c5"><span class="c3">To enable the Strict Mode, one needs to add the string literal &ldquo;use strict&rdquo; above the file that needs to be opened in the Strict Mode. For example:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">somefunction</span>() </span>{
+                                <span class="hljs-meta">"use strict"</span>;
+                                <span class="hljs-keyword">var</span> v = <span class="hljs-string">"Welcome to the Strict Mode"</span>;</code></pre>
+                                <h4 id="h.ga3hflmlrbap" class="c1"><strong><span class="c13 c17">30. What is the for-in loop in JavaScript? Give its syntax.</span></strong></h4>
+                                <p class="c5"><span class="c3">The for-in loop is meant to be used for looping through the properties of a JavaScript object&mdash;every iteration of the loop results in a property of the object getting associated with the variable name. The loop continues until all the object properties are exhausted.</span></p>
+                                <p class="c5"><span class="c3">The general syntax of using the for-in loop is:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">for</span> (variable name <span class="hljs-keyword">in</span> object){
+                                statement or block to execute
+                                }</code></pre>
+                                <p><span class="c13 c17">Both .call() and .apply() functions are almost identical in their use, with a major exception in how arguments are passed to the function.31. Tell us about the difference between .call() and .apply() functions. Give an example of demonstrating the difference between the two JS functions.</span></p>
+                                <p class="c5"><span class="c3">Because arguments are to be passed in the .call() method, it is compulsory to know about the function's arguments. On the other hand, the .apply() method is used when the number of arguments is unknown. The following example demonstrates using the two functions:</span></p>
+                                <pre class="language-javascript hljs"><code><span class="hljs-keyword">var</span> someObject = {
+                                <span class="hljs-attr">myProperty</span> : <span class="hljs-string">'Foo'</span>,
+                                <span class="hljs-attr">myMethod</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">prefix, postfix</span>) </span>{
+                                alert(prefix + <span class="hljs-keyword">this</span>.myProperty + postfix);
+                                }
+                                };
+                                someObject.myMethod(<span class="hljs-string">'&lt;'</span>, <span class="hljs-string">'&gt;'</span>);
+                                <span class="hljs-keyword">var</span> someOtherObject = {
+                                <span class="hljs-attr">myProperty</span> : <span class="hljs-string">'Bar'</span>
+                                };
+                                someObject.myMethod.call(someOtherObject, <span class="hljs-string">'&lt;'</span>, <span class="hljs-string">'&gt;'</span>);
+                                someObject.myMethod.apply(someOtherObject, [<span class="hljs-string">'&lt;'</span>, <span class="hljs-string">'&gt;'</span>]);</code></pre>
+                                <h4 id="h.t8p8roujvwzf" class="c1"><strong><span class="c13 c17">32. What role do deferred scripts play in JavaScript?</span></strong></h4>
+                                <p class="c5"><span class="c3">During page loading, the HTML code's parsing is paused by default until the script hasn&rsquo;t stopped executing. This results in a delay in displaying the web page if the server is slow or the script that is to be loaded is bulky.</span></p>
+                                <p class="c5"><span class="c3">Using deferred scripts results in a delay in the script's execution when the HTML parser is running. Hence, this results in a reduction in the loading time of the webpage.</span></p>
+                                <h4 id="h.2e5lhdy2ju3t" class="c1"><strong><span class="c13 c17">33. What are screen objects? State their various properties.</span></strong></h4>
+                                <p class="c5"><span class="c3">To read the information from the client&rsquo;s screen, screen objects are used in JavaScript. Properties of screen objects are:</span></p>
+                                <ul class="c19 lst-kix_vo280di3tlnp-0 start">
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>AvailHeight&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Gives out the height of the client screen (Excludes taskbar)</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>AvailWidth</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Gives out the width of the client screen (Excludes taskbar)</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>ColorDepth&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Gives out the bit depth of images supported by the client screen.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Height&nbsp;</strong>&ndash;</span><span class="c3">&nbsp;Gives out the total height of the client screen.</span></li>
+                                <li class="c15 li-bullet-0"><span class="c4"><strong>Width</strong>&nbsp;&ndash;</span><span class="c3">&nbsp;Gives out the total width of the client screen.</span></li>
+                                </ul>
+                                <h4 id="h.34vzjw8vinv" class="c1"><strong><span class="c13 c17">34. Could you explain escape() and unescape() functions?</span></strong></h4>
+                                <p class="c5"><span class="c3">The escape() function allows for converting a string into a coded form in JavaScript. It is used for securely transferring information from one system to another over some network. For instance, consider the following code snippet:</span></p>
+                                <pre class="language-javascript hljs"><code>This%<span class="hljs-number">20</span>string%<span class="hljs-number">20</span>is%<span class="hljs-number">20</span>encoded%<span class="hljs-number">21</span></code></pre>
+                                <p class="c5"><span class="c3">The output of the aforementioned code snipped will be something like this:</span></p>
+                                <pre class="language-javascript hljs"><code>This%<span class="hljs-number">3</span>F%<span class="hljs-number">20</span>string%<span class="hljs-number">20</span>is%<span class="hljs-number">20</span>encoded%<span class="hljs-number">21</span></code></pre>
+                                <p class="c5"><span class="c3">The unescape() function does the exact opposite of the escape() function, i.e., it decodes a coded string into the original string. Therefore, the following code snippet:</span></p>
+                                <pre class="language-javascript hljs"><code>This? string is encoded!</code></pre>
+                                <p class="c5"><span class="c3">Will yield the following output:</span></p>
+                                <pre class="language-javascript hljs"><code>This string is encoded!</code></pre>
+                                <h4 id="h.2sih9qepx341" class="c1"><strong><span class="c39">35. Please write JavaScript code for adding new elements dynamically.</span></strong></h4>
+                                <pre class="language-javascript hljs"><code>&lt;html&gt;
+                                <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>t1<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="javascript">
+                                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addNode</span>() </span>{ <span class="hljs-keyword">var</span> newP = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"p"</span>);
+                                <span class="hljs-keyword">var</span> textNode = <span class="hljs-built_in">document</span>.createTextNode(<span class="hljs-string">" This is a new text node"</span>);
+                                newP.appendChild(textNode); <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"firstP"</span>).appendChild(newP); }
+                                </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span>
+                                <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"firstP"</span>&gt;</span>firstP<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span>
+                                <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></span></code></pre>
                             </div>
                         </div>
 
