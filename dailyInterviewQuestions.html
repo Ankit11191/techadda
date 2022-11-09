@@ -130,6 +130,13 @@
             $(window).load(function(){
                 $('#myModal').modal('show');
             });
+
+            // Close modal on ESC key
+            $(document).on('keydown', function(e) {
+                if (e.key === "Escape") {
+                    $('#myModal').modal('hide');
+                }
+            });
         </script>
 
         <!-- ============abt-01 Section  Start============ -->
@@ -3193,7 +3200,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="last-card">
-                        <p>© 2022 All Rights Reserved by TechAdda Grpup</a></p>
+                        <p>© 2025 All Rights Reserved by TechAdda Group</p>
                     </div>
                 </div>
             </div>

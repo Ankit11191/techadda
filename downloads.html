@@ -7,121 +7,64 @@
     <title>Downloads</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <style>
-        h1 {
-          text-align: center;
+        body, table, th, td {
+            font-family: 'Raleway', sans-serif !important;
         }
-        
-        p.righted {
-          text-align: right;
-        }
-        p.lefted {
-          text-align: left;
-        }
-
-        .middle {
-          text-align: left;
-        }
-        
-        p.justifed {
-          text-align: justify;
-        }
-        .my-icon {
-            width: 50px;
-            height: 50px;
-        }
-        
-        .my-image {
-            width: 150px;
-            height: 250px;
-        }
-
-        .download-color{
-            font-size:35px;
-            color:rgb(59, 62, 238);
-        }
-
-        .bcontent {
-            margin-top: 1px;
-        }
-
-        .latestJob1-color{
-            font-size:35px;
-            color:rgb(255, 0, 0);
-        }
-
-        .latestJob2-color{
-            font-size:35px;
-            color:rgb(5, 150, 164);
-        }
-        .latestJob3-color{
-            font-size:35px;
-            color:rgb(0, 110, 253);
-        }
-        .latestJob4-color{
-            font-size:35px;
-            color:rgb(140, 50, 50);
-        }
-        .latestJob5-color{
-            font-size:35px;
-            color:rgb(250, 3, 155);
-        }
-        .heading-color{
-            font-size:35px;
-            color:rgb(119, 0, 255);
-        }
-
-        .blink {
-        animation: blink-animation 1s steps(5, start) infinite;
-        -webkit-animation: blink-animation 1s steps(5, start) infinite;
-      }
-      @keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-      @-webkit-keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-
-    .multicolor-text {
+        h1 { text-align: center; }
+        .middle { text-align: left; }
+        .download-color { font-size:35px; color:rgb(59, 62, 238); }
+        .bcontent { margin-top: 1px; }
+        .latestJob1-color { font-size:35px; color:rgb(255, 0, 0); }
+        .latestJob2-color { font-size:35px; color:rgb(5, 150, 164); }
+        .latestJob3-color { font-size:35px; color:rgb(0, 110, 253); }
+        .latestJob4-color { font-size:35px; color:rgb(140, 50, 50); }
+        .latestJob5-color { font-size:35px; color:rgb(250, 3, 155); }
+        .heading-color { font-size:35px; color:rgb(119, 0, 255); }
+        .multicolor-text {
             text-align: center;
             font-size: 42px;
-            background: linear-gradient(to left,
-                    red,
-                    black,
-                    green,
-                    blue,
-                    cyan,
-                    rgb(199, 21, 133),
-                    rgb(255, 140, 0),
-                    rgb(102, 51, 153),
-                    rgb(0, 0, 139));
+            background: linear-gradient(to left, red, black, green, blue, cyan, rgb(199, 21, 133), rgb(255, 140, 0), rgb(102, 51, 153), rgb(0, 0, 139));
             -webkit-background-clip: text;
             color: transparent;
         }
-        #myModal {
-            /* width: 1500px;
-            height: 1800px;
-            top: 25%;
-            left: 25%;
-            margin-top: -50px;  */
-            margin-left: -150px;
-            padding: 5%;
-            background-color:  rgba(167, 167, 201, 0.527);;
-        }
-
-        </style>
+        /* Category color coding */
+        .cat-manual { background: #e3f2fd; color: #1565c0; font-weight: 600; }
+        .cat-java { background: #fff3e0; color: #e65100; font-weight: 600; }
+        .cat-selenium { background: #fce4ec; color: #ad1457; font-weight: 600; }
+        .cat-api { background: #e8f5e9; color: #388e3c; font-weight: 600; }
+        .cat-domain { background: #f3e5f5; color: #6a1b9a; font-weight: 600; }
+        .cat-devops { background: #ede7f6; color: #4527a0; font-weight: 600; }
+        .cat-docker { background: #e0f7fa; color: #00838f; font-weight: 600; }
+        .cat-misc { background: #f9fbe7; color: #827717; font-weight: 600; }
+        .cat-python { background: #fffde7; color: #fbc02d; font-weight: 600; }
+        .cat-agile { background: #f1f8e9; color: #689f38; font-weight: 600; }
+        /* Color coding for Title and Download Link columns */
+        .title-manual { background: #e3f2fd; color: #1565c0; }
+        .title-java { background: #fff3e0; color: #e65100; }
+        .title-selenium { background: #fce4ec; color: #ad1457; }
+        .title-api { background: #e8f5e9; color: #388e3c; }
+        .title-domain { background: #f3e5f5; color: #6a1b9a; }
+        .title-devops { background: #ede7f6; color: #4527a0; }
+        .title-docker { background: #e0f7fa; color: #00838f; }
+        .title-misc { background: #f9fbe7; color: #827717; }
+        .title-python { background: #fffde7; color: #fbc02d; }
+        .title-agile { background: #f1f8e9; color: #689f38; }
+        .link-manual { background: #e3f2fd; color: #1565c0; }
+        .link-java { background: #fff3e0; color: #e65100; }
+        .link-selenium { background: #fce4ec; color: #ad1457; }
+        .link-api { background: #e8f5e9; color: #388e3c; }
+        .link-domain { background: #f3e5f5; color: #6a1b9a; }
+        .link-devops { background: #ede7f6; color: #4527a0; }
+        .link-docker { background: #e0f7fa; color: #00838f; }
+        .link-misc { background: #f9fbe7; color: #827717; }
+        .link-python { background: #fffde7; color: #fbc02d; }
+        .link-agile { background: #f1f8e9; color: #689f38; }
+    </style>
 </head>
-
-
 
 <body>
     <header>
@@ -142,7 +85,6 @@
                                     <li><a href="downloads.html">Downloads</a></li>
                                     <li><a href="dailyInterviewQuestions.html">Daily Questions</a></li>
                                     <li><a href="productcasestudy.html">Product Case Study</a></li>
-                                    <!-- <li><a href="interviewdetails.html">Interview Details</a></li> -->
                                     <li><a href="moketest.html">Practice Exam</a></li>
                                     <li><a href="aboutme.html">About Me</a></li>
                                 </ul>
@@ -154,279 +96,311 @@
         </div>
     </header>
     <main>
-
-    <!-- ============Autopopup Section Start============ -->
-<!-- 
-    <div class="container">
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                <div class="_he_w">
-                    <h2><span style="text-decoration: underline;"><span style="background-color: #ffff00;">What's New</span></span></h2>
-                    <h3 style="padding-left: 40px;"><strong>Java Cheet Sheet</strong></h3>
-                    <h3 style="padding-left: 40px;"><strong>SQL Joins - A Visual Guid</strong></h3>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-
-    <script>
-        $(window).load(function(){
-            $('#myModal').modal('show');
-        });
-    </script> -->
-
-
-        <!-- ============abt-01 Section  Start============ -->
-        
-        <section class="abt-01">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="heading-wrapper">
-                            <h1 style="color:rgb(255,255,255)">Downloads Notes and Interview Quesions and<br>Practice Questions</h1>
-                        </div>
+    <!-- ============abt-01 Section Start============ -->
+    <section class="abt-01">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading-wrapper">
+                        <h1 style="color:rgb(255,255,255)">Downloads Notes and Interview Questions and<br>Practice Questions</h1>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-                <!-- ============bg-se-05  Section  Start============ -->
-        
-        <section class="bg-se-05">
-            <div class="container">
-                <div class="row">
-                    <div class="heading">
-                        <h2>'    Latest Interview Questions DownLoads</h2>
-                    </div>
-                </div>
-
-                <!-- <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/typescript_tutorial.pdf" target="_blank" rel="noopener noreferrer"><h4>Retail Banking Domain Notes</h4></a> - 12 July 2022<br>
-                </div> -->
-                <div class="row">
-                    <a class="latestJob1-color" href="https://drive.google.com/file/d/18Q0KuEH7k2Xulq3yf30NqQRLW2HIBLcU/view?usp=share_link" target="_blank" rel="noopener noreferrer"><h4>Scrum Master Interview Questions</h4></a> - 09 November 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="https://drive.google.com/file/d/18Q0KuEH7k2Xulq3yf30NqQRLW2HIBLcU/view?usp=share_link" target="_blank" rel="noopener noreferrer"><h4>Agile Interview Questions</h4></a> - 09 November 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/Agile Software Development.pdf" target="_blank" rel="noopener noreferrer"><h4>Agile Methodology</h4></a> - 06 September 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/DevOps 300 Interview QA.pdf" target="_blank" rel="noopener noreferrer"><h4>300 DevOps Interview Questions with Answer</h4></a> - 13 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/Notes/Retail-Banking.pdf" target="_blank" rel="noopener noreferrer"><h4>Retail Banking Domain Notes</h4></a> - 12 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/Notes/E_commerce_.pdf" target="_blank" rel="noopener noreferrer"><h4>E-Commerce Domain Notes</h4></a> - 11 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/TestNG.pdf" target="_blank" rel="noopener noreferrer"><h4>TestNG Notes</h4></a> - 8 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/miscellaneous/100 Manual Interview Questions.pdf" target="_blank" rel="noopener noreferrer"><h4>100 Manual Interview Questions</h4></a> - 7 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/miscellaneous/222 Sel-Q&A.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium Interview Quesions and Answer</h4></a> - 6 July 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob3-color" href="https://drive.google.com/file/d/1mthXWFfq17Mf1wskQA1UfxZTd1DZJw_J/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>API Tutorial 1(Testing)</h4></a> - 5 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="https://drive.google.com/file/d/1ms54SLGGYWd9YEPKqhhyrcpsdUMGi9b7/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>API Tutorial 2(Testing)</h4></a> - 4 July 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="https://drive.google.com/file/d/1mrov3p78e9OfzmR0sioRTlUE401N3FbD/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>API Tutorial 3(Testing)</h4></a> - 3 July 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/CoreJava/Primitive Data Types and Operations Java.pdf" target="_blank" rel="noopener noreferrer"><h4>Primitive Data Types and Operations in Java</h4></a> - 29 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/CoreJava/Java Fundamental Interview Questions.pdf" target="_blank" rel="noopener noreferrer"><h4>Java Fundamental Interview Questions</h4></a> - 28 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/miscellaneous/Rest API Testing Framework_Python.pdf" target="_blank" rel="noopener noreferrer"><h4>Rest API Testing Framework - Python</h4></a> - 27 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/miscellaneous/Docker for the Virtualization Admin.pdf" target="_blank" rel="noopener noreferrer"><h4>Docker for the Virtualization Admin</h4></a> - 26 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/ManualTesting/TEST-STRATEGY-DOCUMENT.pdf" target="_blank" rel="noopener noreferrer"><h4>Test Plan Document</h4></a> - 23 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/ManualTesting/TEST-STRATEGY-DOCUMENT.pdf" target="_blank" rel="noopener noreferrer"><h4>Test Strategy Document-2</h4></a> - Update Date 22 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/ManualTesting/test-strategy-template.pdf" target="_blank" rel="noopener noreferrer"><h4>Test Strategy Template</h4></a> - Update Date 21 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/ManualTesting/ABB-QA-Test Strategy (9AAD134969).pdf" target="_blank" rel="noopener noreferrer"><h4>Test Strategy Document-1</h4></a> - Update Date 19 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/CoreJava/conditionals.pdf" target="_blank" rel="noopener noreferrer"><h4>Conditional Statement In Java(If Else Tutorial)</h4></a> - Update Date 18 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/Maximo Interview Questions.pdf" target="_blank" rel="noopener noreferrer"><h4>Maximo Interview Questions and Answer</h4></a> - Update Date 17 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/miscellaneous/Jira Interview Qiestions answers.pdf" target="_blank" rel="noopener noreferrer"><h4>Jira Interview Qiestions answers </h4></a> - Update Date 16 June 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/miscellaneous/Uat Test Analyst Interview Questions & Answers.pdf" target="_blank" rel="noopener noreferrer"><h4>UAT Test Analyst Interview Questions & Answers </h4></a> - Update Date 15 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/SQL/SQL Joins.pdf" target="_blank" rel="noopener noreferrer"><h4>SQL Joins - A Visual Guide </h4></a> - Update Date 14 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/CoreJava/Java Cheat Sheet.pdf" target="_blank" rel="noopener noreferrer"><h4>Java Cheet Sheet</h4></a> - Update Date 13 June 2022<br>
-                </div>
-                
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/CoreJava/100+ Java Programs with Output_ Useful collection of Java Programs ( PDFDrive ).pdf" target="_blank" rel="noopener noreferrer"><h4>100 Java Programs with Java</h4></a> - Update Date 10 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/Selenium/XLT-Selappium.pdf" target="_blank" rel="noopener noreferrer"><h4>How to test mobile devices using Selendroid and Appium</h4></a> - Update Date 9 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob3-color " href="./downloads/InterviewQuestions/Selenium/Test-Driven Development with Mockito ( PDFDrive ).pdf" target="_blank" rel="noopener noreferrer"><h4>Test-Driven Development with Mockito</h4></a> - Update Date 8 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob4-color" href="https://drive.google.com/file/d/1qsQpM0EOfuMxHJf3gUapdBKdCwFOAiPK/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>Practical Unit Testing with JUnit and Mockito</h4></a> - Update Date 7 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/Selenium/Mockito Essentials ( PDFDrive ).pdf" target="_blank" rel="noopener noreferrer"><h4>Mockito Essentials</h4></a> - Update Date 6 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob1-color" href="https://drive.google.com/file/d/1petip0tIcAOimV4yOZltQAqtSLcJxnH2/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>Experiences of Test Automation_ Case Studies of Software Test Automation</h4></a> - Update Date 3 June 2022<br>
-                </div>
-                
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/Selenium/Automated Functional Testing Using Keyword- driven Framework ( PDFDrive ).pdf" target="_blank" rel="noopener noreferrer"><h4>Automated Functional Testing Using Keyword- driven Framework</h4></a> - Update Date 2 June 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/ManualTesting/Web Application Testing Checklist .pdf" target="_blank" rel="noopener noreferrer"><h4>Web Application Testing Checklist</h4></a> - Update Date 1 June 2022<br>
-                </div>
-
-               <div class="row">
-                    <a class="latestJob4-color" href="https://drive.google.com/file/d/1ojMLbIOpg16AGMNe05OBV3cLgKKSTSWB/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>Data Structures and Algorithms</h4></a> - Update Date 31 May 2022 <br>
-                </div>
-                
-                <div class="row">
-                    <a class="latestJob1-color" href="https://drive.google.com/file/d/1pef893jldHuz6lhwQj8ijZmBthx0eXuW/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>Dynamic Programming</h4></a> - Update Date 30 May 2022 <br>
-                </div>
-                
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/miscellaneous/ArrayInterview.pdf" target="_blank" rel="noopener noreferrer"><h4>Array Interview Quesions with Answer</h4></a> - Update Date 29 May 2022 <br>
-                </div>
-                
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/miscellaneous/OOPSInterview.pdf" target="_blank" rel="noopener noreferrer"><h4>OOPs Interview Quesions with Answer</h4></a> - Update Date 28 May 2022 <br>
-                </div> 
-                
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/miscellaneous/240 Core Java Interview Questions and Answers.pdf" target="_blank" rel="noopener noreferrer"><h4>Core Java Interview Quesions with Answer</h4></a> - Update Date 27 May 2022 <br>
-                </div>  
- 
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/miscellaneous/AWS Interview Questions.pdf" target="_blank" rel="noopener noreferrer"><h4>AWS Interview Quesions with Answers</h4></a> - Update Date 26 My 2022 <br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/miscellaneous/Rest API Interview Questions.pdf" target="_blank" rel="noopener noreferrer"><h4>Rest API Interview Quesions with Answers</h4></a> - Update Date 25 May 2022 <br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/selenium_and_testing_questions.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium Architecture Interview Quesions</h4></a> - Update Date 24 May 2022 <br>
-                </div>
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/miscellaneous/SQL_and_DBMS_Most_asked_interview_questions.pdf" target="_blank" rel="noopener noreferrer"><h4>SQL and DBMS Interview Quesions(For Freshers)</h4></a> - Update Date 23 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/miscellaneous/DevOpsQ&A.pdf" target="_blank" rel="noopener noreferrer"><h4>DevOps Interview Quesions</h4></a> - Update Date 22 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/miscellaneous/DevOpsQ&A.pdf" target="_blank" rel="noopener noreferrer"><h4>DevOps Interview Quesions</h4></a> - Update Date 22 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/miscellaneous/QA Lead Position Interview Questions and Answers.pdf" target="_blank" rel="noopener noreferrer"><h4>QA Lead Position Interview Questions and Answers</h4></a> - Update Date 21 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/miscellaneous/SQL Interview QnA.pdf" target="_blank" rel="noopener noreferrer"><h4>SQL Interview QnA</h4></a> - Update Date 20 May 2022<br>
-                </div>
-
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/ManualTesting/Notes 1.pdf" target="_blank" rel="noopener noreferrer"><h4>Manual Testing Interview Questions - 1</h4></a> - Update Date 19 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/ManualTesting/Notes 2.pdf" target="_blank" rel="noopener noreferrer"><h4>Manual Testing Interview Questions - 2</h4></a> - Update Date 18 May 2022<br>
-                </div>
-                <div class="row">
-                    <a  class="latestJob3-color" href="./downloads/InterviewQuestions/ManualTesting/Notes 3.pdf" target="_blank" rel="noopener noreferrer"><h4>Manual Testing Interview Questions - 3</h4></a> - Update Date 17 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/ManualTesting/Notes 4.pdf" target="_blank" rel="noopener noreferrer"><h4>Manual Testing Interview Questions - 4</h4></a> - Update Date 16 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/ManualTesting/Manual Testing - Interview questions 1.pdf" target="_blank" rel="noopener noreferrer"><h4>Manual Testing Interview Questions - 5</h4></a> - Update Date 15 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 1.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium interview Questions - 1</h4></a> - Update Date 14 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 2.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium interview Questions - 2</h4></a> - Update Date 13 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 3.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium interview Questions - 3</h4></a> - Update Date 12 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 4.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium interview Questions - 4</h4></a> - Update Date 11 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 5.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium interview Questions - 5</h4></a> - Update Date 10 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob5-color" href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 6.pdf" target="_blank" rel="noopener noreferrer"><h4>Selenium interview Questions - 6</h4></a> - Update Date 09 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/CoreJava/Java interview Questions - 1.pdf" target="_blank" rel="noopener noreferrer"><h4>Java interview Questions - 1</h4></a> - Update Date 08 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/CoreJava/Java interview Questions - 2.pdf" target="_blank" rel="noopener noreferrer"><h4>Java interview Questions - 2</h4></a> - Update Date 07 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob3-color" href="./downloads/InterviewQuestions/python/ForLoop.pdf" target="_blank" rel="noopener noreferrer"><h4>For Loop Programing Questions</h4></a> - Update Date 06 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob2-color" href="./downloads/InterviewQuestions/miscellaneous/Java Selenium Questions - 1.pdf" target="_blank" rel="noopener noreferrer"><h4>Automation Interview Quesions - 1</h4></a> - Update Date 05 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/Testing Interview Questions.pdf" target="_blank" rel="noopener noreferrer"><h4>Automation Interview Quesions -2</h4></a> - Update Date 04 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob4-color" href="./downloads/InterviewQuestions/miscellaneous/Docker Interview Questions & Answers.pdf" target="_blank" rel="noopener noreferrer"><h4>Docker Interview Quesions</h4></a> - Update Date 03 May 2022<br>
-                </div>
-                <div class="row">
-                    <a class="latestJob1-color" href="./downloads/InterviewQuestions/miscellaneous/POM framework  interview questions.pdf" target="_blank" rel="noopener noreferrer"><h4>POM framework  interview questions</h4></a> - Update Date 02 May 2022<br>
+    <!-- ============Tabular Downloads Section Start============ -->
+    <section class="bg-se-05">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>All Downloads</h2>
                 </div>
             </div>
-        </section>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover" style="background: #fff; font-size: 15px;">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th style="width: 60%;">Title</th>
+                                    <th style="width: 40%;">Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Example with color coding for both columns, title is now the download link -->
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/Notes 1.pdf" target="_blank">Manual Testing Interview Questions - 1</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/Notes 2.pdf" target="_blank">Manual Testing Interview Questions - 2</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/Notes 3.pdf" target="_blank">Manual Testing Interview Questions - 3</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/Notes 4.pdf" target="_blank">Manual Testing Interview Questions - 4</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/Manual Testing - Interview questions 1.pdf" target="_blank">Manual Testing Interview Questions - 5</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/SDLC Model.pdf" target="_blank">SDLC Models Notes</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/Notes/manual_software_testing_Notes.pdf" target="_blank">Manual Testing Notes</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/Notes/Software Testing and Quality Assurance Theory and Practice.pdf" target="_blank">Software Testing And Quality Assurance - Theory and Practice</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/Notes/Software Testing Foundations A Study Guide for the Certified Tester Exam.pdf" target="_blank">Software Testing Foundations Certificate Tester Exam Guide</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/TEST-STRATEGY-DOCUMENT.pdf" target="_blank">Test Plan Document</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/ABB-QA-Test Strategy (9AAD134969).pdf" target="_blank">Test Strategy Document-1</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/TEST-STRATEGY-DOCUMENT.pdf" target="_blank">Test Strategy Document-2</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/test-strategy-template.pdf" target="_blank">Test Strategy Template</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/ManualTesting/Web Application Testing Checklist .pdf" target="_blank">Web Application Testing Checklist</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-manual"><a href="./downloads/InterviewQuestions/miscellaneous/100 Manual Interview Questions.pdf" target="_blank">100 Manual Interview Questions</a></td>
+                                    <td class="cat-manual">Manual Testing</td>
+                                </tr>
+                                <!-- Java -->
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/Java interview Questions - 1.pdf" target="_blank">Java interview Questions - 1</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/Java interview Questions - 2.pdf" target="_blank">Java interview Questions - 2</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/Java Fundamental Interview Questions.pdf" target="_blank">Java Fundamental Interview Questions</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/Java Cheat Sheet.pdf" target="_blank">Java Cheat Sheet</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/JavaCollections.pdf" target="_blank">Java Collections Notes</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/100+ Java Programs with Output_ Useful collection of Java Programs ( PDFDrive ).pdf" target="_blank">100 Java Programs with Java</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/Primitive Data Types and Operations Java.pdf" target="_blank">Primitive Data Types and Operations in Java</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="./downloads/InterviewQuestions/CoreJava/conditionals.pdf" target="_blank">Conditional Statement In Java (If Else Tutorial)</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="https://drive.google.com/file/d/1jjtZ7Tu62FK2dX-iqChL0Q5JqEbbBbmb/view?usp=sharing" target="_blank">Java Notes - 1</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-java"><a href="https://drive.google.com/file/d/1jm3jysrjHq3Zv4RELQQXtYEdQKERq-S_/view?usp=sharing" target="_blank">Java Notes - 2</a></td>
+                                    <td class="cat-java">Java</td>
+                                </tr>
+                                <!-- Selenium -->
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 1.pdf" target="_blank">Selenium interview Questions - 1</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 2.pdf" target="_blank">Selenium interview Questions - 2</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 3.pdf" target="_blank">Selenium interview Questions - 3</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 4.pdf" target="_blank">Selenium interview Questions - 4</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 5.pdf" target="_blank">Selenium interview Questions - 5</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Selenium interview Questions - 6.pdf" target="_blank">Selenium interview Questions - 6</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/miscellaneous/222 Sel-Q&A.pdf" target="_blank">Selenium Interview Questions and Answer</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/XLT-Selappium.pdf" target="_blank">How to test mobile devices using Selendroid and Appium</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Test-Driven Development with Mockito ( PDFDrive ).pdf" target="_blank">Test-Driven Development with Mockito</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Mockito Essentials ( PDFDrive ).pdf" target="_blank">Mockito Essentials</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="https://drive.google.com/file/d/1qsQpM0EOfuMxHJf3gUapdBKdCwFOAiPK/view?usp=sharing" target="_blank">Practical Unit Testing with JUnit and Mockito</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-selenium"><a href="./downloads/InterviewQuestions/Selenium/Automated Functional Testing Using Keyword- driven Framework ( PDFDrive ).pdf" target="_blank">Automated Functional Testing Using Keyword-driven Framework</a></td>
+                                    <td class="cat-selenium">Selenium</td>
+                                </tr>
+                                <!-- API -->
+                                <tr>
+                                    <td class="title-api"><a href="https://drive.google.com/file/d/1mthXWFfq17Mf1wskQA1UfxZTd1DZJw_J/view?usp=sharing" target="_blank">API Tutorial 1 (Testing)</a></td>
+                                    <td class="cat-api">API</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-api"><a href="https://drive.google.com/file/d/1ms54SLGGYWd9YEPKqhhyrcpsdUMGi9b7/view?usp=sharing" target="_blank">API Tutorial 2 (Testing)</a></td>
+                                    <td class="cat-api">API</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-api"><a href="https://drive.google.com/file/d/1mrov3p78e9OfzmR0sioRTlUE401N3FbD/view?usp=sharing" target="_blank">API Tutorial 3 (Testing)</a></td>
+                                    <td class="cat-api">API</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-api"><a href="./downloads/InterviewQuestions/miscellaneous/Rest API Testing Framework_Python.pdf" target="_blank">Rest API Testing Framework - Python</a></td>
+                                    <td class="cat-api">API / Python</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-api"><a href="./downloads/InterviewQuestions/miscellaneous/Rest API Interview Questions.pdf" target="_blank">Rest API Interview Questions with Answers</a></td>
+                                    <td class="cat-api">API</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-api"><a href="./downloads/Notes/Postman Tutorial 1.pdf" target="_blank">POSTMAN TUTORIAL - 1</a></td>
+                                    <td class="cat-api">API</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-api"><a href="./downloads/Notes/Postman Tutorial 2.pdf" target="_blank">POSTMAN TUTORIAL - 2</a></td>
+                                    <td class="cat-api">API</td>
+                                </tr>
+                                <!-- Domain -->
+                                <tr>
+                                    <td class="title-domain"><a href="./downloads/Notes/Retail-Banking.pdf" target="_blank">Retail Banking Domain Notes</a></td>
+                                    <td class="cat-domain">Domain</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-domain"><a href="./downloads/Notes/E_commerce_.pdf" target="_blank">E-Commerce Domain Notes</a></td>
+                                    <td class="cat-domain">Domain</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-domain"><a href="./downloads/Notes/Insurance Domain Notes.pdf" target="_blank">Insurance Domain Notes - 1</a></td>
+                                    <td class="cat-domain">Domain</td>
+                                </tr>
+                                <!-- DevOps / Docker -->
+                                <tr>
+                                    <td class="title-devops"><a href="./downloads/InterviewQuestions/miscellaneous/DevOps 300 Interview QA.pdf" target="_blank">300 DevOps Interview Questions with Answer</a></td>
+                                    <td class="cat-devops">DevOps</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-devops"><a href="./downloads/InterviewQuestions/miscellaneous/DevOpsQ&A.pdf" target="_blank">DevOps Interview Questions</a></td>
+                                    <td class="cat-devops">DevOps</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-docker"><a href="./downloads/InterviewQuestions/miscellaneous/Docker for the Virtualization Admin.pdf" target="_blank">Docker for the Virtualization Admin</a></td>
+                                    <td class="cat-docker">Docker</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-docker"><a href="./downloads/InterviewQuestions/miscellaneous/Docker Interview Questions & Answers.pdf" target="_blank">Docker Interview Questions</a></td>
+                                    <td class="cat-docker">Docker</td>
+                                </tr>
+                                <!-- Miscellaneous -->
+                                <tr>
+                                    <td class="title-misc"><a href="./downloads/Notes/Linux Complete Notes WhatsApp.pdf" target="_blank">Linux Notes - 1</a></td>
+                                    <td class="cat-misc">Miscellaneous</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-misc"><a href="./downloads/Notes/Advanced_Excel_1653227489.pdf" target="_blank">Excel Function</a></td>
+                                    <td class="cat-misc">Miscellaneous</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-misc"><a href="./downloads/Notes/Kubernetes For Beginners.pdf" target="_blank">Kubernetes For Beginners</a></td>
+                                    <td class="cat-misc">Miscellaneous</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-misc"><a href="./downloads/InterviewQuestions/miscellaneous/typescript_tutorial.pdf" target="_blank">TypeScript For Beginners</a></td>
+                                    <td class="cat-misc">Miscellaneous</td>
+                                </tr>
+                                <!-- Python -->
+                                <tr>
+                                    <td class="title-python"><a href="https://drive.google.com/file/d/1kA60UIJCUgNHwTkFqPoSoMyizVdhptDO/view?usp=sharing" target="_blank">Core Python Notes - 1</a></td>
+                                    <td class="cat-python">Python</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-python"><a href="./downloads/Notes/python - 1.pdf" target="_blank">Core Python Book - 1</a></td>
+                                    <td class="cat-python">Python</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-python"><a href="./downloads/Notes/Python - 2.pdf" target="_blank">Core Python Book - 2</a></td>
+                                    <td class="cat-python">Python</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-python"><a href="./downloads/Notes/python - 3.pdf" target="_blank">Core Python Book - 3</a></td>
+                                    <td class="cat-python">Python</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-python"><a href="./downloads/Notes/Python - 4.pdf" target="_blank">Core Python Book - 4</a></td>
+                                    <td class="cat-python">Python</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-python"><a href="./downloads/InterviewQuestions/python/ForLoop.pdf" target="_blank">For Loop Programming Questions</a></td>
+                                    <td class="cat-python">Python</td>
+                                </tr>
+                                <!-- Others (add more as needed, sorted by name/category) -->
+                                <tr>
+                                    <td class="title-agile"><a href="https://drive.google.com/file/d/18Q0KuEH7k2Xulq3yf30NqQRLW2HIBLcU/view?usp=share_link" target="_blank">Scrum Master Interview Questions</a></td>
+                                    <td class="cat-agile">Agile / Scrum</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-agile"><a href="https://drive.google.com/file/d/18Q0KuEH7k2Xulq3yf30NqQRLW2HIBLcU/view?usp=share_link" target="_blank">Agile Interview Questions</a></td>
+                                    <td class="cat-agile">Agile / Scrum</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-agile"><a href="./downloads/InterviewQuestions/miscellaneous/Agile Software Development.pdf" target="_blank">Agile Methodology</a></td>
+                                    <td class="cat-agile">Agile / Scrum</td>
+                                </tr>
+                                <!-- ...add more rows as needed, sorted by name/category... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
         
        <!-- ============bg-se-05  Section  Start============ -->
         
@@ -444,14 +418,14 @@
                         <h3 rel="noopener noreferrer" class="fa fa-download middle download-color"> Manual Testing</h3>
 
                         <div class="_xs_we_er">
-                            <div class="_he_w" style='width: 340px; height:150px; overflow:auto;'>
-                                <a href="./downloads/InterviewQuestions//ManualTesting/SDLC Model.pdf" target="_blank"><p><Strong>SDLC Models Notes</Strong></p></a>
-                                <a href="./downloads/Notes/manual_software_testing_Notes.pdf" target="_blank"><p><Strong>Manual Testing Notes</Strong></p></a>
-                                <a href="./downloads/Notes/Software Testing and Quality Assurance Theory and Practice.pdf" target="_blank"><p><Strong>Software Testing And quality Assurance - Theory and Practice</Strong></p></a>
-                                <a href="./downloads/Notes/Software Testing Foundations A Study Guide for the Certified Tester Exam.pdf" target="_blank"><p><Strong>Software Testing Foundations Certificate Tester Exam Guide</Strong></p></a>
+                            <div class="_he_w" style="width:340px;height:150px;overflow:auto;">
+                                <a href="./downloads/InterviewQuestions/ManualTesting/SDLC Model.pdf" target="_blank"><p><strong>SDLC Models Notes</strong></p></a>
+                                <a href="./downloads/Notes/manual_software_testing_Notes.pdf" target="_blank"><p><strong>Manual Testing Notes</strong></p></a>
+                                <a href="./downloads/Notes/Software Testing and Quality Assurance Theory and Practice.pdf" target="_blank"><p><strong>Software Testing And Quality Assurance - Theory and Practice</strong></p></a>
+                                <a href="./downloads/Notes/Software Testing Foundations A Study Guide for the Certified Tester Exam.pdf" target="_blank"><p><strong>Software Testing Foundations Certificate Tester Exam Guide</strong></p></a>
                             </div>
                             <ol>
-                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
+                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
                             </ol>
                     </div>
                     </article>
@@ -462,14 +436,14 @@
                        <h3  rel="noopener noreferrer" class="fa fa-download middle download-color"> Core Java Notes</h3>
 
                         <div class="_xs_we_er">
-                            <div class="_he_w" style='width: 340px; height:150px; overflow:auto;'>
+                            <div class="_he_w" style="width:340px;height:150px;overflow:auto;">
                                 <a href="https://drive.google.com/file/d/1jjtZ7Tu62FK2dX-iqChL0Q5JqEbbBbmb/view?usp=sharing" target="_blank" ><p><strong>Java Notes - 1</strong></p></a>
                                 <a href="https://drive.google.com/file/d/1jm3jysrjHq3Zv4RELQQXtYEdQKERq-S_/view?usp=sharing" target="_blank" ><p><strong>Java Notes - 2</strong></p></a>
                                 <a href="./downloads/InterviewQuestions/CoreJava/JavaCollections.pdf" target="_blank" ><p><strong>Java Collections Notes</strong></p></a>
                                 <a href="./downloads/InterviewQuestions/CoreJava/Java Cheat Sheet.pdf" target="_blank" ><p><strong>Java Cheet Sheet</strong></p></a>
                             </div>
                             <ol>
-                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
+                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
                             </ol>
                     </div>
                     </article>
@@ -480,7 +454,7 @@
                         <h3 rel="noopener noreferrer" class="fa fa-download middle download-color"> Automation Notes</h3>
 
                         <div class="_xs_we_er">
-                            <div class="_he_w" style='width: 340px; height:150px; overflow:auto;'>
+                            <div class="_he_w" style="width:340px;height:150px;overflow:auto;">
                                 <a href="https://drive.google.com/file/d/1k02HUbBCPKlh1PAVWV-54K9nAELdm56I/view?usp=sharing" target="_blank"><p><strong>Selenium with Java Notes - 1</strong></p></a>
                                 <a href="https://drive.google.com/file/d/1lJMc7-egrieQ3mXF5fwGb1j5I-OBK-iS/view?usp=sharing" target="_blank"><p><strong>TestNG HandWritten Notes - 1</strong></p></a>
                                 <a href="./downloads/Notes/Selenium Notes 2.pdf" target="_blank"><p><strong>Selenium With Java Notes - 2</strong></p></a>
@@ -489,7 +463,7 @@
                                 <a href="./downloads/Notes/Testng and Mockito.pdf" target="_blank"><p><strong>TestNG and Mockito Book</strong></p></a>
                             </div>
                             <ol>
-                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
+                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
                             </ol>
                     </div>
                     </article>
@@ -499,7 +473,7 @@
                     <article class="_lk_bg_sd_we">
                         <h3 rel="noopener noreferrer" class="fa fa-download middle download-color"> Core Python Notes</h3>
                         <div class="_xs_we_er">
-                            <div class="_he_w" style='width: 340px; height:150px; overflow:auto;'>
+                            <div class="_he_w" style="width:340px;height:150px;overflow:auto;">
                                 <a href="https://drive.google.com/file/d/1kA60UIJCUgNHwTkFqPoSoMyizVdhptDO/view?usp=sharing" target="_blank"><p><strong>Core Python Notes - 1</strong></p></a>
                                 <a href="./downloads/Notes/python - 1.pdf" target="_blank"><p><strong>Core Python Book - 1</strong></p></a>
                                 <a href="./downloads/Notes/Python - 2.pdf" target="_blank"><p><strong>Core Python Book - 2</strong></p></a>
@@ -507,7 +481,7 @@
                                 <a href="./downloads/Notes/Python - 4.pdf" target="_blank"><p><strong>Core Python Book - 4</strong></p></a>
                             </div>
                             <ol>
-                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
+                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
                             </ol>
                     </div>
                     </article>
@@ -517,14 +491,14 @@
                     <article class="_lk_bg_sd_we">
                         <h3 rel="noopener noreferrer" class="fa fa-download middle download-color"> SQL and API Notes</h3>
                         <div class="_xs_we_er">
-                            <div class="_he_w" style='width: 340px; height:150px; overflow:auto;'>
+                            <div class="_he_w" style="width:340px;height:150px;overflow:auto;">
                                 <a href="https://drive.google.com/file/d/1l75wZF06PlEbTNkQjAlVwfO1ETVtSxah/view?usp=sharing" target="_blank"><p><strong>SQL Notes - 1</strong></p></a>
                                 <a href="./downloads/InterviewQuestions/SQL/SQL Joins.pdf" target="_blank"><p><strong>SQL Joins</strong></p></a>
                                 <a href="./downloads/Notes/Postman Tutorial 1.pdf" target="_blank"><p><strong>POSTMAN TUTORIAL - 1</strong></p></a>
                                 <a href="./downloads/Notes/Postman Tutorial 2.pdf" target="_blank"><p><strong>POSTMAN TUTORIAL - 2</strong></p></a>
                             </div>
                             <ol>
-                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
+                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
                             </ol>
                     </div>
                     </article>
@@ -535,15 +509,15 @@
                     <article class="_lk_bg_sd_we">
                         <h3 rel="noopener noreferrer" class="fa fa-download middle download-color"> Miscellaneous Notes</h3>
                         <div class="_xs_we_er">
-                            <div class="_he_w" style='width: 340px; height:150px; overflow:auto;'>
+                            <div class="_he_w" style="width:340px;height:150px;overflow:auto;">
                                 <a href="./downloads/Notes/Linux Complete Notes WhatsApp.pdf" target="_blank"><p><strong>Linux Notes - 1</strong></p></a>
-                                <a href="./downloads/Notes/Insurance Domain Notes.pdf" target="_blank"><p><strong>Insurence Domain Notes - 1</strong></p></a>
+                                <a href="./downloads/Notes/Insurance Domain Notes.pdf" target="_blank"><p><strong>Insurance Domain Notes - 1</strong></p></a>
                                 <a href="./downloads/Notes/Advanced_Excel_1653227489.pdf" target="_blank"><p><strong>Excel Function</strong></p></a>
                                 <a href="./downloads/Notes/Kubernetes For Beginners.pdf" target="_blank"><p><strong>Kubernetes For Beginners</strong></p></a>
                                 <a href="./downloads/InterviewQuestions/miscellaneous/typescript_tutorial.pdf" target="_blank"><p><strong>TypeScript For Beginners</strong></p></a>
                             </div>
                             <ol>
-                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
+                                <li><span>by</span> <a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank">Ankit</a><span class="_mn_cd_xs"> May 21, 2022</span></li>
                             </ol>
                     </div>
                     </article>
@@ -596,19 +570,16 @@
             <div class="row">
                 <div class="col-12">
                     <div class="last-card">
-                        <p>© 2022 All Rights Reserved by TechAdda Grpup</a></p>
+                        <p>© 2025 All Rights Reserved by TechAdda Group</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/plugins/owl.carousel.js"></script>
-<script src="assets/js/plugins/owl.carousel.min.js"></script>
-<script src="assets/js/script.js"></script>
 
 </html>

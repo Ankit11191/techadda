@@ -7,49 +7,43 @@
     <title>TechAdda - Ankit Mittal</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-<style>
-h1 {
-  text-align: center;
-}
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
 
-p.righted {
-  text-align: right;
-}
-p.lefted {
-  text-align: left;
-}
+        p.righted {
+            text-align: right;
+        }
 
-p.justifed {
-  text-align: justify;
-}
-.my-icon {
-    width: 50px;
-    height: 50px;
-}
+        p.lefted {
+            text-align: left;
+        }
 
-.my-image {
-    width: 150px;
-    height: 250px;
-}
-#myModal {
-            /* width: 1500px;
-            height: 1800px;
-            top: 25%;
-            left: 25%;
-            margin-top: -50px;
-            margin-left: -200px;  */
+        p.justifed {
+            text-align: justify;
+        }
+
+        .my-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .my-image {
+            width: 150px;
+            height: 250px;
+        }
+
+        #myModal {
             padding: 5%;
-            background-color:  rgba(167, 167, 201, 0.527);
+            background-color: rgba(167, 167, 201, 0.527);
             text-align: justify;
             text-justify: inter-word;
         }
-</style>
+    </style>
 </head>
 
 <body>
@@ -68,10 +62,9 @@ p.justifed {
                             <div class="menu">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="downloads.html" >Downloads</a></li>
+                                    <li><a href="downloads.html">Downloads</a></li>
                                     <li><a href="dailyInterviewQuestions.html">Daily Questions</a></li>
                                     <li><a href="productcasestudy.html">Product Case Study</a></li>
-                                    <!-- <li><a href="interviewdetails.html">Interview Details</a></li> -->
                                     <li><a href="moketest.html">Practice Exam</a></li>
                                     <li><a href="aboutme.html">About Me</a></li>
                                 </ul>
@@ -84,32 +77,39 @@ p.justifed {
     </header>
     <main>
 
-        <!-- ============Autopopup Section Start============ -->
-
+        <!-- Modal Section -->
         <div class="container">
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <h2 style="text-align: left;"><span style="text-decoration: underline; color: #0000ff;"><strong>Product Owner vs Product Manager</strong></span></h2>
-                    <h4><span style="color: #545353;"><strong>The product manager discovers what users need, prioritizes what to build next, and rallies the team around a product roadmap.</strong></span></h4><br/>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h2 style="text-align: left;"><span style="text-decoration: underline; color: #0000ff;"><strong>Product Owner vs Product Manager</strong></span></h2>
+                            <h4><span style="color: #545353;"><strong>The product manager discovers what users need, prioritizes what to build next, and rallies the team around a product roadmap.</strong></span></h4><br/>
 
-                    <h4><span style="color: #545353;"><strong>The product owner is responsible for maximizing the value of the product by creating and managing the product backlog. This person creates user stories for the development team and communicates the voice of the customer in the Scrum process.</strong></span></h4>
-                  </div>
+                            <h4><span style="color: #545353;"><strong>The product owner is responsible for maximizing the value of the product by creating and managing the product backlog. This person creates user stories for the development team and communicates the voice of the customer in the Scrum process.</strong></span></h4>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-
+        </div>
         <script>
-            $(window).load(function(){
+            $(function() {
+                // Show modal only once per page load
                 $('#myModal').modal('show');
+                // ESC key closes modal
+                $(document).on('keydown', function(e) {
+                    if (e.key === "Escape") {
+                        $('#myModal').modal('hide');
+                    }
+                });
+                // Remove focus trap issues
+                $('#myModal').on('hidden.bs.modal', function () {
+                    $('body').removeClass('modal-open');
+                    $('.modal-backdrop').remove();
+                });
             });
         </script>
-        
-        <!-- ============Slider  Section  Start============ -->
+        <!-- Slider Section -->
         <section class="slider">
             <div class="shap"></div>
             <div class="shap-01">
@@ -129,110 +129,67 @@ p.justifed {
                     </g>
                 </svg>
             </div>
-            <!-- <div class="shap-02">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="30px" height="200px" viewBox="0 0 30 200" style="enable-background:new 0 0 30 200;"
-                    xml:space="preserve">
-                    <path style="fill:#FFFFFF;" d="M20.666,176.646C20.666,186.782,18.129,195,15,195l0,0c-3.129,0-5.667-8.218-5.667-18.354V23.352
-                	C9.333,13.217,11.871,5,15,5l0,0c3.129,0,5.666,8.217,5.666,18.352V176.646z" />
-                </svg>
-            </div>
-            <div class="shape-03"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="main-wrapper">
-                        <div class="sub-wrapper-01">
-                            <div class="content">
-                                <h2><b>BROADEN YOUR KNOWLEDGE in QUALITY ASSURANCE</b></h2>
-                                <p>Quality Assurance in Software Testing is defined as a procedure to ensure the quality of software products or services provided to the customers by an organization. Quality assurance focuses on improving the software development process and making it efficient and effective as per the quality standards defined for software products. Quality Assurance is popularly known as QA Testing..</p>
-                            </div>
-                        </div>
-                        <div class="sub-wrapper-01">
-                                <div class="my-ba image">
-                                    <img src="assets/images/agile-software-development 6.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </section>
 
-        <!-- ============bg-se-02-01 Latest Job  Section  Start============ -->
-
+        <!-- Latest Job Section -->
+        <!--
         <section class="bg-se-03" style="height: 500px;">
-            <div class="container" >
+            <div class="container">
                 <div class="row">
                     <div class="heading">
                         <a href="./interviewdetails.html"><h2>LATEST JOBS</h2></a>
                     </div>
                 </div>
-
                 <div class="slideshow-container">
                     <link rel="stylesheet" src="./assets/css/myStyle.css">
 
-                    <!-- <div class="mySlides1" style='height:450px; overflow:auto; '>
-                    </div> -->
-
-                    <div class="mySlides1"   style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>Omni Pay is hiring for QA Manual Tester </strong><strong>Walk-in Drive on Monday 11-07-2022</strong></h3>
                         <p><strong>Experience Type: Fresher</strong><br /><strong>Immediate joiners only</strong><br /><strong>Timings- 11:00A.M IST to 8:00P.M IST</strong><br /><strong>Venue: Office address: Marathahalli Outer Ring Road, Varthur Hobli, Devarabisanahalli, Block D, 9th Floor Smart Works Bengaluru, Karnataka 560103</strong><br /><strong>Any queries or hassles reaching the office please feel free to contact the below number</strong><br /><strong>Share your CV @ madhuri1@omni-pay.com or priya@omni-pay.com</strong></p>
                     </div>
 
-                    <div class="mySlides1"   style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>I SQUARE SOFT is hiring Freshers in Software testing !!</strong></h3>
                         <p><strong>Role: Manual Tester</strong><br /><strong>Exp level: Trainee</strong><br /><strong>Location: Bangalore</strong><br /><strong>Mode of work: Work from Office (right from DOJ)</strong><br /><strong>Need only immediate joiners</strong><br /><strong>Interested candidates can reach out to me at roja@isquaresoft.com</strong></p>
                     </div>
 
-                    <div class="mySlides1"   style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>Pragma Edge Inc is hiring Quality Assurance Engineer</strong></h3>
                         <p><strong>We are looking for only freshers #freshers #careerdevelopment #careergrowth</strong><br /><strong>Required Skills : Manual testing, Automation testing, Selenium with corejava #automation #testing #manualtesting</strong><br /><strong>Qualification : B.sc(ComputerScience),BCA,MCA,B.tech(CSE,ECE)</strong><br /><strong>Only 2021 and 2022 Pass-outs are eligible</strong><br /><strong>Interested candidates share your updated resume to <a href="mailto:mohankumar.murugesan@pragmaedge.com">mohankumar.murugesan@pragmaedge.com</a>&nbsp;Fresher Jobs Freshers Jobs in Hyderabad</strong></p>
 
                     </div>
 
-                    <div class="mySlides1"   style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>Vensai Technologies is hiring Quality Assurance Engineer</strong></h3>
                         <p><strong>Role: Java Trainee/ Software Trainee</strong><br /><strong>work location: Visakhapatnam</strong><br /><strong>Educational Qualification:</strong><br /><strong>&middot; B. Tech\BE &ndash; CSE, IT.</strong><br /><strong>&middot; BSc, MCA, MSc (Computers specialization).</strong><br /><strong>Eligibility Criteria:</strong><br /><strong>&middot; 2019, 2020, 2021, 2022 passed outs.</strong><br /><strong>&middot; Minimum of 60% in Academics</strong><br /><strong>&middot; Trained or certified in Java</strong><br /><strong>&middot; Should have good communication skills.</strong><br /><strong>Interview Process: all rounds on the same day</strong><br /><strong>1. Written Test</strong><br /><strong>2. Technical Discussion</strong><br /><strong>3. HR Discussion.</strong><br /><strong>Interested candidates are requested to drop their CV to <a href="mailto:vinod.r@vensaiinc.com">vinod.r@vensaiinc.com</a></strong></p>
                     </div>
 
-                    <div class="mySlides1"  style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>Princeton is hiring!!</strong></h3>
                         <p><strong>QA Engineer/Test Automation for Data</strong><br /><strong>Location - Bangalore</strong><br /><strong>Experience - 4-8 yrs</strong><br /><strong>Top SKills:</strong><br /><strong>1. Experience testing Data from source to target</strong><br /><strong>2. Experience writing SQL Queries</strong><br /><strong>3. ETL Testing / Big Data Testing is a must</strong><br /><strong>4. Data Engineering Project experience</strong><br /><strong>5. Experience writing test scripts</strong><br /><strong>6. TestRail &amp; Jira experience</strong><br /><strong>Write to <a href="mailto:salmau@princetonamerica.com">salmau@princetonamerica.com</a></strong></p>
                     </div>
 
-                    <div class="mySlides1"  style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>CognoticAI is Hiring!!!!</strong></h3>
                         <p><strong>Position: SDET</strong><br /><strong>Skills: Selenium, Automation testing, Python</strong><br /><strong>Experience: 4+</strong><br /><strong>Location: Bangalore</strong><br /><strong>Interested candidate can share their resume at swati.dhiman@cognoticai.com</strong></p>
                     </div>
 
-                    <div class="mySlides1"  style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>RVU India is looking for an Automation/Manual Tester for a product-based company </strong></h3>
                         <p><strong>with work exp of min 3yrs to 5yrs max</strong><br /><strong>skill set Must have:- API Testing, Selenium, SQL, and Python</strong><br /><strong>Notice period:- Max 15 days will be considered.</strong><br /><strong>Location:- Gurgaon</strong><br /><strong>Hybrid model work profile.</strong><br /><strong>Mail your updated resume </strong><strong><a href="mailto:tausif.fatima@rvu.in">tausif.fatima@rvu.in</a></strong></p>
                     </div>
 
-                    <div class="mySlides1"  style='height:450px; overflow:auto;'>
+                    <div class="mySlides1" style='height:450px; overflow:auto;'>
                         <h3><strong>Quess Corp is hiring Quality Assurance Engineer</strong></h3>
                         <p><strong>Profile: Quality analysis-Manual testing -Software testing </strong><br /><strong>Location:- Noida,Chennai</strong><br /><strong>Experience:- 3+ years </strong><br /><strong>Interested candidates send their cv to <a href="mailto:Ekta.Chauhan@quesscorp.com">Ekta.Chauhan@quesscorp.com</a>&nbsp;</strong></p>
                     </div>
 
                     <a class="prev1" onclick="plusSlides(-1)">❮</a>
-                    <!-- <a class="next1" onclick="plusSlides(1)">❯</a> -->
-                    
-                    </div>
-                    
-                    <script>
-                        function plusSlides(n) {
-                            showSlides(slideIndex += n);
-                        }
-                        
-                        function currentSlide(n) {
-                            showSlides(slideIndex = n);
-                        }
-
-                        var slideIndex1 = 0;
-                        carousel();
-
-                        function carousel() {
+                </div>
+                <script>
+                    var slideIndex1 = 0;
+                    carousel();
+                    function carousel() {
                         var i;
                         var x = document.getElementsByClassName("mySlides1");
                         for (i = 0; i < x.length; i++) {
@@ -242,36 +199,29 @@ p.justifed {
                         if (slideIndex1 > x.length) {slideIndex1 = 1}
                         x[slideIndex1-1].style.display = "block";
                         setTimeout(carousel, 5000); // Change image every 5 seconds
+                    }
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides1");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
                         }
-
-
-                                var slideIndex = 1;
-                                showSlides(slideIndex);
-                                
-                                function showSlides(n) {
-                                var i;
-                                var slides = document.getElementsByClassName("mySlides1");
-                                var dots = document.getElementsByClassName("dot1");
-                                if (n > slides.length) {slideIndex = 1}    
-                                if (n < 1) {slideIndex = slides.length}
-                                for (i = 0; i < slides.length; i++) {
-                                    slides[i].style.display = "none";  
-                                }
-                                for (i = 0; i < dots.length; i++) {
-                                    dots[i].className = dots[i].className.replace(" active", "");
-                                }
-                                slides[slideIndex-1].style.display = "block";  
-                                dots[slideIndex-1].className += " active";
-                                }
-
-                    
-                    </script>
-
+                        slides[slideIndex-1].style.display = "block";
+                    }
+                </script>
             </div>
         </section>
-
-        <!-- ============bg-se-01  Section  Start============ -->
-
+        <!-- Why Read This Page Section -->
         <section class="bg-se-01">
             <div class="container">
                 <div class="row">
@@ -320,11 +270,7 @@ p.justifed {
                 </div>
             </div>
         </section>
-
-        
-
-        <!-- ============bg-se-02  Section  Start============ -->
-
+        <!-- Popular Category Section -->
         <section class="bg-se-02">
             <div class="container">
                 <div class="row">
@@ -334,7 +280,6 @@ p.justifed {
                 </div>
 
                 <div class="row">
-                    <link rel="stylesheet" href="assets/css/myStyle.css">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                         <div class="main-wrapper">
                             <div class="content text-center">
@@ -343,7 +288,7 @@ p.justifed {
                                 </div>
                                 <div class="sentence" style='width: 310px; height:200px;'>
                                     <h3>Automation Framework Development</h3>
-                                    <p class="lefted"> Automation Framework is not a single tool or process, but it is a collection of tools and processes working together to support automated testing of any application. It integrates various functions like libraries, test data, and various reusable modules.</p>
+                                    <p class="lefted">Automation Framework is a collection of tools and processes working together to support automated testing of any application. It integrates various functions like libraries, test data, and reusable modules.</p>
                                 </div>
                             </div>
                         </div>
@@ -357,7 +302,7 @@ p.justifed {
                                 </div>
                                 <div class="sentence" style='width: 310px; height:235px; overflow:auto;'>
                                     <h3>Quality Assurance</h3>
-                                    <p class="lefted">It is part of quality management focused on providing confidence that quality requirements will be fulfilled." The confidence provided by quality assurance is twofold—internally to management and externally to customers, government agencies, regulators, certifiers, and third parties. An alternate definition is "all the planned and systematic activities implemented within the quality system that can be demonstrated to provide confidence that a product or service will fulfill requirements for quality.</p>
+                                    <p class="lefted">Quality assurance focuses on providing confidence that quality requirements will be fulfilled, both internally and externally. It includes all planned and systematic activities to ensure product or service quality.</p>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +314,7 @@ p.justifed {
                                 <div class="icon">
                                     <i class="fal fa-calculator-alt" style="font-size:60px;color:rgb(105, 71, 226);text-shadow:2px 2px 4px #000000;"></i>
                                 </div>
-                                <div class="sentence"  style='width: 310px; height:235px; '>
+                                <div class="sentence" style='width: 310px; height:235px; '>
                                     <h3>Practice Exam</h3>
                                         <div>
                                             <li><a href="https://forms.gle/h8seyMwhKSg57jC67">Manual Testing</a></li>
@@ -385,9 +330,7 @@ p.justifed {
                 </div>
             </div>
         </section>
-
-        <!-- ============bg-se-03  Section  Start============ -->
-
+        <!-- Our Courses Section -->
         <section class="bg-se-03">
             <div class="container">
                 <div class="row">
@@ -464,17 +407,13 @@ p.justifed {
                                         </div>
                                     </div>
                                 </div>
-
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- ============bg-se-04  Section  Start============ -->
-
+        <!-- Stats Section -->
         <section class="bg-se-04">
             <div class="container">
                 <div class="row">
@@ -521,51 +460,11 @@ p.justifed {
                 </div>
             </div>
         </section>
-
-        <!-- ============bg-se-06  Section  Start============ -->
-        
-        <!-- <section class="bg-se-06">
-            <div class="container">
-                <div class="row">
-                    <div class="heading">
-                        <h2>Our Team</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="team-card">
-                            <div class="image-team">
-                                <img src="assets/images/team/Ankit.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h3>Ankit Mittal</h3>
-                                <p>Corporate Trainer</p>
-                                <ol>
-                                    <li><a href="https://github.com/Ankit11191" target="_blank" rel="noopener noreferrer" class="fab fa-github"></a></li>
-                                    <li><a href="https://www.linkedin.com/in/ankitmittal061091" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin-in"></a></li>
-                                    <li><a href="mailto:techadda.ankit.mittal@gmail.com" target="_blank" rel="noopener noreferrer" class="fa fa-envelope"></a></li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
-
-    <!-- ============Footer  Start============ -->
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-3 col-md-3 col-6">
-                    <div class="_kl_de_w">
-                        <h3>Smart Group</h3>
-                        <p>ipsum dolor sit amet, Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div> -->
-    
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="_kl_de_w">
                         <h3>Quick Links</h3>
@@ -578,59 +477,38 @@ p.justifed {
                         </ol>
                     </div>
                 </div>
-    
                 <div class="col-lg-3 col-md-3 col-6">
                     <div class="_kl_de_w">
                         <h3>Course to Support</h3>
                         <ol>
-                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Manual_Testing.pdf"  target="_blank">Manual Testing</a></li>
-                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Core_Java.pdf"  target="_blank">Java</a></li>
-                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Python Programming Syllabus.pdf"  target="_blank">Python</a></li>
-                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Selenium_with_Java.pdf"  target="_blank">Selenium With Java</a></li>
-                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Selenium_Python.pdf"  target="_blank">Selenium With Python</a></li>
-                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_DevOPS.pdf"  target="_blank">DevOps</a></li>
-                            
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Manual_Testing.pdf" target="_blank">Manual Testing</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Core_Java.pdf" target="_blank">Java</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Python Programming Syllabus.pdf" target="_blank">Python</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Selenium_with_Java.pdf" target="_blank">Selenium With Java</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_Selenium_Python.pdf" target="_blank">Selenium With Python</a></li>
+                            <li><i class="far fa-angle-right"></i><a href="./downloads/courseContent/Syllabus_of_DevOPS.pdf" target="_blank">DevOps</a></li>
                         </ol>
                     </div>
-                </div> 
-
-                <!-- <div class="col-lg-3 col-md-3 col-6">
-                    <div class="_kl_de_w">
-                        <h3>Contact Us</h3>
-                        <form action="mailto:techadda.ankit.mittal@gmail.com" method="POST" enctype="text/plain" name="EmailForm">
-                            <div class="form-group">
-                                <input class="form-control" type="emal" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="3" placeholder="Message" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" value="Submit">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </footer>
-
     <div class="end-footer">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="last-card">
-                        <p>© 2022 All Rights Reserved by TechAdda Grpup</a></p>
+                        <p>© 2025 All Rights Reserved by TechAdda Group</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/plugins/owl.carousel.js"></script>
-<script src="assets/js/plugins/owl.carousel.min.js"></script>
-<script src="assets/js/script.js"></script>
 </html>
