@@ -2,11 +2,6 @@
 
 > Comprehensive QA engineering, test automation, study materials, and interview preparation platform created and mentored by **Ankit Mittal**.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=flat-square&logo=github)](https://ankit11191.github.io/techadda/)
-[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green?style=flat-square&logo=node.js)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Server-Express%204.x-blue?style=flat-square&logo=express)](https://expressjs.com/)
-[![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](LICENSE)
-
 ---
 
 ## 📌 Table of Contents
